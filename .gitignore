@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+
+# 生成物（脚本可重建）
+data/*.db
+
+# 外部数据集（脚本可拉取，不入库）
+data/raw/
+
+# 规则库渲染产物（scripts/gen_rules.py 可重建）
+data/rules/
+
+# v0.1 原型期设备手册产物（scripts/gen_manual.py 可重建）
+data/manual/
+
+# 本地运行日志（含本机地址，不入库）
+eval/hud_run.log

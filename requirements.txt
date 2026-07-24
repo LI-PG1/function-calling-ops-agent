@@ -1,0 +1,13 @@
+# 运行环境（Python 3.12；版本为 2026-08-02 实测通过版本）
+openai==3.30.0
+fastapi==0.143.0
+uvicorn==0.54.0
+pydantic==2.14.1
+python-dotenv==1.2.4
+PyYAML==6.0.3
+
+# HUD demo（app.py）
+streamlit==1.66.0
+
+# —— 单元测试 ——
+pytest==9.1.1
