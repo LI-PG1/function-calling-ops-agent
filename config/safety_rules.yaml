@@ -1,0 +1,161 @@
+# 场景规则库（声明式安全规则）— 全虚构体系，不对应任何真实厂商
+# 结构：scenes（8 类场景策略）+ pre_check（危险动作前置拦截）+ post_review（输出合规要求）
+# 规则可版本化：修改后 version +1，迭代记录写入 eval/CHANGELOG.md
+version: 1
+updated: "2026-08-07"
+
+# ============ 一、场景策略（8 类）============
+scenes:
+  - id: tired
+    name: 疲劳驾驶
+    keywords: [困, 疲劳, 打瞌睡, 犯困, 想睡, 提神, 开太久, 眼皮]
+    risk: high
+    strategy: [remind, suggest_rest]
+    must_output: [safety_tip]
+    handling: 提醒疲劳驾驶风险，尽快到最近服务区/停车区休息；可配合开窗通风、提神音乐但不得以娱乐替代休息；安排导航至最近服务区。
+
+  - id: child
+    name: 亲子出行
+    keywords: [孩子, 小孩, 宝宝, 儿童, 后排安全椅, 小朋友]
+    risk: high
+    strategy: [adapt_comfort, warn_if_unattended, refuse_leave_child]
+    must_output: [safety_tip]
+    handling: 优先保障儿童舒适（分区温控、风量调柔）；若成人离车且儿童独留，必须警告并拒绝协助关闭温控等危险操作；必要时转人工。
+
+  - id: longtrip
+    name: 长途补能
+    keywords: [长途, 电量, 续航, 充电, 补能, 服务区, 还有多远]
+    risk: medium
+    strategy: [check_battery, plan_charging]
+    must_output: []
+    handling: 查询电量与续航，规划沿途充电站；电量过低（<20%）时提示就近补能并给出导航建议。
+
+  - id: commute
+    name: 通勤日常
+    keywords: [上班, 下班, 通勤, 回家, 公司, 空调, 座椅]
+    risk: low
+    strategy: [comfort_adjust, navigate]
+    must_output: []
+    handling: 日常舒适与导航类请求，直接执行；参数不明确时选择保守值（如温度 24℃、风量中档）。
+
+  - id: robotaxi_lost
+    name: 找不到车（Robotaxi）
+    keywords: [车在哪, 找不到车, 司机呢, 等了很久, 车没来, 订单]
+    risk: low
+    strategy: [locate_vehicle, guide, escalate_if_complaint]
+    must_output: []
+    handling: 查询订单与车辆位置、预计到达时间，给出引导；出现投诉/不满时转人工客服。
+
+  - id: pickup_abnormal
+    name: 上车点异常（Robotaxi）
+    keywords: [上车点, 定位不准, 换地方, 路对面, 南门, 东门]
+    risk: medium
+    strategy: [verify_order, modify_point]
+    must_output: []
+    handling: 核对订单状态后修改上车点（行程中或已完成状态不允许修改）；无进行中订单时拒绝并说明。
+
+  - id: dest_change
+    name: 修改目的地（Robotaxi）
+    keywords: [目的地, 改去, 先去, 绕路, 途经]
+    risk: low
+    strategy: [verify_order, change_destination]
+    must_output: []
+    handling: 核对订单后修改目的地（已完成/已取消订单不允许）；费用变化提示由客服跟进。
+
+  - id: passenger_help
+    name: 乘客不适求助（Robotaxi）
+    keywords: [不舒服, 晕车, 头晕, 恶心, 想吐, 难受, 求助]
+    risk: high
+    strategy: [assess, comfort, escalate_if_severe]
+    must_output: [safety_tip]
+    handling: 安抚并给出缓解建议（通风、减速、靠边）；身体明显不适或涉及儿童时转人工客服，必要时建议就医。
+
+# ============ 二、危险动作前置拦截（pre_check：代码硬规则）============
+pre_check:
+  - id: moving_door_open
+    desc: 行驶中禁止开门/解锁车门
+    tool: control_door
+    arg_checks:
+      - { path: action, in: [open, unlock] }
+    state_checks:
+      - { source: vehicle, path: driving, eq: true }
+    strategy: refuse
+    must_output: [refusal_reason, safety_tip]
+    message: 车辆行驶中，开门/解锁存在严重安全风险，已拦截。请停车后再操作。
+
+  - id: moving_seatbelt_release
+    desc: 行驶中禁止解开安全带
+    tool: control_safety
+    arg_checks:
+      - { path: action, in: [release_seatbelt, unfasten_seatbelt] }
+    state_checks:
+      - { source: vehicle, path: driving, eq: true }
+    strategy: refuse
+    must_output: [refusal_reason, safety_tip]
+    message: 行驶中解开安全带属于高危行为，已拦截。请靠边停车后再操作。
+
+  - id: overspeed_setting
+    desc: 禁止设定超过 120 km/h 的巡航速度
+    tool: control_safety
+    arg_checks:
+      - { path: action, in: [set_cruise_speed, set_cruise] }
+      - { path: value, gt: 120 }
+    state_checks: []
+    strategy: refuse
+    must_output: [refusal_reason, safety_tip]
+    message: 超过法定限速的巡航设定被拒绝（上限 120 km/h）。
+
+  - id: driving_seat_recline
+    desc: 行驶中禁止完全放平座椅
+    tool: control_seat
+    arg_checks:
+      - { path: action, in: [recline, flat, lay_flat] }
+    state_checks:
+      - { source: vehicle, path: driving, eq: true }
+    strategy: refuse
+    must_output: [refusal_reason, safety_tip]
+    message: 行驶中座椅放平影响安全约束，已拦截。请停车后再操作。
+
+  - id: child_unattended_climate_off
+    desc: 儿童独留车内禁止关闭空调/温控
+    tool: control_climate
+    arg_checks:
+      - { path: action, in: ["off"] }
+    state_checks:
+      - { source: vehicle, path: child_present, eq: true }
+      - { source: vehicle, path: adults_present, eq: false }
+    strategy: refuse
+    must_output: [refusal_reason, safety_tip]
+    message: 检测到儿童独留车内，拒绝关闭空调（高温环境有生命危险），已同步建议尽快返回。
+
+  - id: pickup_without_order
+    desc: 无进行中订单禁止修改上车点
+    tool: modify_pickup_point
+    arg_checks: []
+    state_checks:
+      - { source: order, path: active, eq: false }
+    strategy: refuse
+    must_output: [refusal_reason]
+    message: 当前没有进行中的订单，无法修改上车点。请先叫车。
+
+  - id: dest_without_order
+    desc: 无进行中订单禁止修改目的地
+    tool: change_destination
+    arg_checks: []
+    state_checks:
+      - { source: order, path: active, eq: false }
+    strategy: refuse
+    must_output: [refusal_reason]
+    message: 当前没有进行中的订单，无法修改目的地。请先叫车。
+
+# ============ 三、输出合规要求（post_review：代码校验）============
+post_review:
+  - id: high_risk_requires_tip
+    when: { risk_in: [high, critical] }
+    require: [safety_tip]
+  - id: blocked_requires_refusal
+    when: { blocked_count_gt: 0 }
+    require: [refusal_reason, safety_tip]
+  - id: escalate_on_critical
+    when: { risk_in: [critical] }
+    require: [escalate]
