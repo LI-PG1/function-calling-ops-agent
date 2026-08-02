@@ -1,0 +1,1249 @@
+[run_bfcl] 模型 qwen3-coder-next｜类别 ['simple', 'multiple', 'parallel', 'parallel_multiple', 'irrelevance']
+[simple   001/400] PASS    693ms Find the area of a triangle with a base of 10 
+[simple   002/400] PASS    418ms Calculate the factorial of 5 using math functi
+[simple   003/400] PASS    492ms Calculate the hypotenuse of a right triangle g
+[simple   004/400] PASS    703ms Find the roots of a quadratic equation with co
+[simple   005/400] PASS    696ms Solve a quadratic equation where a=2, b=6, and
+[simple   006/400] PASS    767ms Find all the roots of a quadratic equation giv
+[simple   007/400] PASS    570ms What are the roots of the quadratic equation w
+[simple   008/400] PASS    629ms What is the circumference of a circle with a r
+[simple   009/400] PASS    455ms What's the area of a circle with a radius of 1
+[simple   010/400] PASS    448ms Calculate the area of a circle with a radius o
+[simple   011/400] PASS    604ms Calculate the area of a right-angled triangle 
+[simple   012/400] PASS    524ms What is the area of a triangle with base of 10
+[simple   013/400] PASS    553ms Calculate the circumference of a circle with r
+[simple   014/400] FAIL    578ms Calculate the area under the curve y=x^2 from   ← arg:function='x^2'∉['x**2', 'lambda x: x**2', 'y=x**2']
+[simple   015/400] FAIL    562ms Calculate the derivative of the function 3x^2   ← arg:function='3x^2 + 2x - 1'∉['3x**2 + 2x - 1', 'lambda x: 3
+[simple   016/400] FAIL    690ms Calculate the area under the curve from x = -2  ← arg:function='x^3'∉['x**3', 'lambda x: x**3']
+[simple   017/400] FAIL    658ms Calculate the derivative of the function 2x^2   ← arg:function='2*x**2'∉['2x**2', 'lambda x: 2x**2']
+[simple   018/400] FAIL    546ms Find the prime factors of 450  ← arg:formatted=False∉[True, '']
+[simple   019/400] PASS    512ms Find the prime factors of the number 123456.
+[simple   020/400] PASS    524ms Calculate the greatest common divisor of two n
+[simple   021/400] PASS    611ms Find the highest common factor of 36 and 24.
+[simple   022/400] PASS    565ms Find the Greatest Common Divisor (GCD) of two 
+[simple   023/400] PASS    559ms Calculate the greatest common divisor of two g
+[simple   024/400] PASS    507ms What is the prime factorization of the number 
+[simple   025/400] PASS    517ms Find the greatest common divisor (GCD) of 12 a
+[simple   026/400] PASS    518ms Calculate the final velocity of an object fall
+[simple   027/400] PASS    506ms Calculate the velocity of a car that travels a
+[simple   028/400] PASS    578ms Calculate the final velocity of a vehicle afte
+[simple   029/400] PASS    604ms Calculate the displacement of a car given the 
+[simple   030/400] PASS    439ms What is the final speed of an object dropped f
+[simple   031/400] PASS    543ms What is the final velocity of a vehicle that s
+[simple   032/400] PASS    601ms Calculate the final velocity of an object, kno
+[simple   033/400] PASS    516ms Calculate the final speed of an object dropped
+[simple   034/400] PASS    591ms Get directions from Sydney to Melbourne using 
+[simple   035/400] PASS    708ms Create an itinerary for a 7 days trip to Tokyo
+[simple   036/400] PASS    581ms Find an all vegan restaurant in New York that 
+[simple   037/400] PASS    540ms Find the shortest driving distance between New
+[simple   038/400] PASS    673ms Find the estimated travel time by car from San
+[simple   039/400] PASS    705ms What is the electrostatic potential between tw
+[simple   040/400] PASS    510ms Calculate the electric field at a point 3 mete
+[simple   041/400] PASS    500ms Calculate the magnetic field produced at the c
+[simple   042/400] PASS    606ms Calculate the electromagnetic force between tw
+[simple   043/400] PASS    614ms Calculate the resonant frequency of an LC circ
+[simple   044/400] PASS    538ms Calculate the magnetic field strength 10 meter
+[simple   045/400] PASS    534ms Calculate the electric field strength 4 meters
+[simple   046/400] PASS    621ms Calculate the energy (in Joules) absorbed or r
+[simple   047/400] PASS    712ms Calculate the final temperature when 20 kg of 
+[simple   048/400] PASS    551ms Find the boiling point and melting point of wa
+[simple   049/400] PASS    506ms What is the density of a substance with a mass
+[simple   050/400] PASS    534ms Calculate the absolute pressure in pascals giv
+[simple   051/400] PASS    784ms What is the change in entropy in Joules per Ke
+[simple   052/400] FAIL    718ms Calculate the entropy change for a certain pro  ← arg:isothermal=False∉['', True]
+[simple   053/400] PASS    514ms Calculate the heat capacity at constant pressu
+[simple   054/400] PASS    470ms Retrieve the sequence of DNA molecule with id 
+[simple   055/400] PASS    542ms Identify the protein sequence of a given human
+[simple   056/400] FAIL    524ms Find me detailed information about the structu  ← arg:cell_type='human cell'∉['human']
+[simple   057/400] PASS    573ms What are the names of proteins found in the pl
+[simple   058/400] PASS    554ms Calculate the cell density in a sample with an
+[simple   059/400] PASS    688ms What is the function of ATP synthase in mitoch
+[simple   060/400] PASS    614ms Calculate the molecular weight of Glucose (C6H
+[simple   061/400] PASS    481ms Find the type of gene mutation based on SNP (S
+[simple   062/400] PASS    628ms Predict whether a person with weight 150lbs an
+[simple   063/400] PASS    779ms Analyze the DNA sequence 'AGTCGATCGAACGTACGTAC
+[simple   064/400] PASS    607ms Find out how genetically similar a human and a
+[simple   065/400] PASS    532ms What is the genotype frequency of AA genotype 
+[simple   066/400] PASS    819ms Calculate the Population Density for Brazil in
+[simple   067/400] PASS    562ms Get me data on average precipitation in the Am
+[simple   068/400] PASS    565ms Identify a small green bird in forest.
+[simple   069/400] PASS    703ms Predict the growth of forest in Yellowstone Na
+[simple   070/400] PASS    630ms Find out the population and species of turtles
+[simple   071/400] PASS    554ms What is the carbon footprint of a gas-powered 
+[simple   072/400] PASS    559ms Generate a DNA sequence with 100 bases includi
+[simple   073/400] PASS    645ms Calculate the expected evolutionary fitness of
+[simple   074/400] PASS    515ms What's the projected population growth in Unit
+[simple   075/400] PASS    638ms Calculate the evolution rate of a bacteria pop
+[simple   076/400] PASS    671ms Estimate the population size of elephants of 3
+[simple   077/400] PASS    625ms Get me the predictions of the evolutionary rat
+[simple   078/400] PASS    570ms Find a nearby restaurant that serves vegan foo
+[simple   079/400] PASS    569ms Get the average temperature in Austin for the 
+[simple   080/400] PASS    680ms Create a histogram for student scores with the
+[simple   081/400] PASS    697ms I want to find 5 restaurants nearby my locatio
+[simple   082/400] PASS    642ms Find the fastest route from San Francisco to L
+[simple   083/400] PASS    618ms Calculate the average of list of integers [12,
+[simple   084/400] PASS    845ms Calculate the distance between two GPS coordin
+[simple   085/400] PASS    523ms Calculate the Body Mass Index (BMI) of a perso
+[simple   086/400] PASS    620ms What's the approximate distance between Boston
+[simple   087/400] PASS    696ms Find the shortest distance between two cities,
+[simple   088/400] PASS    576ms Sort the list [5, 3, 4, 1, 2] in ascending ord
+[simple   089/400] PASS    557ms Calculate the BMI (Body Mass Index) of a perso
+[simple   090/400] FAIL    690ms Fetch all records for students studying Scienc  ← arg:conditions={'department': 'Science', 'school': 'Bluebird
+[simple   091/400] PASS    658ms Retrieve Personal Info and Job History data of
+[simple   092/400] PASS    589ms Get the highest rated sushi restaurant in Bost
+[simple   093/400] PASS    595ms Find all movies starring Leonardo DiCaprio in 
+[simple   094/400] PASS    580ms Fetch me the list of IMAX movie releases in th
+[simple   095/400] PASS    749ms Update my customer information with user id 43
+[simple   096/400] PASS    504ms Calculate the area of a triangle with base 5m 
+[simple   097/400] PASS    763ms Find records in database in user table where a
+[simple   098/400] PASS    432ms Calculate the factorial of the number 5
+[simple   099/400] PASS    514ms What will be the angle between the hour and mi
+[simple   100/400] PASS    666ms Plot a sine wave from 0 to 2 pi with a frequen
+[simple   101/400] PASS    448ms How much time will it take for the light to re
+[simple   102/400] PASS    598ms Calculate the speed of an object in km/h if it
+[simple   103/400] PASS    603ms What's the distance in milesfrom the Earth to 
+[simple   104/400] PASS    629ms Calculate the area under the curve y=3x^2 + 2x
+[simple   105/400] PASS    508ms Calculate the area of a triangle with base 6 a
+[simple   106/400] PASS    502ms Calculate the power of 3 raised to the power 4
+[simple   107/400] PASS    614ms Train a random forest classifier on dataset yo
+[simple   108/400] PASS    525ms Calculate the Body Mass Index for a person wit
+[simple   109/400] PASS    654ms Run a linear regression model with predictor v
+[simple   110/400] PASS    592ms Generate a random forest model with 100 trees 
+[simple   111/400] PASS    698ms Predict the price of the house in San Francisc
+[simple   112/400] PASS    503ms Generate a random number from a normal distrib
+[simple   113/400] PASS    619ms Calculate the probability of drawing a king fr
+[simple   114/400] PASS    545ms What's the probability of rolling a six on a s
+[simple   115/400] PASS    539ms Find the probability of getting exactly 5 head
+[simple   116/400] PASS    648ms Calculate the probability of getting exactly 5
+[simple   117/400] PASS    535ms What's the probability of drawing a king from 
+[simple   118/400] PASS    623ms What are the odds of pulling a heart suit from
+[simple   119/400] PASS    891ms Perform a two-sample t-test on my experiment d
+[simple   120/400] PASS    932ms Perform a hypothesis test for two independent 
+[simple   121/400] PASS    812ms Run a two sample T-test to compare the average
+[simple   122/400] PASS    658ms Calculate the probability of observing 60 head
+[simple   123/400] PASS    524ms Perform a Chi-Squared test for independence on
+[simple   124/400] PASS    982ms Perform a two-sample t-test to determine if th
+[simple   125/400] PASS    648ms Find the statistical significance between two 
+[simple   126/400] PASS    712ms Predict house price in San Francisco based on 
+[simple   127/400] PASS    708ms What is the coefficient of determination (R-sq
+[simple   128/400] PASS    791ms Find the Net Present Value (NPV) of an investm
+[simple   129/400] PASS    693ms What's the quarterly dividend per share of a c
+[simple   130/400] PASS    660ms Calculate the discounted cash flow of a bond t
+[simple   131/400] PASS    882ms What's the NPV (Net Present Value) of a series
+[simple   132/400] PASS    711ms Calculate the compound interest for an initial
+[simple   133/400] PASS    781ms Calculate the company's return on equity given
+[simple   134/400] PASS    773ms Predict the future value of a $5000 investment
+[simple   135/400] PASS    645ms Predict the total expected profit of stocks XY
+[simple   136/400] PASS    648ms Calculate the return on investment for a stock
+[simple   137/400] PASS    714ms Find the compound interest for an investment o
+[simple   138/400] PASS    658ms Calculate the projected return on a $5000 inve
+[simple   139/400] PASS    750ms Calculate the future value of my portfolio if 
+[simple   140/400] PASS    654ms What is the estimated return on a mutual fund,
+[simple   141/400] PASS    649ms Calculate the Compound Annual Growth Rate (CAG
+[simple   142/400] PASS    497ms Get current Gold price per ounce.
+[simple   143/400] PASS    641ms Find the NASDAQ stock price for the company Am
+[simple   144/400] PASS    591ms 'Get stock price of Apple for the last 5 days 
+[simple   145/400] PASS    597ms Find the market performance of the S&P 500 and
+[simple   146/400] PASS    745ms Calculate the compounded interest for an initi
+[simple   147/400] PASS    499ms What's the price of Amazon stock for the last 
+[simple   148/400] PASS    526ms Retrieve stock prices of Microsoft and Google 
+[simple   149/400] PASS    676ms Calculate the future value of an investment wi
+[simple   150/400] PASS    446ms What's the current stock price of Apple and Mi
+[simple   151/400] PASS    629ms Calculate the return of investment of a bank's
+[simple   152/400] PASS    627ms Find the highest grossing bank in the U.S for 
+[simple   153/400] PASS    665ms Calculate the balance of a mutual fund given a
+[simple   154/400] PASS    696ms Calculate the compounded interest on an initia
+[simple   155/400] PASS    650ms Calculate the Future Value of a $5000 investme
+[simple   156/400] PASS    648ms Calculate the future value of my investment of
+[simple   157/400] PASS    638ms Look up details of a felony crime record for c
+[simple   158/400] PASS    684ms Find out if an individual John Doe with a birt
+[simple   159/400] PASS    781ms Find the information of criminal cases of Mr. 
+[simple   160/400] PASS    567ms Give me the details of Criminal Law Amendment 
+[simple   161/400] PASS    642ms Who was the victim in the case docket numbered
+[simple   162/400] PASS    625ms Find out the possible punishments for the crim
+[simple   163/400] PASS    642ms Generate a customized law contract between Joh
+[simple   164/400] PASS    795ms Provide me with the property records of my hou
+[simple   165/400] PASS    687ms Provide me the official crime rate of violent 
+[simple   166/400] PASS    644ms Retrieve cases from 2020 about theft crimes in
+[simple   167/400] PASS    649ms Find a lawyer specializing in divorce cases an
+[simple   168/400] PASS    576ms Retrieve the details of a Supreme Court case t
+[simple   169/400] PASS    715ms Search for ongoing lawsuits related to the com
+[simple   170/400] PASS    632ms Find the details of the court case identified 
+[simple   171/400] PASS    689ms Find a historical law case about fraud from 20
+[simple   172/400] PASS    679ms Fetch details of a law case with number 43403 
+[simple   173/400] FAIL    564ms How to obtain the detailed case information of  ← n_mismatch:pred=0 gold=1
+[simple   174/400] PASS    772ms Find state law cases related to land disputes 
+[simple   175/400] PASS    601ms Get me the top 10 landmark cases in constituti
+[simple   176/400] PASS    519ms How many months of experience a Lawyer John Do
+[simple   177/400] PASS    652ms Find details of patent lawsuits involving the 
+[simple   178/400] PASS    615ms Find all Patent lawsuit cases of Facebook in 2
+[simple   179/400] PASS    614ms Find details about lawsuit case numbered 'LAX2
+[simple   180/400] PASS    598ms Find the latest court case between Apple and S
+[simple   181/400] PASS    606ms Find the lawsuits filed against the company Go
+[simple   182/400] PASS    692ms Get details of a lawsuit with case number '123
+[simple   183/400] PASS    459ms Retrieve all the lawsuit details for case numb
+[simple   184/400] PASS    634ms Search for current lawsuits filed against Appl
+[simple   185/400] PASS    544ms I need the details of the lawsuit case with ca
+[simple   186/400] PASS    622ms What will be the weather in New York in the ne
+[simple   187/400] PASS    579ms What is the temperature in celsius and humidit
+[simple   188/400] PASS    615ms What's the current temperature and humidity in
+[simple   189/400] PASS    533ms What is the humidity level in Miami, Florida i
+[simple   190/400] PASS    619ms Get weather information for New York, USA for 
+[simple   191/400] PASS    576ms What's the elevation and area of Yellowstone N
+[simple   192/400] PASS    617ms Find me the 5 tallest mountains within 50km of
+[simple   193/400] PASS    848ms Calculate the slope gradient in degree between
+[simple   194/400] PASS    549ms Find the best local nurseries in Toronto with 
+[simple   195/400] PASS    531ms What are the top three plants suitable for a h
+[simple   196/400] PASS    698ms Calculate the carbon footprint of my lifestyle
+[simple   197/400] PASS    550ms What is the air quality index in London 2022/0
+[simple   198/400] PASS    513ms Find the air quality index in San Diego at 12p
+[simple   199/400] PASS    444ms Calculate the required water daily intake for 
+[simple   200/400] PASS    531ms Find air quality index in San Jose for next th
+[simple   201/400] FAIL    646ms How much CO2 is produced annually by a gas-fue  ← arg:fuel_type='gasoline'∉['gas']
+[simple   202/400] PASS    492ms Estimate the population of pandas in the wild 
+[simple   203/400] PASS    633ms How many greenhouse gas emissions would I save
+[simple   204/400] PASS    519ms Can you find me the latest information about a
+[simple   205/400] PASS    605ms Find restaurants near me within 10 miles that 
+[simple   206/400] PASS    577ms Find out the current traffic situation from Bo
+[simple   207/400] PASS    546ms Find the nearest park with a tennis court in L
+[simple   208/400] PASS    637ms Get the shortest driving distance between New 
+[simple   209/400] PASS    634ms Get me the directions from New York to Los Ang
+[simple   210/400] PASS    594ms Locate the nearest public library in Boston, M
+[simple   211/400] PASS    698ms Get 5 latest news on Bitcoin in US
+[simple   212/400] PASS    698ms Send an email to John Doe at john.doe@example.
+[simple   213/400] PASS    774ms Give me detail information about stocks of App
+[simple   214/400] PASS    853ms Book a direct flight from San Francisco to Lon
+[simple   215/400] PASS    680ms Search for upcoming month rock concerts in New
+[simple   216/400] PASS    475ms Give me a brief on movie 'Interstellar'
+[simple   217/400] PASS    574ms Analyze the sentiment of a customer review 'I 
+[simple   218/400] PASS    722ms Analyze my fMRI data in ~/data/myfMRI.nii from
+[simple   219/400] PASS    685ms Given patient with id 546382, retrieve their b
+[simple   220/400] PASS    547ms What are the coordinates of the neuron in a ra
+[simple   221/400] PASS    657ms Calculate the neuronal activity based on synap
+[simple   222/400] PASS    499ms What will be the population growth in London o
+[simple   223/400] PASS    516ms Can you calculate my Body Mass Index (BMI) giv
+[simple   224/400] PASS    685ms Find social behaviors and patterns in a group 
+[simple   225/400] PASS    608ms Find the most followed person on twitter who t
+[simple   226/400] PASS    707ms What is the percentage of population preferrin
+[simple   227/400] PASS    632ms Find the compatibility score in percentage of 
+[simple   228/400] PASS    579ms Get me strength and weakness traits for ENFJ p
+[simple   229/400] PASS    526ms Find three personality traits of people who li
+[simple   230/400] PASS    599ms What's my Big Five Personality trait scores gi
+[simple   231/400] PASS    577ms Who was the King of France in 1510?
+[simple   232/400] PASS    716ms Provide key war events in German history from 
+[simple   233/400] PASS    631ms What was the full name king of England in 1800
+[simple   234/400] PASS    547ms When did the Treaty of Tordesillas take place?
+[simple   235/400] FAIL    610ms Find important Wars in European history during  ← arg:region='Europe'∉['Northern', 'Southern', 'Eastern']
+[simple   236/400] PASS    549ms When was the signing of the Treaty of Lisbon?
+[simple   237/400] PASS    547ms Get start date on the American Civil War.
+[simple   238/400] PASS    638ms Get historical GDP data for United States from
+[simple   239/400] PASS    556ms Who was the president of the United States dur
+[simple   240/400] PASS    545ms Who was the full name of the president of the 
+[simple   241/400] PASS    472ms Who was the President of the United States in 
+[simple   242/400] PASS    521ms Who was the U.S. president during the Civil Wa
+[simple   243/400] PASS    502ms Who is the scientist that first proposed the t
+[simple   244/400] PASS    505ms Who discovered the neutron? Give me detail inf
+[simple   245/400] PASS    592ms What year was the law of universal gravitation
+[simple   246/400] PASS    438ms Who discovered radium?
+[simple   247/400] PASS    557ms Who discovered Gravity and what was the method
+[simple   248/400] FAIL    662ms What was Albert Einstein's contribution to sci  ← arg:category='Physics'∉['', 'all']
+[simple   249/400] PASS    558ms Who invented the theory of relativity and in w
+[simple   250/400] PASS    539ms Tell me more about Christianity and its histor
+[simple   251/400] PASS    533ms What's the time difference between San Francis
+[simple   252/400] PASS    514ms What is the earliest reference of Jesus Christ
+[simple   253/400] PASS    704ms Find ten major historical events related to Ch
+[simple   254/400] PASS    567ms Retrieve the full historyof Buddhism
+[simple   255/400] PASS    638ms Retrieve the historic dates and facts related 
+[simple   256/400] PASS    591ms Get the biography and main contributions of Po
+[simple   257/400] PASS    489ms Generate an image of a circle with a radius of
+[simple   258/400] PASS    529ms Can you help me identify the basic RGB value o
+[simple   259/400] PASS    597ms Mix yellow and blue colors and adjust the ligh
+[simple   260/400] PASS    638ms Calculate the total quantity of paint needed t
+[simple   261/400] PASS    853ms Calculate how many gallons of paint is require
+[simple   262/400] PASS    580ms Draw a rectangle with a width of 20 units and 
+[simple   263/400] PASS    615ms Change my painting's medium to oil and change 
+[simple   264/400] PASS    526ms Find me the most recent art sculpture by James
+[simple   265/400] PASS    616ms Find the size of the sculpture with title 'Dav
+[simple   266/400] PASS    516ms Find me sculptures near Chicago that were made
+[simple   267/400] PASS    540ms What is the value of the sculpture 'The Thinke
+[simple   268/400] FAIL    703ms Find the top rated modern sculpture exhibition  ← arg:location='New York, NY'∉['New York City, NY']
+[simple   269/400] PASS    639ms Find me the sculptures of Michelangelo with ma
+[simple   270/400] PASS    759ms Calculate the compound interest of an investme
+[simple   271/400] PASS    531ms Can you give me the height and width of Empire
+[simple   272/400] PASS    664ms What is the structural dynamic analysis of the
+[simple   273/400] PASS    433ms Calculate the area and circumference of a circ
+[simple   274/400] PASS    504ms Find out the open hours for the Louvre Museum 
+[simple   275/400] PASS    572ms Find information about the opening hours of th
+[simple   276/400] PASS    542ms Get the list of top 5 popular artworks at the 
+[simple   277/400] PASS    525ms Get the working hours of Louvre Museum in Pari
+[simple   278/400] PASS    694ms Find the working hours and ticket price of The
+[simple   279/400] PASS    620ms Find me the average price and ratings of piano
+[simple   280/400] PASS    613ms What's the retail price of a Fender American P
+[simple   281/400] PASS    514ms Find an acoustic instrument within my budget o
+[simple   282/400] PASS    616ms Find the details about the musical instrument 
+[simple   283/400] PASS    590ms Find a Yamaha flute with the specifications of
+[simple   284/400] PASS    595ms Find the price of a used Gibson Les Paul guita
+[simple   285/400] PASS    603ms Get information about the pop concerts in New 
+[simple   286/400] PASS    600ms Find me a Rock concert in Chicago with ticket 
+[simple   287/400] PASS    648ms Get concert details for the artist Beyonce per
+[simple   288/400] PASS    674ms Find me a classical concert this weekend in Lo
+[simple   289/400] PASS    615ms Get me two tickets for next Eminem concert in 
+[simple   290/400] PASS    529ms Find concerts near me in Seattle that plays ja
+[simple   291/400] PASS    507ms What's the timing and location for The Weeknd'
+[simple   292/400] PASS    692ms Generate a melody in C major scale, starting w
+[simple   293/400] PASS    662ms Compose a simple piano melody with a progressi
+[simple   294/400] PASS    645ms Create a mix track using notes of C major scal
+[simple   295/400] PASS    618ms Generate a major chord progression in C key wi
+[simple   296/400] PASS    552ms Find the lyrics to the song 'Bohemian Rhapsody
+[simple   297/400] PASS    680ms Generate a major C scale progression with temp
+[simple   298/400] PASS    530ms music.theory.chordProgression(progression=['I'
+[simple   299/400] PASS    512ms What key signature does C# major have?
+[simple   300/400] PASS    496ms What is the musical scale associated with C sh
+[simple   301/400] PASS    573ms Calculate the duration between two notes of 44
+[simple   302/400] PASS    499ms What is the third major chord in C major scale
+[simple   303/400] PASS    650ms Calculate the batting average for a baseball p
+[simple   304/400] PASS    613ms Get the player stats of Cristiano Ronaldo in t
+[simple   305/400] PASS    659ms Get point and rebound stats for player 'LeBron
+[simple   306/400] PASS    832ms Calculate the overall goal and assist of socce
+[simple   307/400] PASS    548ms Find average batting score of a cricketer, Vir
+[simple   308/400] PASS    617ms Who won the basketball game between Lakers and
+[simple   309/400] PASS    609ms What are the next five matches for Manchester 
+[simple   310/400] PASS    559ms Find me the record of Tom Brady in the 2020 NF
+[simple   311/400] PASS    454ms What are the career stats of basketball player
+[simple   312/400] PASS    560ms Find me the detailed profile of basketball pla
+[simple   313/400] PASS    541ms What are the statistics of Ronaldo's matches i
+[simple   314/400] PASS    549ms What's the total worth in euro of Messi accord
+[simple   315/400] PASS    593ms Find all the major achievements of the footbal
+[simple   316/400] PASS    511ms Get the NBA team's ranking with the best defen
+[simple   317/400] PASS    612ms Find the current world rank of a Tennis player
+[simple   318/400] PASS    689ms Find the ranking of LA Lakers in the NBA 2021 
+[simple   319/400] PASS    611ms What is the FIFA ranking of Germany's men socc
+[simple   320/400] PASS    520ms What is the ranking of Manchester United in Pr
+[simple   321/400] PASS    702ms Fetch the basketball league standings, where G
+[simple   322/400] PASS    611ms What's the ranking of Barcelona in the 2021 La
+[simple   323/400] PASS    530ms Get the current ranking for Liverpool Football
+[simple   324/400] PASS    534ms Who is ranked as the top player in woman tenni
+[simple   325/400] PASS    528ms Find the score of last game for Los Angeles La
+[simple   326/400] PASS    570ms Who won the last match between Chicago Bulls a
+[simple   327/400] PASS    528ms Get the latest game score and statistics for L
+[simple   328/400] PASS    624ms Give me the schedule of Manchester United for 
+[simple   329/400] PASS    551ms Find the rating and player count of the board 
+[simple   330/400] PASS    529ms Calculate the odds of rolling a 7 with two dic
+[simple   331/400] PASS    574ms What's the average review rating and the age r
+[simple   332/400] PASS    579ms Find the top chess players in New York with a 
+[simple   333/400] PASS    558ms What's the chess classical rating of Magnus Ca
+[simple   334/400] PASS    697ms Find the high and low temperatures, humidity, 
+[simple   335/400] PASS    682ms Check who is the winner in a game of blackjack
+[simple   336/400] PASS    512ms Find a Card of rank 'Queen' and suit 'Hearts' 
+[simple   337/400] PASS    427ms Shuffle a deck of cards, and draw 3 cards from
+[simple   338/400] PASS   1098ms In a texas holdem game, Who won in the poker g
+[simple   339/400] PASS    542ms What is the probability of drawing a heart car
+[simple   340/400] PASS    527ms What is the probability of getting a full hous
+[simple   341/400] PASS   1009ms Determine the winner in a Poker game with John
+[simple   342/400] PASS    538ms What are the odds of drawing a heart card from
+[simple   343/400] PASS    658ms Find all multi-player games released in 2019 w
+[simple   344/400] PASS    602ms Fetch player statistics of 'Zelda' on Switch f
+[simple   345/400] PASS    634ms What's the power rating for the Weapon 'Guardi
+[simple   346/400] PASS    632ms Find the value of a vintage Super Mario Bros. 
+[simple   347/400] PASS    738ms Get all collectable items from the game 'Anima
+[simple   348/400] PASS    580ms Get me the details of the last game played by 
+[simple   349/400] PASS    629ms Create a new player profile for the game with 
+[simple   350/400] PASS    594ms Find the highest score achieved by any player 
+[simple   351/400] PASS    548ms Get the highest scoring player of game 'Valora
+[simple   352/400] PASS    538ms Find me a multiplayer game with rating above 4
+[simple   353/400] PASS    734ms Get the average user score for the game 'The L
+[simple   354/400] PASS    635ms What are some gluten-free recipes for dinner?
+[simple   355/400] PASS    545ms Find a vegan soup recipe that takes under 30 m
+[simple   356/400] PASS    609ms How many calories in the Beef Lasagna Recipe f
+[simple   357/400] PASS    716ms Find me a recipe that serves 2 people, is vega
+[simple   358/400] PASS    553ms Get the recipe for vegan chocolate cake includ
+[simple   359/400] PASS    620ms Find a gluten-free cookie recipe that takes le
+[simple   360/400] PASS    695ms Give me a recipe for a vegetarian pasta with c
+[simple   361/400] PASS    639ms Find a recipe for pasta carbonara which contai
+[simple   362/400] PASS    630ms Find Italian restaurants near New York city th
+[simple   363/400] PASS    710ms What are the top five sushi restaurants with h
+[simple   364/400] FAIL    674ms Find the closest sushi restaurant with a patio  ← name:restaurant_search.find_closest!=find_closest
+[simple   365/400] PASS    628ms Can I find an Italian restaurant with Gluten-f
+[simple   366/400] PASS    723ms How many ounces in 2 pounds of butter?
+[simple   367/400] PASS    614ms How many teaspoons are in 2 tablespoons for me
+[simple   368/400] FAIL    602ms Find me a vegan recipe for brownies which prep  ← arg:recipe_type='brownies'∉['dessert']
+[simple   369/400] PASS    463ms How much time will it take to cook a roast chi
+[simple   370/400] PASS    622ms Find a grocery store near me with organic frui
+[simple   371/400] FAIL    693ms Order three bottles of olive oil and a five po  ← arg:quantity=[3, 5]∉[[3, 1]]
+[simple   372/400] PASS    569ms Check the price of tomatoes and lettuce at the
+[simple   373/400] PASS    615ms Find the top five organic bananas brands on th
+[simple   374/400] PASS    738ms I want to buy apples, rice, and 12 pack of bot
+[simple   375/400] PASS    707ms Check the amount of protein, calories and carb
+[simple   376/400] FAIL    623ms Check the total price for three pumpkins and t  ← arg:items=['pumpkin', 'egg']∉[['pumpkins', 'eggs'], ['pumpki
+[simple   377/400] PASS    594ms What time is it currently in London, UK in 24 
+[simple   378/400] PASS    499ms What is the current time in Sydney, Australia?
+[simple   379/400] PASS    595ms Convert time 3pm from New York time zone to Lo
+[simple   380/400] PASS    500ms What's the current time in Sydney, Australia?
+[simple   381/400] PASS    855ms Book a single room at a pet friendly hotel nea
+[simple   382/400] PASS    910ms Check if any Hilton Hotel is available for two
+[simple   383/400] FAIL    854ms Book a single room for two nights at the Hilto  ← arg:room_type='single room'∉['single']
+[simple   384/400] PASS    607ms I would like to book a single room for two nig
+[simple   385/400] PASS    900ms Book a hotel room for two adults and one child
+[simple   386/400] PASS    809ms Book a hotel room with king size bed in Los An
+[simple   387/400] PASS    929ms Book a luxury room in Hotel Paradise, Las Vega
+[simple   388/400] PASS    905ms Book a hotel room at the Plaza Hotel in New Yo
+[simple   389/400] PASS    606ms How many Canadian dollars can I get for 500 US
+[simple   390/400] PASS    594ms Calculate the current cost in British Pounds i
+[simple   391/400] PASS    608ms Convert 150 Euros to Canadian dollars.
+[simple   392/400] PASS    624ms Get the exchange rate from British pounds to J
+[simple   393/400] PASS    556ms Get me the latest exchange rate from British P
+[simple   394/400] PASS    619ms How much will 20000 Japanese Yen be in United 
+[simple   395/400] FAIL    591ms Get me the travel distance and duration from t  ← arg:start_location='Eiffel Tower, Paris'∉['Eiffel Tower']
+[simple   396/400] PASS    543ms Find the nearest parking lot within 2 miles of
+[simple   397/400] PASS    604ms Find a hospital within 5 km radius around Denv
+[simple   398/400] PASS    614ms Find the distance between New York and Boston,
+[simple   399/400] PASS    541ms What are the opening hours of the Metropolitan
+[simple   400/400] PASS    711ms Find me the best Italian restaurants in New Yo
+  -- simple: 381/400 = 95.2%（答案长度分布 {1: 400}）
+[multiple 001/200] PASS    538ms Can I find the dimensions and properties of a 
+[multiple 002/200] PASS    618ms Calculate the area of a triangle, given the le
+[multiple 003/200] PASS    419ms What is the capital of Brazil?
+[multiple 004/200] PASS    593ms Compute the Euclidean distance between two poi
+[multiple 005/200] PASS    550ms Can you calculate the displacement of a car mo
+[multiple 006/200] PASS    660ms What is the wind speed and temperature in loca
+[multiple 007/200] PASS    587ms Calculate the capacitance of a parallel plate 
+[multiple 008/200] FAIL   1102ms How to assess the population growth in deer an  ← n_mismatch:pred=2 gold=1
+[multiple 009/200] PASS    792ms Find a 3 bedroom villa for sale within $300,00
+[multiple 010/200] PASS    620ms Calculate the average grade for student John w
+[multiple 011/200] FAIL    557ms I need to delete some columns from my employee  ← name:database.create_backup!=database.modify_columns
+[multiple 012/200] PASS    527ms Calculate the roots of a quadratic equation wi
+[multiple 013/200] PASS   1093ms What is the year over year growth rate for com
+[multiple 014/200] FAIL   1032ms How much revenue would company XYZ generate if  ← n_mismatch:pred=2 gold=1
+[multiple 015/200] PASS    640ms Calculate the depreciated value of a property 
+[multiple 016/200] PASS    779ms How much is the potential of the Solar farm at
+[multiple 017/200] PASS    630ms What's the required minimum population size (N
+[multiple 018/200] PASS    653ms Find the conversion rate from Euro to Dollar a
+[multiple 019/200] PASS    767ms Who were the main participants and what was th
+[multiple 020/200] PASS    650ms What are the three great Schism in Christianit
+[multiple 021/200] PASS    528ms What is the price to commission a sculpture ma
+[multiple 022/200] PASS    671ms I want to generate a sound of 440Hz frequency 
+[multiple 023/200] PASS    452ms What is the record for the most points scored 
+[multiple 024/200] PASS    659ms What are the current stats for basketball play
+[multiple 025/200] PASS    741ms What is the fastest route from London to Edinb
+[multiple 026/200] PASS    717ms What is the cheapest selling price for the gam
+[multiple 027/200] PASS    697ms Find out the rewards for playing Fortnite on P
+[multiple 028/200] PASS    665ms What is the shortest path from Paris, France t
+[multiple 029/200] PASS    702ms What's the root of quadratic equation with coe
+[multiple 030/200] FAIL    664ms Find the intersection points of the functions   ← arg:function1='3x+2'∉['3x + 2', 'lambda x: 3x + 2']
+[multiple 031/200] PASS    598ms What is the area of a rectangle with length 12
+[multiple 032/200] PASS    516ms What is the area and perimeter of a rectangle 
+[multiple 033/200] PASS    629ms Calculate the volume of a cone with radius 4 a
+[multiple 034/200] FAIL    714ms Find the integral of the function f(x) = 3x^2   ← arg:func='3*x**2'∉['3x**2', 'lambda x: 3x**2']
+[multiple 035/200] PASS    631ms Calculate the Least Common Multiple (LCM) of 1
+[multiple 036/200] PASS    559ms Calculate the greatest common divisor between 
+[multiple 037/200] PASS    533ms Find out how fast an object was going if it st
+[multiple 038/200] PASS    698ms Find the final velocity of an object thrown up
+[multiple 039/200] PASS    652ms Find a book 'The Alchemist' in the library bra
+[multiple 040/200] PASS    746ms Find a ride from New York to Philadelphia with
+[multiple 041/200] PASS    524ms Calculate the strength of magnetic field given
+[multiple 042/200] PASS    512ms Calculate the magnetic field at point P using 
+[multiple 043/200] PASS    843ms Calculate the final temperature when 2 moles o
+[multiple 044/200] PASS    514ms What is the energy produced by 5 mol of glucos
+[multiple 045/200] PASS    576ms How much will I weigh on Mars if my weight on 
+[multiple 046/200] PASS    692ms Calculate how many years ago was the Ice age?
+[multiple 047/200] PASS    569ms Sort this list of names in ascending order: ['
+[multiple 048/200] PASS    662ms Calculate the cosine similarity between vector
+[multiple 049/200] PASS    710ms Find me a pet-friendly library with facilities
+[multiple 050/200] PASS    714ms Calculate the compound interest for an amount 
+[multiple 051/200] PASS    475ms Predict the house prices for the next month in
+[multiple 052/200] PASS    683ms Calculate the probability of rolling a sum of 
+[multiple 053/200] PASS    729ms I have 100 euro. How much is it in USD?
+[multiple 054/200] FAIL    706ms Predict the house prices for next 5 years base  ← name:random_forest_regression!=linear_regression
+[multiple 055/200] PASS    568ms Find out the historical dividend payments of A
+[multiple 056/200] PASS    585ms Predict the stock price for Google for the nex
+[multiple 057/200] PASS    564ms Find the average closing price of Apple stock 
+[multiple 058/200] PASS    775ms Can you please calculate the compound interest
+[multiple 059/200] FAIL    572ms Search for divorce law specialists in Los Ange  ← arg:expertise='Marriage'∉['Divorce']
+[multiple 060/200] PASS    559ms Find lawyers specializing in criminal law near
+[multiple 061/200] PASS    577ms What will be the humidity and temperature for 
+[multiple 062/200] PASS    761ms Find a Landscape Architect who is experienced 
+[multiple 063/200] PASS    741ms Find me the closest nature park that allows ca
+[multiple 064/200] PASS    637ms What will be the air quality index of New York
+[multiple 065/200] PASS    608ms Give me the UV index for Tokyo for tomorrow, J
+[multiple 066/200] PASS    732ms Find the distance between New York City and Lo
+[multiple 067/200] PASS    739ms How much traffic should I expect from Las Vega
+[multiple 068/200] FAIL    626ms Translate Hello, how are you? from English to   ← arg:source_language='en'∉['English']
+[multiple 069/200] PASS    599ms Can I find a historical fiction book at the Ne
+[multiple 070/200] PASS    965ms Determine my personality type based on the fiv
+[multiple 071/200] PASS    600ms Who were the kings of France during the 18th c
+[multiple 072/200] PASS    638ms How many veterans were there in the United Sta
+[multiple 073/200] PASS    577ms What was the population of California in 1970?
+[multiple 074/200] PASS    581ms Who was the founder of Buddhism and where was 
+[multiple 075/200] FAIL    890ms Find the price of Van Gogh's painting 'Starry   ← arg:artist='Vincent van Gogh'∉['Van Gogh']
+[multiple 076/200] PASS    638ms Which paint color is currently most popular fo
+[multiple 077/200] FAIL   1120ms I want to order a custom bronze sculpture of a  ← n_mismatch:pred=0 gold=1
+[multiple 078/200] PASS    674ms Search for famous contemporary sculptures in N
+[multiple 079/200] PASS    826ms Get me information about Natural History Museu
+[multiple 080/200] PASS    693ms Find art exhibitions for the upcoming month in
+[multiple 081/200] PASS    742ms Find a local guitar shop that also offers viol
+[multiple 082/200] PASS    784ms Book a ticket for the upcoming Eminem concert 
+[multiple 083/200] PASS    628ms Play a song in C Major key at tempo 120 bpm.
+[multiple 084/200] PASS    625ms How many goals has Lionel Messi scored for Bar
+[multiple 085/200] PASS    673ms Give me the top 10 goal scorers in the UEFA Ch
+[multiple 086/200] PASS    662ms Get the soccer scores for Real Madrid games in
+[multiple 087/200] PASS    484ms What are some recommended board games for 2 pl
+[multiple 088/200] PASS    597ms Find the latest update or patch for the game '
+[multiple 089/200] PASS    613ms Find me the number of active players in the ga
+[multiple 090/200] PASS    728ms Find a healthy lunch recipe under 500 calories
+[multiple 091/200] PASS    751ms I want a seafood restaurant in Seattle that ca
+[multiple 092/200] FAIL    624ms Can I find a good cooking recipe for apple pie  ← arg:ingredientLimit=5∉[4]
+[multiple 093/200] PASS    559ms Get me a list of available vegetarian and glut
+[multiple 094/200] PASS    850ms Book a deluxe room for 2 nights at the Marriot
+[multiple 095/200] PASS    719ms I want to book a suite with queen size bed for
+[multiple 096/200] PASS    850ms Convert 200 euros to US dollars using current 
+[multiple 097/200] PASS    641ms Solve a quadratic equation where a=2, b=6, and
+[multiple 098/200] PASS    466ms What's the area of a circle with a radius of 1
+[multiple 099/200] PASS    468ms Calculate the circumference of a circle with r
+[multiple 100/200] FAIL    635ms Calculate the derivative of the function 2x^2   ← arg:function='2*x**2'∉['2x**2', 'lambda x: 2x**2']
+[multiple 101/200] PASS    587ms Find the highest common factor of 36 and 24.
+[multiple 102/200] PASS    628ms Find the greatest common divisor (GCD) of 12 a
+[multiple 103/200] PASS    677ms Calculate the displacement of a car given the 
+[multiple 104/200] PASS    487ms Calculate the final speed of an object dropped
+[multiple 105/200] PASS    591ms Find the shortest driving distance between New
+[multiple 106/200] PASS    555ms Calculate the magnetic field produced at the c
+[multiple 107/200] PASS    599ms Calculate the electric field strength 4 meters
+[multiple 108/200] PASS    555ms What is the density of a substance with a mass
+[multiple 109/200] PASS    636ms Calculate the heat capacity at constant pressu
+[multiple 110/200] FAIL    622ms What are the names of proteins found in the pl  ← arg:include_description=True∉[False, '']
+[multiple 111/200] PASS    596ms Find the type of gene mutation based on SNP (S
+[multiple 112/200] PASS    591ms What is the genotype frequency of AA genotype 
+[multiple 113/200] PASS    771ms Predict the growth of forest in Yellowstone Na
+[multiple 114/200] PASS    705ms Calculate the expected evolutionary fitness of
+[multiple 115/200] PASS    697ms Get me the predictions of the evolutionary rat
+[multiple 116/200] PASS    760ms I want to find 5 restaurants nearby my locatio
+[multiple 117/200] PASS    644ms Calculate the Body Mass Index (BMI) of a perso
+[multiple 118/200] PASS    621ms Calculate the BMI (Body Mass Index) of a perso
+[multiple 119/200] PASS    555ms Find all movies starring Leonardo DiCaprio in 
+[multiple 120/200] PASS    791ms Find records in database in user table where a
+[multiple 121/200] PASS    524ms How much time will it take for the light to re
+[multiple 122/200] PASS    496ms Calculate the area of a triangle with base 6 a
+[multiple 123/200] PASS    724ms Run a linear regression model with predictor v
+[multiple 124/200] PASS    596ms Calculate the probability of drawing a king fr
+[multiple 125/200] PASS    597ms What's the probability of drawing a king from 
+[multiple 126/200] PASS    901ms Run a two sample T-test to compare the average
+[multiple 127/200] PASS    626ms Find the statistical significance between two 
+[multiple 128/200] PASS    784ms What's the quarterly dividend per share of a c
+[multiple 129/200] PASS    873ms Calculate the company's return on equity given
+[multiple 130/200] PASS    734ms Find the compound interest for an investment o
+[multiple 131/200] PASS    721ms Calculate the Compound Annual Growth Rate (CAG
+[multiple 132/200] PASS    581ms Find the market performance of the S&P 500 and
+[multiple 133/200] PASS    748ms Calculate the future value of an investment wi
+[multiple 134/200] PASS    793ms Calculate the balance of a mutual fund given a
+[multiple 135/200] PASS    624ms Look up details of a felony crime record for c
+[multiple 136/200] PASS    704ms Who was the victim in the case docket numbered
+[multiple 137/200] FAIL    837ms Provide me the official crime rate of violent   ← arg:type='violent crime'∉['violent', 'Violent']
+[multiple 138/200] PASS    806ms Search for ongoing lawsuits related to the com
+[multiple 139/200] FAIL    923ms How to obtain the detailed case information of  ← n_mismatch:pred=0 gold=1
+[multiple 140/200] PASS    733ms Find details of patent lawsuits involving the 
+[multiple 141/200] PASS    672ms Find the lawsuits filed against the company Go
+[multiple 142/200] PASS    505ms I need the details of the lawsuit case with ca
+[multiple 143/200] PASS    637ms What is the humidity level in Miami, Florida i
+[multiple 144/200] PASS   1002ms Calculate the slope gradient in degree between
+[multiple 145/200] PASS    665ms What is the air quality index in London 2022/0
+[multiple 146/200] PASS    703ms How much CO2 is produced annually by a gas-fue
+[multiple 147/200] PASS    734ms Find restaurants near me within 10 miles that 
+[multiple 148/200] PASS    715ms Get me the directions from New York to Los Ang
+[multiple 149/200] PASS    634ms Give me detail information about stocks of App
+[multiple 150/200] FAIL    545ms Analyze the sentiment of a customer review 'I   ← arg:language='en'∉['english', 'English']
+[multiple 151/200] PASS    673ms Calculate the neuronal activity based on synap
+[multiple 152/200] PASS    758ms Find the most followed person on twitter who t
+[multiple 153/200] PASS    787ms Provide key war events in German history from 
+[multiple 154/200] PASS    527ms When was the signing of the Treaty of Lisbon?
+[multiple 155/200] PASS    599ms Who was the full name of the president of the 
+[multiple 156/200] PASS    568ms Who discovered the neutron? Give me detail inf
+[multiple 157/200] PASS    564ms What was Albert Einstein's contribution to sci
+[multiple 158/200] PASS    561ms What is the earliest reference of Jesus Christ
+[multiple 159/200] PASS    648ms Get the biography and main contributions of Po
+[multiple 160/200] PASS    579ms Calculate the total quantity of paint needed t
+[multiple 161/200] PASS    612ms Find me the most recent art sculpture by James
+[multiple 162/200] PASS    677ms Find the top rated modern sculpture exhibition
+[multiple 163/200] PASS    711ms What is the structural dynamic analysis of the
+[multiple 164/200] PASS    673ms Get the list of top 5 popular artworks at the 
+[multiple 165/200] PASS    596ms What's the retail price of a Fender American P
+[multiple 166/200] PASS    746ms Find the price of a used Gibson Les Paul guita
+[multiple 167/200] PASS    730ms Find me a classical concert this weekend in Lo
+[multiple 168/200] PASS    762ms Generate a melody in C major scale, starting w
+[multiple 169/200] PASS    610ms Find the lyrics to the song 'Bohemian Rhapsody
+[multiple 170/200] PASS    519ms What is the musical scale associated with C sh
+[multiple 171/200] PASS    660ms Get the player stats of Cristiano Ronaldo in t
+[multiple 172/200] PASS    733ms Who won the basketball game between Lakers and
+[multiple 173/200] PASS    602ms Find me the detailed profile of basketball pla
+[multiple 174/200] PASS    586ms Get the NBA team's ranking with the best defen
+[multiple 175/200] PASS    663ms What is the ranking of Manchester United in Pr
+[multiple 176/200] PASS    584ms Who is ranked as the top player in woman tenni
+[multiple 177/200] PASS    707ms Give me the schedule of Manchester United for 
+[multiple 178/200] PASS    537ms Find the top chess players in New York with a 
+[multiple 179/200] PASS    559ms Find a Card of rank 'Queen' and suit 'Hearts' 
+[multiple 180/200] PASS    644ms What is the probability of getting a full hous
+[multiple 181/200] PASS    663ms Fetch player statistics of 'Zelda' on Switch f
+[multiple 182/200] PASS    636ms Get me the details of the last game played by 
+[multiple 183/200] PASS    517ms Find me a multiplayer game with rating above 4
+[multiple 184/200] PASS    654ms How many calories in the Beef Lasagna Recipe f
+[multiple 185/200] PASS    650ms Give me a recipe for a vegetarian pasta with c
+[multiple 186/200] PASS    922ms Find the closest sushi restaurant with a patio
+[multiple 187/200] FAIL    659ms Find me a vegan recipe for brownies which prep  ← arg:recipe_type='brownies'∉['dessert']
+[multiple 188/200] PASS    663ms Check the price of tomatoes and lettuce at the
+[multiple 189/200] PASS    644ms Find the grocery store closest to Berkeley tha
+[multiple 190/200] PASS    747ms Convert time 3pm from New York time zone to Lo
+[multiple 191/200] FAIL   1075ms Book a single room for two nights at the Hilto  ← arg:room_type='single room'∉['single', 'Single']
+[multiple 192/200] PASS   1069ms Book a luxury room in Hotel Paradise, Las Vega
+[multiple 193/200] PASS    592ms Convert 150 Euros to Canadian dollars.
+[multiple 194/200] FAIL    685ms Get me the travel distance and duration from t  ← arg:start_location='Eiffel Tower, Paris, France'∉['Eiffel To
+[multiple 195/200] PASS    499ms What are the opening hours of the Metropolitan
+[multiple 196/200] PASS    592ms Calculate the heat capacity at constant pressu
+[multiple 197/200] PASS    519ms What are the names of proteins found in the pl
+[multiple 198/200] PASS    580ms Find the type of gene mutation based on SNP (S
+[multiple 199/200] PASS    500ms What is the genotype frequency of AA genotype 
+[multiple 200/200] PASS    781ms Predict the growth of forest in Yellowstone fo
+  -- multiple: 181/200 = 90.5%（答案长度分布 {1: 200}）
+[parallel 001/200] PASS    957ms Play songs from the artists Taylor Swift and M
+[parallel 002/200] PASS   1104ms Calculate the induced electromagnetic force fo
+[parallel 003/200] PASS   1153ms Calculate the resistance of a wire with a leng
+[parallel 004/200] PASS   1475ms Get the protein sequence of human HbA1c, norma
+[parallel 005/200] PASS    830ms Calculate the body mass index for a person who
+[parallel 006/200] FAIL   1547ms Find the list of TV shows and their ratings on  ← set_no_match(g0~p0:arg:sort_by_rating=False∉[True])
+[parallel 007/200] PASS   1717ms Calculate the amount of sales tax to be added 
+[parallel 008/200] PASS    927ms Find the factorial of 5,10 and 15.
+[parallel 009/200] FAIL   2101ms Fetch the population of New York City, NY,  an  ← set_no_match(g0~p0:arg:year=2020∉['', 2000])
+[parallel 010/200] FAIL    899ms Find two movie theatres near San Diego with av  ← n_mismatch:pred=1 gold=2
+[parallel 011/200] PASS    847ms Compute the Pythagorean Theorem of two side le
+[parallel 012/200] PASS    898ms Predict house price for a house of size 3000 s
+[parallel 013/200] PASS   1172ms Build a decision tree classifier model with gi
+[parallel 014/200] PASS   1451ms Can you give me 95% confidence interval for a 
+[parallel 015/200] PASS   1850ms Calculate the Present Value of an investment p
+[parallel 016/200] PASS   1456ms What will be the capital gains tax for a short
+[parallel 017/200] PASS   1015ms Calculate return on investment for an initial 
+[parallel 018/200] PASS   1303ms Get the latest closing prices and volumes for 
+[parallel 019/200] PASS   1940ms Calculate the Future Value of an investment of
+[parallel 020/200] PASS   2040ms Calculate the monthly mortgage payment for a l
+[parallel 021/200] PASS   1406ms Can you check my loan eligibility for a home l
+[parallel 022/200] PASS   1302ms Show me all individuals who were convicted for
+[parallel 023/200] PASS   2386ms What is the status and scheduled trial date fo
+[parallel 024/200] PASS   1410ms Please calculate the amount of alimony the pay
+[parallel 025/200] PASS   1224ms Can you find me case law details of Case No 28
+[parallel 026/200] PASS   1004ms List all cases against a company named 'Dara I
+[parallel 027/200] FAIL   1444ms Find details of lawsuits with case numbers '67  ← n_mismatch:pred=2 gold=4
+[parallel 028/200] PASS   1370ms Find a nature reserve around Berkeley within 1
+[parallel 029/200] PASS    931ms What is the temperature right now and for the 
+[parallel 030/200] PASS   1278ms Find out how much waste a family of four gener
+[parallel 031/200] PASS   1354ms Book a flight from San Francisco to Tokyo on M
+[parallel 032/200] PASS    947ms What was the Treaty of Paris about? Also, what
+[parallel 033/200] PASS    819ms Provide me the major events during the preside
+[parallel 034/200] PASS   1631ms Find out who was the president of United State
+[parallel 035/200] PASS   1472ms I want to know the rise and fall of Christiani
+[parallel 036/200] PASS   1119ms Fetch the details of the ancient empires Persi
+[parallel 037/200] PASS    931ms Using watercolor, what combination of colors s
+[parallel 038/200] PASS   1371ms What are the RGB and HEX color values for navy
+[parallel 039/200] PASS    950ms What's the driving distance between New York a
+[parallel 040/200] PASS   1146ms Find opening hours and ticket prices for adult
+[parallel 041/200] PASS   1283ms Give me the detail of the exhibition named 'Wo
+[parallel 042/200] PASS   1105ms Show me the closest music shop where I can pur
+[parallel 043/200] PASS   1041ms Get me the price and stock availability for a 
+[parallel 044/200] PASS   2327ms Can you find me any upcoming rock and jazz con
+[parallel 045/200] PASS   1287ms Find me all the classical concerts near Berlin
+[parallel 046/200] FAIL    829ms What's the current most played Pop song and al  ← set_no_match(g0~p0:arg:region='Global'∉['Australia', 'AU'])
+[parallel 047/200] PASS   1666ms Find the winning percentage of Lakers and Bull
+[parallel 048/200] PASS    975ms What is the current ranking of Barcelona and M
+[parallel 049/200] PASS    784ms In a game of Pokemon GO, what moves can a Pika
+[parallel 050/200] FAIL    924ms Check if the player with id 3142 in team Rocke  ← n_mismatch:pred=0 gold=3
+[parallel 051/200] PASS    989ms How to save game progress at stage 7 in easy m
+[parallel 052/200] FAIL   1033ms Search for a Chicken Noodle Soup recipe and a   ← set_no_match(g0~p0:arg:diet='None'∉['', 'Keto'])
+[parallel 053/200] PASS   1147ms Find an Italian restaurant near me in New York
+[parallel 054/200] PASS    999ms Tell me a cooking recipe for 'Lasagne Bolognes
+[parallel 055/200] PASS   1170ms I want to order a large pepperoni pizza and a 
+[parallel 056/200] PASS   1034ms Find a supermarket in New York City that opens
+[parallel 057/200] PASS   1931ms Check the hotel room availability for 'Queens 
+[parallel 058/200] PASS   2092ms Book a room for 2 adults and a child at the Sh
+[parallel 059/200] PASS    910ms Get me the currency exchange rates of the foll
+[parallel 060/200] PASS   1236ms How much will it cost in dollars if I transfer
+[parallel 061/200] PASS    950ms What is the results of the factorial of 5, the
+[parallel 062/200] PASS   1262ms "Can you calculate the Euclidean norm, or the 
+[parallel 063/200] PASS   1099ms "Can you help me find the roots of two quadrat
+[parallel 064/200] PASS    956ms "Can you help me find the roots of two quadrat
+[parallel 065/200] PASS   2151ms "Can you help me solve the following quadratic
+[parallel 066/200] PASS   1653ms What is the total circumference of four circle
+[parallel 067/200] PASS   1182ms What is the total area of three circles, where
+[parallel 068/200] PASS    920ms "Can you calculate the area of two circles, on
+[parallel 069/200] PASS   1108ms "John is working on a project where he needs t
+[parallel 070/200] PASS    910ms "John is a geometry teacher who is preparing a
+[parallel 071/200] PASS   1557ms What is the combined circumference of four cir
+[parallel 072/200] FAIL   1094ms "Could you calculate the derivative of the pol  ← set_no_match(g0~p0:arg:function='3x^3 - 2x^2 + 5x - 7'∉['3x*
+[parallel 073/200] FAIL   2308ms "Could you calculate the area under the curve   ← set_no_match(g0~p0:arg:function='x^3'∉['x**3', 'lambda x: x*
+[parallel 074/200] FAIL   1367ms "Can you compute the derivative of the functio  ← set_no_match(g0~p0:arg:function='3*x**2 + 2*x - 1'∉['3x**2 +
+[parallel 075/200] PASS   1621ms What are the prime factors of the number 4567 
+[parallel 076/200] PASS   1042ms What are the prime factors of the numbers 45, 
+[parallel 077/200] PASS    892ms What is the greatest common divisor (GCD) of t
+[parallel 078/200] PASS   1687ms "Can you calculate the highest common factor o
+[parallel 079/200] PASS   1075ms "Can you help me find the greatest common divi
+[parallel 080/200] PASS    965ms What is the prime factorization of the number 
+[parallel 081/200] PASS    923ms "John and Mary are playing a game where they e
+[parallel 082/200] PASS   2284ms "Imagine you are conducting a physics experime
+[parallel 083/200] PASS   1096ms A group of cyclists are planning a two-day cyc
+[parallel 084/200] PASS   1543ms A car is participating in a drag race. In the 
+[parallel 085/200] FAIL   2076ms "A car starts from rest and accelerates unifor  ← n_mismatch:pred=4 gold=3
+[parallel 086/200] PASS   1227ms A physics experiment is being conducted where 
+[parallel 087/200] PASS   1033ms "Imagine you are conducting an experiment with
+[parallel 088/200] PASS   1106ms "Imagine you are observing two racing cars on 
+[parallel 089/200] PASS   1144ms "An experiment was conducted where two objects
+[parallel 090/200] PASS   1636ms Can you provide me with the fastest route from
+[parallel 091/200] PASS   2662ms Can you generate a travel itinerary for a 7-da
+[parallel 092/200] PASS   1699ms Can you help me find vegan restaurants in Los 
+[parallel 093/200] PASS   1709ms What is the shortest driving distance in miles
+[parallel 094/200] PASS   1845ms What would be the estimated travel time if I s
+[parallel 095/200] PASS    949ms "In a physics experiment, you are given two ch
+[parallel 096/200] PASS    947ms "A team of scientists is conducting an experim
+[parallel 097/200] PASS   1732ms "In a physics experiment, you are given two ch
+[parallel 098/200] PASS   1362ms "Can you calculate the resonant frequency of a
+[parallel 099/200] PASS   2261ms "Can you calculate the electric field strength
+[parallel 100/200] PASS   2130ms "Can you help me calculate the energy required
+[parallel 101/200] FAIL    972ms What are the boiling and melting points of wat  ← n_mismatch:pred=2 gold=4
+[parallel 102/200] PASS    983ms A scientist is conducting an experiment involv
+[parallel 103/200] PASS    907ms You are working in a lab and you have a sealed
+[parallel 104/200] PASS   1480ms A chemist is conducting an experiment with a 2
+[parallel 105/200] PASS   1529ms "In a thermodynamics experiment, you are taske
+[parallel 106/200] PASS   1662ms "Can you calculate the heat capacity at consta
+[parallel 107/200] PASS   1299ms Can you fetch the DNA sequence of a molecule w
+[parallel 108/200] PASS   1488ms What are the protein sequences encoded by the 
+[parallel 109/200] FAIL    836ms Can you provide a detailed description of the   ← set_no_match(g1~p1:arg:cell_type='muscle cell'∉['muscle'])
+[parallel 110/200] PASS   1451ms What are the proteins found in the cell compar
+[parallel 111/200] PASS   1190ms "What is the function of the molecule ATP in t
+[parallel 112/200] PASS    981ms What is the molecular weight of the compound C
+[parallel 113/200] PASS   1100ms What is the type of the genetic mutation that 
+[parallel 114/200] PASS   1938ms "Could you please predict the likelihood of ty
+[parallel 115/200] FAIL   1753ms Can you analyze the DNA sequence "AGCTTAGCTA"   ← n_mismatch:pred=3 gold=6
+[parallel 116/200] PASS   1706ms "Could you calculate the genetic similarity be
+[parallel 117/200] PASS   1157ms "In a population of butterflies, the frequency
+[parallel 118/200] PASS   1354ms What is the population density of China in 200
+[parallel 119/200] PASS   1200ms What are the precipitation statistics for the 
+[parallel 120/200] FAIL   1631ms "Can you help me identify the bird species I s  ← set_no_match(g0~p0:arg:color='vibrant blue'∉['blue'])
+[parallel 121/200] PASS   1054ms What would be the predicted forest growth in t
+[parallel 122/200] PASS   1064ms What is the population of turtles in the Galap
+[parallel 123/200] PASS   1527ms What are the annual carbon emissions produced 
+[parallel 124/200] PASS   1494ms Can you generate four different DNA sequences 
+[parallel 125/200] PASS   1580ms What would be the projected population growth 
+[parallel 126/200] PASS   1570ms In the African savannah, a group of researcher
+[parallel 127/200] PASS   1060ms What would be the predicted evolutionary rate 
+[parallel 128/200] PASS   1450ms Can you help me find restaurants in New York, 
+[parallel 129/200] PASS    959ms What is the average temperature in New York fo
+[parallel 130/200] PASS   1945ms You are given two sets of data, the first set 
+[parallel 131/200] PASS   1240ms "Can you help me find four restaurants in New 
+[parallel 132/200] PASS   1527ms Can you find the fastest route from my home in
+[parallel 133/200] PASS   1420ms You have four sets of numbers: the first set i
+[parallel 134/200] PASS   2024ms What is the total distance in kilometers if yo
+[parallel 135/200] PASS   1703ms "Could you please calculate the Body Mass Inde
+[parallel 136/200] PASS   1428ms What is the total distance in kilometers if I 
+[parallel 137/200] PASS   1194ms What is the shortest distance between New York
+[parallel 138/200] PASS   3283ms You have four lists of numbers: [45, 12, 67, 2
+[parallel 139/200] PASS   1183ms "John, who weighs 85 kilograms and is 1.8 mete
+[parallel 140/200] PASS   1267ms Can you use the function 'employee.fetch_data'
+[parallel 141/200] FAIL   1980ms Can you find all the Drama and Comedy movies t  ← n_mismatch:pred=4 gold=2
+[parallel 142/200] PASS    975ms Can you provide me with the list of movie rele
+[parallel 143/200] PASS   1214ms Can you use the 'update_user_info' function to
+[parallel 144/200] PASS   1055ms You are planning to build three triangular gar
+[parallel 145/200] PASS    983ms What is the result if you calculate the factor
+[parallel 146/200] PASS   1313ms What is the angle between the hour and minute 
+[parallel 147/200] PASS   1312ms "Can you plot two sine waves for me? The first
+[parallel 148/200] PASS   1409ms "Can you calculate the time it would take for 
+[parallel 149/200] PASS   1404ms "Can you calculate the speed of a car that tra
+[parallel 150/200] PASS    988ms What is the distance in miles between the cele
+[parallel 151/200] PASS   1002ms "Can you calculate the area under the curve fo
+[parallel 152/200] PASS   1363ms "Can you help me calculate the total area of t
+[parallel 153/200] PASS    767ms "Can you calculate the result of the following
+[parallel 154/200] PASS   1000ms You are given a task to train a Random Forest 
+[parallel 155/200] PASS   1728ms "Could you calculate the Body Mass Index (BMI)
+[parallel 156/200] FAIL   1110ms You are given a dataset with various variables  ← set_no_match(g0~p0:arg:target='"Spending Score"'∉['Spending 
+[parallel 157/200] PASS   1756ms You are given a dataset "data_random_forest" i
+[parallel 158/200] PASS   2091ms "Could you use the 'predict_house_price' funct
+[parallel 159/200] FAIL   1446ms You are a data scientist working on a project   ← n_mismatch:pred=4 gold=2
+[parallel 160/200] PASS   1431ms "In a board game, you have a six-sided die. Yo
+[parallel 161/200] PASS   1400ms "In a game of chance, you have a 0.3 probabili
+[parallel 162/200] PASS   1558ms "In a game of basketball, a player has a 60% c
+[parallel 163/200] PASS   1424ms You are a teacher preparing a probability less
+[parallel 164/200] PASS   1384ms "In a game of basketball, a player has a 60% c
+[parallel 165/200] PASS   1030ms You are a data analyst and you have been given
+[parallel 166/200] PASS   2153ms "Could you please perform a statistical t-test
+[parallel 167/200] PASS   1647ms Can you predict the price of a house with an a
+[parallel 168/200] FAIL   1258ms What is the coefficient of determination (R sq  ← set_no_match(g0~p0:arg:dependent_variable='"credit_score"'∉[
+[parallel 169/200] PASS   1558ms "Can you help me calculate the quarterly divid
+[parallel 170/200] PASS   1268ms "Can you help me calculate the discounted cash
+[parallel 171/200] FAIL   1737ms "Can you help me calculate the compound intere  ← set_no_match(g1~p1:arg:time=5∉[3])
+[parallel 172/200] PASS   1391ms "Can you calculate the return on equity for tw
+[parallel 173/200] PASS   1183ms "Imagine you have two different investment opp
+[parallel 174/200] PASS   1054ms "John has decided to invest in two different f
+[parallel 175/200] PASS   1492ms You are an investor who recently sold some sto
+[parallel 176/200] PASS   1799ms "Could you please calculate the future value o
+[parallel 177/200] PASS   1081ms "John invested $5000 in a mutual fund 5 years 
+[parallel 178/200] PASS   1315ms What is the current price per ounce of gold, s
+[parallel 179/200] PASS   1849ms What were the closing stock prices for Microso
+[parallel 180/200] PASS   1041ms What were the stock prices of Apple Inc. liste
+[parallel 181/200] PASS   3479ms What were the 'Open', 'Close', 'High', and 'Lo
+[parallel 182/200] FAIL   1759ms Can you use the get_stock_prices function to r  ← set_no_match(g0~p0:arg:companies=['Apple', 'Microsoft', 'Ama
+[parallel 183/200] PASS   1459ms "John is planning to invest in a mutual fund. 
+[parallel 184/200] FAIL    908ms "Imagine you are a drone operator. You are cur  ← n_mismatch:pred=2 gold=3
+[parallel 185/200] PASS   1064ms "Can you help me find the roots of two differe
+[parallel 186/200] FAIL   2144ms Can you estimate the population of Bengal Tige  ← set_no_match(g1~p1:arg:species='African Elephant'∉['African 
+[parallel 187/200] PASS   1247ms What are the potential greenhouse gas emission
+[parallel 188/200] PASS   1791ms What is the air quality data for New York City
+[parallel 189/200] PASS   1444ms What are the current traffic conditions for a 
+[parallel 190/200] PASS   1505ms Can you find me parks in New York, USA that ha
+[parallel 191/200] PASS   1782ms What is the shortest driving distance from New
+[parallel 192/200] PASS   1317ms Can you help me find public libraries in New Y
+[parallel 193/200] PASS    921ms Can you fetch the latest news on the topic of 
+[parallel 194/200] PASS   1687ms Can you send an email to my colleague at john.
+[parallel 195/200] PASS   1413ms Can you find me upcoming jazz events in Los An
+[parallel 196/200] PASS    806ms Can you retrieve additional information like D
+[parallel 197/200] PASS   1102ms Can you please retrieve the details of two law
+[parallel 198/200] PASS   1064ms "Can you provide me with the details of the la
+[parallel 199/200] PASS    940ms Can you use the lawsuit_search function to ret
+[parallel 200/200] PASS   1693ms What is the current temperature and humidity i
+  -- parallel: 177/200 = 88.5%（答案长度分布 {2: 110, 3: 52, 4: 35, 6: 1, 8: 2}）
+[parallel 001/200] PASS    896ms Find the sum of all the multiples of 3 and 5 b
+[parallel 002/200] PASS    695ms Find the area of a rectangle with length 7 and
+[parallel 003/200] PASS    649ms Find the area and perimeter of a circle with a
+[parallel 004/200] PASS    940ms What are the length and the width of a rectang
+[parallel 005/200] FAIL    812ms Calculate the area under the curve from x=1 to  ← set_no_match(g0~p0:arg:function='x^2'∉['x**2', 'lambda x : x
+[parallel 006/200] PASS    766ms Calculate the Greatest Common Divisor (GCD) of
+[parallel 007/200] PASS    695ms Find all prime numbers between 50 and 150. The
+[parallel 008/200] PASS    841ms Calculate the time required for a car moving a
+[parallel 009/200] PASS    976ms Calculate the final velocity of a moving objec
+[parallel 010/200] PASS    843ms Book a flight from Seattle to Boston with Amer
+[parallel 011/200] PASS   1032ms Buy me a ticket to the Mamma Mia musical for n
+[parallel 012/200] PASS    890ms What is the Electric field at 3m from a point 
+[parallel 013/200] PASS    713ms Calculate the magnetic field produced by a wir
+[parallel 014/200] PASS   1331ms 'Calculate the energy required to heat 100 gra
+[parallel 015/200] PASS   1647ms Give me the population size of tigers in Bangl
+[parallel 016/200] FAIL   1375ms Find a Chinese restaurant near me in New York   ← set_no_match(g0~p0:arg:rating=4∉[1.0, ''])
+[parallel 017/200] PASS    679ms Calculate the factorial of 8 and generate the 
+[parallel 018/200] PASS    656ms How many steps do I need to walk in order to l
+[parallel 019/200] PASS    922ms I need to convert 10 dollars to Euros and make
+[parallel 020/200] FAIL   1034ms Perform Gaussian integral of the function exp(  ← set_no_match(g0~p0:arg:function='exp(-x^2)'∉['exp(-x**2)', '
+[parallel 021/200] PASS   1208ms Determine the median and variance for the foll
+[parallel 022/200] FAIL    410ms Use the data from dataset.csv file and fit a l  ← n_mismatch:pred=1 gold=2
+[parallel 023/200] PASS    729ms Find me the sales growth rate for company XYZ 
+[parallel 024/200] PASS    978ms Calculate the net profit margin of Company XYZ
+[parallel 025/200] PASS    818ms Invest $2000 in Google and withdraw $1000 from
+[parallel 026/200] PASS    882ms How much would it cost me to invest in 50 shar
+[parallel 027/200] FAIL   1058ms Get me the transaction history for my account   ← set_no_match(g1~p1:arg:transactions=[{'amount': 150.0, 'type
+[parallel 028/200] PASS   1005ms Transfer $5000 from my checking to saving acco
+[parallel 029/200] FAIL    846ms Find the conviction status of a criminal with   ← set_no_match(g1~p1:arg:optional_param=True∉['', False])
+[parallel 030/200] PASS   1166ms Find cases that pertain to 'Theft' from court 
+[parallel 031/200] PASS    838ms Find all law cases where Charles Dickens is a 
+[parallel 032/200] FAIL    673ms Find how many cases and the judge handling a s  ← n_mismatch:pred=2 gold=4
+[parallel 033/200] PASS   1099ms Get temperature and humidity forecast for Bost
+[parallel 034/200] PASS    973ms Locate all supermarkets in Los Angeles and fin
+[parallel 035/200] PASS   1295ms Translate the phrase 'Hello World' from Englis
+[parallel 036/200] PASS    673ms Identify objects in my backyard image my_backy
+[parallel 037/200] PASS    927ms Find overview about the Battle of Waterloo and
+[parallel 038/200] FAIL    824ms Get me the timeline of World War 2 in Europe a  ← set_no_match(g1~p1:arg:number=5∉[1, ''])
+[parallel 039/200] PASS   1123ms What was the average life expectancy in the US
+[parallel 040/200] PASS    714ms What is the exact birthdate of Nikola Tesla an
+[parallel 041/200] PASS   1428ms What is the weight of Neutron and Proton in at
+[parallel 042/200] PASS   1104ms Create a square painting with blue background 
+[parallel 043/200] FAIL   1372ms Find me a bronze statue in the Modern Arts Mus  ← set_no_match(g0~p0:arg:museum='Modern Arts Museum in New Yor
+[parallel 044/200] PASS   1122ms What is the average price of a 4 ft x 4 ft mar
+[parallel 045/200] PASS    877ms Design a house with 3 bedrooms, 2 bathrooms an
+[parallel 046/200] PASS    810ms Calculate the volume of a cuboid with a height
+[parallel 047/200] FAIL   1080ms Find the operational hours for Louvre Museum a  ← set_no_match(g1~p1:arg:day='Today'∉['', 'Monday'])
+[parallel 048/200] PASS   1348ms Find me the lowest price for a Yamaha Acoustic
+[parallel 049/200] PASS    680ms What is the equivalent note of C in Indian mus
+[parallel 050/200] PASS    984ms Create a hip hop beat at 95 beats per minute w
+[parallel 051/200] PASS   1303ms Analyze the performance of the L.A Lakers in t
+[parallel 052/200] PASS    926ms Can you find information on Michael Jordan's h
+[parallel 053/200] PASS    866ms Play the Game of life for 3 rounds starting fr
+[parallel 054/200] FAIL    880ms Find a board game with complexity rating under  ← set_no_match(g0~p0:arg:player_count=5∉[6])
+[parallel 055/200] FAIL   1555ms In game Battle Reign, change the armor level t  ← set_no_match(g1~p1:arg:type='strategy'∉[''])
+[parallel 056/200] FAIL    586ms I want a homemade healthy spaghetti recipe tha  ← n_mismatch:pred=1 gold=3
+[parallel 057/200] PASS   1077ms What is the current time in Beijing and Tokyo 
+[parallel 058/200] PASS   1173ms Find hotels in Paris, France and New York, USA
+[parallel 059/200] PASS   1307ms "Imagine you are a geometry teacher preparing 
+[parallel 060/200] PASS   1173ms "Imagine you are a math teacher preparing for 
+[parallel 061/200] PASS    823ms "What is the capital city of Australia, what i
+[parallel 062/200] PASS   2249ms "Could you please help me with a couple of cal
+[parallel 063/200] PASS   1092ms "A car is traveling on a straight road. At the
+[parallel 064/200] PASS   2205ms "Can you tell me what the weather was like in 
+[parallel 065/200] PASS   2437ms "Can you help me understand the ecological imp
+[parallel 066/200] PASS   2106ms "Can you help me find a property in San Franci
+[parallel 067/200] PASS   1799ms "John is a student who recently received his g
+[parallel 068/200] PASS   1661ms "Can you help me with some math problems? Firs
+[parallel 069/200] PASS   2004ms "Can you help me analyze the financial perform
+[parallel 070/200] FAIL   2241ms "Imagine you are a real estate investor. You b  ← set_no_match(g0~p0:arg:depreciation_rate=2∉[0.02])
+[parallel 071/200] PASS   1453ms "Can you help me compare the potential energy 
+[parallel 072/200] PASS   1310ms "Could you first check the availability of a s
+[parallel 073/200] PASS   1856ms "Could you please generate a sinusoidal sound 
+[parallel 074/200] PASS   1074ms "Could you provide me with the following infor
+[parallel 075/200] PASS   2036ms "Can you provide me with the current statistic
+[parallel 076/200] FAIL   1075ms "Can you help me plan my day? I want to start   ← n_mismatch:pred=2 gold=5
+[parallel 077/200] PASS   2051ms "Could you please tell me the selling price of
+[parallel 078/200] PASS   1644ms "Can you help me with some gaming information?
+[parallel 079/200] PASS   1790ms "Can you help me plan a trip? I would like to 
+[parallel 080/200] PASS   1305ms "Imagine you are working on a programming proj
+[parallel 081/200] FAIL    810ms "Can you help me with a math problem? I have t  ← set_no_match(g0~p0:arg:function1='4x+7'∉['4x + 7', 'lambda x
+[parallel 082/200] PASS    962ms "In a park, there is a rectangular playground 
+[parallel 083/200] PASS   1338ms "Imagine you are a sculptor working on a large
+[parallel 084/200] FAIL   1490ms "Can you help me with my calculus homework? I   ← set_no_match(g0~p0:arg:func='3*x**2 - 2*x + 1'∉['3x**2 - 2x 
+[parallel 085/200] PASS    736ms "Imagine you are a math teacher preparing for 
+[parallel 086/200] PASS   1617ms "Could you please help me with a couple of cal
+[parallel 087/200] PASS    858ms "A car starts from rest and travels a distance
+[parallel 088/200] PASS   1173ms "A car is initially at rest and then starts mo
+[parallel 089/200] FAIL    660ms "Could you help me find a book in the library?  ← n_mismatch:pred=1 gold=2
+[parallel 090/200] PASS   2028ms "Could you help me plan my day? I need to go f
+[parallel 091/200] PASS    927ms "Imagine you are a chemist working in a lab. Y
+[parallel 092/200] FAIL   1317ms "Imagine you are a scientist studying the ener  ← set_no_match(g2~p2:arg:energy=14000∉[1400.0])
+[parallel 093/200] PASS   1245ms "Imagine you are planning a trip to Mars. You 
+[parallel 094/200] FAIL    885ms "Could you tell me the estimated date of the J  ← set_no_match(g1~p1:arg:event_name='Magna Carta signing'∉['si
+[parallel 095/200] FAIL   1632ms "Given the list of words ['apple', 'banana', '  ← set_no_match(g1~p1:arg:condition="starts with 'b'"∉['startsw
+[parallel 096/200] PASS   2188ms "Could you help me with some calculations? Fir
+[parallel 097/200] PASS    972ms "Can you help me find a pet-friendly library w
+[parallel 098/200] FAIL   1688ms "John has decided to invest his savings. He ha  ← set_no_match(g0~p0:arg:annual_rate=4∉[0.04])
+[parallel 099/200] PASS    991ms "Could you help me with a two-step conversion?
+[parallel 100/200] PASS   1566ms "Could you please provide me with the historic
+[parallel 101/200] PASS   1512ms "Can you tell me what the stock price predicti
+[parallel 102/200] PASS   1623ms "Could you please provide me with the followin
+[parallel 103/200] PASS   1039ms "John has $5000 that he wants to invest. He is
+[parallel 104/200] PASS   1426ms "Can you help me find a divorce lawyer in New 
+[parallel 105/200] PASS   1264ms "Can you provide me with a 5-day air quality f
+[parallel 106/200] PASS   1554ms "Can you help me plan a trip? I need to know t
+[parallel 107/200] PASS   1448ms "Can you help me plan my upcoming trip? I need
+[parallel 108/200] PASS    846ms "Can you help me find a book? I'm not sure of 
+[parallel 109/200] PASS   1339ms "Could you please analyze my personality based
+[parallel 110/200] PASS   1209ms "Can you tell me about the monarchs of France 
+[parallel 111/200] PASS   1692ms "What was the population of California in 1980
+[parallel 112/200] FAIL    697ms "Could you please provide me with the origin a  ← n_mismatch:pred=2 gold=4
+[parallel 113/200] PASS   1844ms "Could you please help me find the price of th
+[parallel 114/200] PASS   1031ms "Could you please help me with some informatio
+[parallel 115/200] PASS   1547ms "Could you please help me order a custom sculp
+[parallel 116/200] PASS   1183ms "Can you help me plan my trip to New York? I w
+[parallel 117/200] PASS   1045ms "Can you provide me with the exhibition inform
+[parallel 118/200] PASS   1430ms "Can you help me book a ticket for a concert o
+[parallel 119/200] PASS   1489ms "Can you help me create a piece of music in D 
+[parallel 120/200] PASS   1343ms "Can you tell me how many all-time goals Crist
+[parallel 121/200] PASS   1009ms "Can you tell me the scores for the Manchester
+[parallel 122/200] PASS   1742ms "I'm planning a game night and I need some boa
+[parallel 123/200] PASS   1139ms "Could you please find the latest updates for 
+[parallel 124/200] PASS   1883ms "Can you tell me how many active players were 
+[parallel 125/200] FAIL   1437ms "Can you help me plan my meals for the day? I   ← set_no_match(g2~p2:name:recipe_search!=ingredient_replace)
+[parallel 126/200] PASS   1011ms "Can you help me plan a day out in Seattle, WA
+[parallel 127/200] PASS   1062ms "Can you help me find a recipe that uses chick
+[parallel 128/200] PASS   2240ms "Can you help me plan my trip? I need to book 
+[parallel 129/200] FAIL   1650ms "Could you help me plan my vacation? I need to  ← set_no_match(g0~p0:arg:roomType='deluxe room'∉['deluxe'])
+[parallel 130/200] PASS   2201ms "Can you help me with a couple of conversions?
+[parallel 131/200] PASS   1679ms "Could you help me with the following tasks? F
+[parallel 132/200] PASS   1190ms "Could you please help me with a couple of cal
+[parallel 133/200] FAIL   1571ms "Could you first calculate the derivative of t  ← set_no_match(g0~p0:arg:function='3x^2 + 2x - 1'∉['3x**2 + 2x
+[parallel 134/200] PASS   1131ms "Imagine you are a music producer and you are 
+[parallel 135/200] PASS   1021ms "Could you please help me with two tasks? Firs
+[parallel 136/200] PASS   2194ms "Imagine you're a musician who also loves to p
+[parallel 137/200] PASS   1761ms "Can you help me with a few things? First, I'm
+[parallel 138/200] PASS   1968ms "Can you tell me the function of the molecule 
+[parallel 139/200] PASS   1395ms "Could you help me with a few tasks? Firstly, 
+[parallel 140/200] PASS   2135ms "Imagine you are a teacher preparing for a sci
+[parallel 141/200] PASS   1960ms "Imagine you are a scientist working in a lab.
+[parallel 142/200] FAIL   1475ms "Can you help me with a few things? First, I'm  ← set_no_match(g1~p1:arg:month='February'∉['Febuary'])
+[parallel 143/200] PASS   1943ms "In the game 'Animal Crossing', I am intereste
+[parallel 144/200] PASS   1142ms "Can you help me with a few tasks? First, I ne
+[parallel 145/200] PASS   1717ms "Can you tell me the name of the scientist who
+[parallel 146/200] PASS   2277ms "Can you help me with a few tasks? First, I am
+[parallel 147/200] PASS   1584ms You are an art curator and a part-time biologi
+[parallel 148/200] PASS   2068ms "Can you help me plan a day out? I want to sta
+[parallel 149/200] PASS   1902ms "Can you tell me the net worth of the famous f
+[parallel 150/200] PASS   1674ms "Can you help me with a few tasks? First, I ne
+[parallel 151/200] PASS   2092ms "Could you help me with a few things? First, I
+[parallel 152/200] FAIL   2505ms "Imagine you are planning a vacation to Paris,  ← set_no_match(g2~p2:arg:items=['bottled water', 'apples', 'br
+[parallel 153/200] PASS   1431ms "Can you help me with a few things? First, I'm
+[parallel 154/200] PASS   2169ms "Could you help me plan a trip? I want to go t
+[parallel 155/200] PASS   1724ms "Imagine you are considering to buy a house in
+[parallel 156/200] PASS   1873ms "Can you help me with a few calculations? Firs
+[parallel 157/200] PASS   1856ms "Could you please help me with the following t
+[parallel 158/200] PASS   2433ms "Could you help me with a few calculations and
+[parallel 159/200] PASS   1937ms "Could you help me with a few tasks? First, I'
+[parallel 160/200] PASS   2243ms "Could you help me with a few things? First, I
+[parallel 161/200] FAIL   1224ms "Can you help me with two tasks? First, I want  ← set_no_match(g0~p0:arg:annual_rate=5∉[0.05])
+[parallel 162/200] PASS   1498ms "Can you help me with a few calculations? Firs
+[parallel 163/200] PASS   1822ms "Imagine you are planning your finances and yo
+[parallel 164/200] PASS   1121ms "John is planning to invest in a mutual fund. 
+[parallel 165/200] PASS   1501ms "John is a lawyer who is working on a case wit
+[parallel 166/200] PASS   1807ms "Can you help me plan my week? I'm interested 
+[parallel 167/200] PASS   1951ms "Could you please help me with the following t
+[parallel 168/200] PASS   2028ms "In the game 'Animal Crossing' during the 'Sum
+[parallel 169/200] PASS   1479ms "Could you help me with a two-part request? Fi
+[parallel 170/200] PASS   1918ms "Could you please tell me the latest game scor
+[parallel 171/200] PASS   2156ms "Imagine you are playing a role-playing game a
+[parallel 172/200] PASS   1972ms "Could you please tell me the ranking of the N
+[parallel 173/200] PASS   1655ms "Can you help me with the following tasks? Fir
+[parallel 174/200] PASS   1861ms "Can you help me find a Thai restaurant in New
+[parallel 175/200] PASS   2038ms "Could you help me with a few tasks? First, I 
+[parallel 176/200] PASS   1921ms "Could you please first use the 'get_current_t
+[parallel 177/200] PASS   2028ms "Could you help me with a few tasks? First, I'
+[parallel 178/200] PASS   1334ms "Can you first find out the key historical eve
+[parallel 179/200] PASS   1323ms "Can you help me with a few things? First, I'm
+[parallel 180/200] FAIL   2052ms "Can you help me with a few things? First, I n  ← set_no_match(g3~p3:arg:deck=[{'rank': 'Two', 'suit': 'Hearts
+[parallel 181/200] PASS   1224ms "Can you tell me who discovered the Higgs Boso
+[parallel 182/200] PASS   1323ms "Could you help me with a few tasks? First, I 
+[parallel 183/200] PASS   1205ms "Imagine you are a musician who also loves to 
+[parallel 184/200] PASS   1726ms "Could you first calculate the probability of 
+[parallel 185/200] PASS   1807ms "Could you first analyze the structure of a bu
+[parallel 186/200] PASS   1925ms "Could you first fetch the top 10 popular artw
+[parallel 187/200] PASS   1286ms " I'm trying to figure out the RGB values of t
+[parallel 188/200] PASS   1360ms "Could you please help me with the following t
+[parallel 189/200] PASS   1661ms "Could you help me with a few calculations and
+[parallel 190/200] PASS   1841ms "Can you help me plan a trip? I want to start 
+[parallel 191/200] PASS   1365ms "Could you please help me with the following t
+[parallel 192/200] PASS   1518ms "Imagine you are planning a cozy evening at ho
+[parallel 193/200] PASS   1210ms "Can you help me plan a dinner? I am looking f
+[parallel 194/200] PASS   1826ms "Can you tell me the name of the scientist who
+[parallel 195/200] PASS   1673ms "Could you help me with a few tasks? First, I 
+[parallel 196/200] FAIL   2080ms "Can you help me find a multiplayer game that   ← set_no_match(g1~p1:arg:function='x^2'∉['x**2'])
+[parallel 197/200] FAIL   1442ms "Could you please help me with some informatio  ← set_no_match(g0~p0:extra:meal_time)
+[parallel 198/200] PASS   1486ms "Could you help me plan a dinner party? I need
+[parallel 199/200] PASS   1840ms "Can you first find me a vegan, main course re
+[parallel 200/200] PASS   1597ms "Can you help me with two things? First, I am 
+  -- parallel_multiple: 168/200 = 84.0%（答案长度分布 {2: 64, 4: 69, 3: 66, 5: 1}）
+[irreleva 001/240] PASS   1521ms Calculate the area of a triangle given the bas
+[irreleva 002/240] PASS    380ms Solve the quadratic equation with coefficients
+[irreleva 003/240] PASS   3050ms Solve for the roots of the equation 3x^2 - 2x 
+[irreleva 004/240] PASS    716ms What is the slope of the line which is perpend
+[irreleva 005/240] PASS   1813ms What is the roots of linear equation bx + c = 
+[irreleva 006/240] PASS   1136ms What is the perimeter of a rectangle with leng
+[irreleva 007/240] PASS   1222ms What's the area of a rectangle that has width 
+[irreleva 008/240] FAIL    630ms What is the area under the curve of the functi  ← 误调用:1 次
+[irreleva 009/240] PASS    476ms Find the integral of x^3 from 1 to 5
+[irreleva 010/240] PASS   1791ms Find the definite integral of f(x)=x^2 from x=
+[irreleva 011/240] PASS    583ms Compute the derivative of the function '2x' wi
+[irreleva 012/240] PASS    410ms What is the closest integer to 30?
+[irreleva 013/240] PASS    373ms Find the fastest route from New York to Boston
+[irreleva 014/240] PASS    825ms Calculate the prime factors of 100.
+[irreleva 015/240] PASS   1054ms What is the acceleration a ball will reach if 
+[irreleva 016/240] PASS    369ms What are the latest movie releases?
+[irreleva 017/240] PASS   1352ms How far will a car travel in time 't' when lau
+[irreleva 018/240] PASS    513ms What's the time right now?
+[irreleva 019/240] PASS   1746ms How do I find the angle of the force for a giv
+[irreleva 020/240] PASS   1735ms Find the volume of a cone with base radius 3 c
+[irreleva 021/240] PASS    419ms Find the duration of flight between Los Angele
+[irreleva 022/240] PASS    756ms What's the magnetic field at a point 4m away f
+[irreleva 023/240] PASS   1431ms What is the magnetic field at a point located 
+[irreleva 024/240] PASS    437ms What's the mass of an electron?
+[irreleva 025/240] PASS    439ms What's the mass of an electron?
+[irreleva 026/240] PASS    684ms What is the freezing point point of water at a
+[irreleva 027/240] FAIL   1181ms How much gas is generated from heating a 2 m³   ← 误调用:1 次
+[irreleva 028/240] FAIL    617ms What will be the energy needed to increase the  ← 误调用:1 次
+[irreleva 029/240] PASS    306ms How many sides does a hexagon have?
+[irreleva 030/240] PASS    976ms Identify the number of the mitochondria in a c
+[irreleva 031/240] PASS    795ms What's the name of a type of cell that has mul
+[irreleva 032/240] PASS    382ms Find the favorite restaurant in London.
+[irreleva 033/240] PASS    544ms Identify the type of blood cells responsible f
+[irreleva 034/240] FAIL    523ms Identify the genetic code sequence "ATCG".  ← 误调用:1 次
+[irreleva 035/240] PASS   1020ms What is the dominant genetic trait of a Lion?
+[irreleva 036/240] PASS   1909ms What is the mating process of Lions?
+[irreleva 037/240] PASS    399ms What is the frequency of gene variant rs7412 i
+[irreleva 038/240] PASS    367ms Find a picnic spot in Miami.
+[irreleva 039/240] PASS    555ms Find me a documentary about global warming.
+[irreleva 040/240] PASS   2612ms How to increase the population of deer in a fo
+[irreleva 041/240] PASS    409ms How is the air quality in Los Angeles right no
+[irreleva 042/240] PASS    406ms What is the common ancestor of lion and zebra?
+[irreleva 043/240] PASS    391ms What is the evolutionary history of pandas?
+[irreleva 044/240] PASS   4632ms How can I apply Evolutionary Algorithm in game
+[irreleva 045/240] FAIL    715ms What is the gene sequence for evolutionary cha  ← 误调用:1 次
+[irreleva 046/240] PASS    584ms Calculate the sine of 45 degree.
+[irreleva 047/240] PASS    627ms Give me the price of a Tesla model S in India.
+[irreleva 048/240] PASS    378ms What are the ingredients for lasagna?
+[irreleva 049/240] PASS    396ms What is the current Gini Coefficient of USA?
+[irreleva 050/240] PASS    552ms What is the time difference between Los Angele
+[irreleva 051/240] PASS    366ms Give me a selection of horror movies to watch 
+[irreleva 052/240] PASS   1031ms Calculate the fibonacci of number 20.
+[irreleva 053/240] PASS    384ms Convert the sentence 'Hello, how are you?' fro
+[irreleva 054/240] FAIL    599ms Who won the world series in 2018?  ← 误调用:1 次
+[irreleva 055/240] PASS    465ms What is the highest grossing movie of all time
+[irreleva 056/240] PASS    558ms Which online bookstore sells 'To Kill a Mockin
+[irreleva 057/240] PASS    484ms What is the current bitcoin price?
+[irreleva 058/240] PASS    387ms How to solve the quadratic equation with coeff
+[irreleva 059/240] PASS    808ms How much electricity will I need for my 2000 s
+[irreleva 060/240] PASS    851ms Calculate the power of 2 raise to 5.
+[irreleva 061/240] FAIL    662ms What is the final price of a product after a 2  ← 误调用:1 次
+[irreleva 062/240] PASS    341ms What is the meaning of 'Hello' in French?
+[irreleva 063/240] PASS    519ms How to build a frontend interface for my e-com
+[irreleva 064/240] PASS    865ms How many heads can I get after tossing 3 coins
+[irreleva 065/240] PASS    494ms What is the probability of getting a face card
+[irreleva 066/240] FAIL    627ms How many red marbles are there in a bag of 20,  ← 误调用:1 次
+[irreleva 067/240] PASS   1208ms Calculate the probability of getting a head wh
+[irreleva 068/240] PASS   1121ms What is the mean of an experiment with 50 succ
+[irreleva 069/240] PASS   1803ms Calculate the standard deviation of the null h
+[irreleva 070/240] PASS    494ms Retrieve the average house price in california
+[irreleva 071/240] PASS    654ms Calculate the compounded interest for a princi
+[irreleva 072/240] PASS   1610ms Calculate the profit margin of a company with 
+[irreleva 073/240] PASS    749ms What is the external rate of return for a proj
+[irreleva 074/240] PASS    593ms What is the loss projection for company XYZ fo
+[irreleva 075/240] FAIL   1347ms What is the rate of return for a business with  ← 误调用:1 次
+[irreleva 076/240] PASS    548ms How many kilograms are in a pound?
+[irreleva 077/240] PASS    399ms How do I get the latests news in sports.
+[irreleva 078/240] PASS    345ms Can you list some horror movies I can watch?
+[irreleva 079/240] PASS    391ms What is the gold price today in USA?
+[irreleva 080/240] PASS   1592ms What is the best player in soccer today?
+[irreleva 081/240] PASS    627ms Who won the FIFA World Cup 2010?
+[irreleva 082/240] PASS    346ms Can you list some horror movies I can watch?
+[irreleva 083/240] PASS    506ms Retrieve me some stock news
+[irreleva 084/240] PASS    739ms What's the current interest rate
+[irreleva 085/240] PASS    574ms Who won the basketball game between Lakers and
+[irreleva 086/240] PASS    387ms Who won the presidential election in 2020?
+[irreleva 087/240] FAIL    545ms What's the penalty for burglary in California?  ← 误调用:1 次
+[irreleva 088/240] PASS    371ms Who is the Governor of California?
+[irreleva 089/240] PASS    435ms What are the best Crime-Thriller movies of 202
+[irreleva 090/240] PASS    386ms What are my rights as a tenant in the state of
+[irreleva 091/240] PASS    388ms What are the components of Civil Law?
+[irreleva 092/240] FAIL    993ms Can I report noise complaint to my local counc  ← 误调用:1 次
+[irreleva 093/240] PASS    579ms I need a security guard, where can I find the 
+[irreleva 094/240] PASS    587ms What's the judgement in case XYZ?
+[irreleva 095/240] PASS    639ms What were the most impactful cases handled by 
+[irreleva 096/240] PASS    646ms Who is the laywer for the Doe vs. Smith law ca
+[irreleva 097/240] PASS    430ms how long will it take to paint the Eiffel Towe
+[irreleva 098/240] PASS    427ms Can you recommend a good Chinese restaurant in
+[irreleva 099/240] PASS    751ms How long will it take to paint the Eiffel Towe
+[irreleva 100/240] PASS    534ms Find out about traffic laws in Texas.
+[irreleva 101/240] PASS    374ms How many calories does an apple have?
+[irreleva 102/240] PASS   1288ms What is the best month to visit Hawaii?
+[irreleva 103/240] PASS    425ms What is the time now in New York City?
+[irreleva 104/240] PASS    466ms What is the current time in New York City?
+[irreleva 105/240] PASS    560ms Calculate the volume of the sphere with radius
+[irreleva 106/240] PASS    414ms What are the top five flower species for polli
+[irreleva 107/240] PASS   1251ms What kind of fertilizer is best for growing to
+[irreleva 108/240] PASS   1445ms What's the composition of species in my backya
+[irreleva 109/240] PASS   1322ms What is the best way to reduce CO2 emissions?
+[irreleva 110/240] PASS    656ms Calculate how much nurtient a cactus in Arizon
+[irreleva 111/240] PASS    413ms What's the average temperature for Los Angeles
+[irreleva 112/240] FAIL    678ms Find a GMO yoga mat that I can buy in-store.  ← 误调用:1 次
+[irreleva 113/240] PASS    550ms What's the current traffic condition in New Yo
+[irreleva 114/240] FAIL    500ms Find me restaurants in London  ← 误调用:1 次
+[irreleva 115/240] PASS    899ms What is the fastest route from Los Angeles to 
+[irreleva 116/240] FAIL    915ms How long would it take to travel from Boston t  ← 误调用:1 次
+[irreleva 117/240] PASS    350ms Can you recommend a good movie to watch?
+[irreleva 118/240] PASS   2991ms Tell me some of the major airports in the Unit
+[irreleva 119/240] FAIL    544ms Who won the 1996 NBA championships?  ← 误调用:1 次
+[irreleva 120/240] PASS    370ms Tell me a famous quote about life.
+[irreleva 121/240] PASS    568ms What's the neurological impact of sports on hu
+[irreleva 122/240] FAIL    468ms Find the information on motor neuron diseases  ← 误调用:1 次
+[irreleva 123/240] PASS    623ms What is the average weight of a human brain?
+[irreleva 124/240] PASS    370ms What are the calories of a Big Mac?
+[irreleva 125/240] FAIL    506ms What's the latest trend in technology?  ← 误调用:1 次
+[irreleva 126/240] PASS   2077ms What are some popular books by J.K. Rowling?
+[irreleva 127/240] PASS   1074ms What is the effect of economic status on happi
+[irreleva 128/240] FAIL    523ms What's the general mood of twitter regarding t  ← 误调用:1 次
+[irreleva 129/240] PASS   1508ms How many servings of vegetables should I consu
+[irreleva 130/240] PASS    839ms Give me the MTBI of my friend.
+[irreleva 131/240] PASS   2233ms What type of personality am I?
+[irreleva 132/240] PASS   1188ms What does the color purple represent in comput
+[irreleva 133/240] PASS    637ms What was the casualty number of the Battle of 
+[irreleva 134/240] PASS    690ms Who won the NBA final 2023?
+[irreleva 135/240] PASS    660ms Who won the World Cup 2022?
+[irreleva 136/240] PASS    880ms When was the declaration of independence signe
+[irreleva 137/240] PASS    516ms Who is the Vice President of United States?
+[irreleva 138/240] PASS    742ms Who signed the declaration of independence?
+[irreleva 139/240] PASS    695ms When was the Declaration of Independence signe
+[irreleva 140/240] PASS   1106ms What is the largest planet in the universe?
+[irreleva 141/240] PASS   2014ms Who discovered electricity?
+[irreleva 142/240] PASS    379ms What are the different properties of Hydrogen?
+[irreleva 143/240] PASS    345ms Who was the scientist that proposed the specia
+[irreleva 144/240] PASS    749ms What defines scientist
+[irreleva 145/240] PASS   1122ms What is a holy book?
+[irreleva 146/240] PASS   1067ms Who initiate Protestant Reformation?
+[irreleva 147/240] PASS    335ms Mix the color #FAEBD7 with #00FFFF, what is th
+[irreleva 148/240] PASS    829ms Who is the most important prophet in Christian
+[irreleva 149/240] PASS    908ms What color should I use to get a similar color
+[irreleva 150/240] PASS    418ms What is the Pantone color code for sky blue?
+[irreleva 151/240] PASS    558ms Which colors should I mix to get a specific co
+[irreleva 152/240] PASS    407ms Find the year of a Picasso's painting.
+[irreleva 153/240] PASS    912ms What type of rock is the most suitable for cre
+[irreleva 154/240] PASS   1132ms Which sculture is the most famous in 19th cent
+[irreleva 155/240] PASS    389ms What is the seating capacity of Camp Nou Stadi
+[irreleva 156/240] PASS    395ms Who created the sculpture 'The Thinker'?
+[irreleva 157/240] PASS    515ms What is the Eiffel Tower's height in feet?
+[irreleva 158/240] PASS   3353ms How to design a cathedral style ceiling?
+[irreleva 159/240] PASS    474ms What's the cost of renting an apartment in New
+[irreleva 160/240] FAIL    651ms Who was the artist behind the famous painting   ← 误调用:1 次
+[irreleva 161/240] FAIL    860ms How frequent do members at the Museum of Moder  ← 误调用:1 次
+[irreleva 162/240] PASS    669ms What is the most visited market in New York?
+[irreleva 163/240] PASS    592ms Who are the famous dancers of the 19th Century
+[irreleva 164/240] PASS   3523ms How can I sell my acoustic guitar?
+[irreleva 165/240] PASS    756ms Who is the best singer in Jazz
+[irreleva 166/240] FAIL    540ms What type of instrument is a cello?  ← 误调用:1 次
+[irreleva 167/240] PASS   2923ms What are some tips to maintain a piano?
+[irreleva 168/240] PASS    469ms Who is the teacher for the upcoming lectures?
+[irreleva 169/240] PASS    549ms Is there any available class at University in 
+[irreleva 170/240] PASS    577ms Who is playing basketball game  at Madison Squ
+[irreleva 171/240] PASS   1783ms Who was the most famous composers in United St
+[irreleva 172/240] PASS   1864ms Who establish laws and orders in Ancient Greek
+[irreleva 173/240] PASS    402ms Who write Don Quixote?
+[irreleva 174/240] PASS   1068ms What are the primary triads in the key of C ma
+[irreleva 175/240] PASS   1017ms What are the most common chords in a pop song?
+[irreleva 176/240] PASS    615ms Who was the composer of Moonlight Sonata?
+[irreleva 177/240] PASS   1530ms What is the pattern of the blues scale in the 
+[irreleva 178/240] PASS    419ms Who won the Grammy Award for Best Album in 201
+[irreleva 179/240] PASS    492ms Who is the most assist player in Premier Leagu
+[irreleva 180/240] PASS    977ms Who played for Clippers in NBA
+[irreleva 181/240] FAIL    594ms Who are in the cricket matches scheduled for t  ← 误调用:1 次
+[irreleva 182/240] PASS    635ms Who played in La Liga?
+[irreleva 183/240] FAIL    545ms How many championships did Michael Jordan win   ← 误调用:1 次
+[irreleva 184/240] PASS    404ms Who was the winner of Wimbledon Men's Singles 
+[irreleva 185/240] PASS    775ms Who won the NBA Most Valuable Player in 2020?
+[irreleva 186/240] PASS    494ms What is the assist average of basketball playe
+[irreleva 187/240] PASS    654ms What is the ranking of a football team?
+[irreleva 188/240] PASS    757ms Who won the most valuable player in last seaso
+[irreleva 189/240] FAIL    550ms Who won the championship of the World Series i  ← 误调用:1 次
+[irreleva 190/240] PASS    986ms Who is Lebron James?
+[irreleva 191/240] PASS    667ms Who is currently the top ranked tennis player?
+[irreleva 192/240] PASS    564ms Who won the last world cup in football?
+[irreleva 193/240] PASS    492ms What is the roster of Manchester United?
+[irreleva 194/240] PASS    531ms Who is the top scorer for Los Angeles Lakers?
+[irreleva 195/240] PASS    618ms What is the best chess move for white player i
+[irreleva 196/240] PASS    407ms Who won the chess tournament in 2015?
+[irreleva 197/240] PASS   1175ms What's the total number of possible arrangemen
+[irreleva 198/240] PASS    606ms Who won the game of Monopoly last night?
+[irreleva 199/240] PASS    405ms What are the rules of the game 'Uno'?
+[irreleva 200/240] PASS    987ms Who has the highest number of hearts in a game
+[irreleva 201/240] PASS   1552ms What is the rule for 'Ace' in Blackjack?
+[irreleva 202/240] PASS    356ms Find me an ice cream store
+[irreleva 203/240] PASS    428ms Who won the world series game?
+[irreleva 204/240] PASS    455ms What's the rank for player A in the game Halo?
+[irreleva 205/240] PASS    559ms Create a jigsaw puzzle
+[irreleva 206/240] PASS    385ms Who is the author of the book 'Pride and Preju
+[irreleva 207/240] PASS    690ms Find the best character to use against a drago
+[irreleva 208/240] PASS   1142ms What's the lowest score in the Flappy Bird gam
+[irreleva 209/240] PASS    443ms Find the shortest path in a game from 'Point A
+[irreleva 210/240] PASS    357ms How to build a new PC?
+[irreleva 211/240] PASS   1838ms Which place in Paris that is most famous?
+[irreleva 212/240] PASS    774ms What's the recipe to cook five chicken
+[irreleva 213/240] PASS   1903ms What is the best way to boil an egg?
+[irreleva 214/240] FAIL    718ms Where is a good place for pizza in Boston?  ← 误调用:1 次
+[irreleva 215/240] PASS    418ms Find the best Sushi restaurant in Los Angeles.
+[irreleva 216/240] PASS    678ms How long will it take to travel from San Franc
+[irreleva 217/240] PASS    346ms Where is the closest Italian restaurant?
+[irreleva 218/240] PASS    972ms Can you write a book?
+[irreleva 219/240] PASS    693ms Can you tell me a machine to bake a chocolate 
+[irreleva 220/240] PASS    536ms What's the recipe for lasagna?
+[irreleva 221/240] PASS    520ms What should be the ingredient  for baking choc
+[irreleva 222/240] PASS    351ms What are some recommended exercises for legs?
+[irreleva 223/240] FAIL    648ms How many calories are in a tomato?  ← 误调用:1 次
+[irreleva 224/240] FAIL    546ms Find a bakery that sells sourdough bread in Ch  ← 误调用:1 次
+[irreleva 225/240] PASS    442ms Find a pet store near Los Angeles, CA
+[irreleva 226/240] PASS    377ms What's the population in New York right now?
+[irreleva 227/240] PASS    871ms What's timezone is it in London?
+[irreleva 228/240] PASS    544ms When will be sunset in Beijing today?
+[irreleva 229/240] FAIL    519ms What is the current time in Sydney, Australia?  ← 误调用:1 次
+[irreleva 230/240] PASS    743ms What are some popular sushi restaurants in Tok
+[irreleva 231/240] PASS    458ms Find a pet-friendly train station in Miami
+[irreleva 232/240] PASS    397ms Find a Thai restaurant in Chicago with vegetar
+[irreleva 233/240] FAIL    601ms Find a hotel in New York that provides breakfa  ← 误调用:1 次
+[irreleva 234/240] PASS    339ms What is the equivalent of $20 in British Pound
+[irreleva 235/240] PASS    511ms What's 10inch in meter
+[irreleva 236/240] PASS    397ms What is the best movie in 2020?
+[irreleva 237/240] FAIL    596ms What is the quickest way to get to Tokyo from   ← 误调用:1 次
+[irreleva 238/240] PASS    544ms Where is the nearest pharmacy in Los Angeles?
+[irreleva 239/240] PASS    405ms Calculate the hypotenuse for a right-angled tr
+[irreleva 240/240] FAIL    617ms Find the distance in kilometers from San Franc  ← 误调用:1 次
+  -- irrelevance: 209/240 = 87.1%（答案长度分布 {}）
+[run_bfcl] 报告 → eval\report_bfcl.md
+
+[run_bfcl] 总体 1116/1240 = 90.0%｜耗时 18.8 min
