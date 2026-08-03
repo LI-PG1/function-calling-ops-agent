@@ -1,0 +1,786 @@
+[api_bank] 模型 qwen3-coder-next｜级别 ['1', '2', 'batch']
+[1     001/399] PASS    741ms ModifyRegistration
+[1     002/399] FAIL   1241ms QueryHealthData  ← arg:end_time='2023-03-12 23:59:59'≠'2023-03-12 00:00:00'
+[1     003/399] PASS    380ms CancelRegistration
+[1     004/399] PASS    903ms Calculator
+[1     005/399] PASS    319ms QueryScene
+[1     006/399] PASS    836ms EmergencyKnowledge
+[1     007/399] PASS    736ms ModifyRegistration
+[1     008/399] PASS   1364ms RecordHealthData
+[1     009/399] PASS    271ms SymptomSearch
+[1     010/399] PASS    794ms SymptomSearch
+[1     011/399] FAIL    494ms AppointmentRegistration  ← arg:doctor_name='John'≠'Dr. John'
+[1     012/399] PASS    679ms ModifyRegistration
+[1     013/399] PASS    397ms EmergencyKnowledge
+[1     014/399] PASS   2377ms EmergencyKnowledge
+[1     015/399] PASS    369ms GetUserToken
+[1     016/399] PASS    904ms DeleteAccount
+[1     017/399] PASS    302ms GetUserToken
+[1     018/399] PASS   1215ms QueryAlarm
+[1     019/399] PASS    439ms GetUserToken
+[1     020/399] PASS   1614ms QueryMeeting
+[1     021/399] FAIL    669ms AddAgenda  ← name:AddAgenda!=GetUserToken
+[1     022/399] FAIL    868ms AddAgenda  ← arg:content='Meeting with clients'≠'Meeting with clients at 
+[1     023/399] FAIL   1276ms AddAgenda  ← arg:content='Meeting with clients'≠'Meeting with clients at 
+[1     024/399] PASS    488ms QueryStock
+[1     025/399] PASS    599ms OpenBankAccount
+[1     026/399] PASS    423ms GetUserToken
+[1     027/399] PASS    634ms QueryBalance
+[1     028/399] PASS    635ms QueryBalance
+[1     029/399] PASS    742ms QueryStock
+[1     030/399] PASS    671ms GetUserToken
+[1     031/399] PASS    918ms AddReminder
+[1     032/399] PASS   1146ms AddReminder
+[1     033/399] PASS    335ms CancelRegistration
+[1     034/399] PASS   1159ms RecordHealthData
+[1     035/399] FAIL    764ms QueryRegistration  ← arg:patient_name='Sarah Johnson'≠'Jane Smith'
+[1     036/399] PASS    338ms ForgotPassword
+[1     037/399] FAIL    729ms ForgotPassword  ← extra:username
+[1     038/399] PASS    641ms GetUserToken
+[1     039/399] PASS    726ms DeleteAccount
+[1     040/399] PASS    470ms RegisterUser
+[1     041/399] PASS    409ms GetUserToken
+[1     042/399] PASS    972ms ModifyPassword
+[1     043/399] PASS    336ms GetUserToken
+[1     044/399] FAIL    970ms QueryReminder  ← arg:content='call my mom'≠'Call mom'
+[1     045/399] PASS    949ms ModifyRegistration
+[1     046/399] PASS    701ms ForgotPassword
+[1     047/399] FAIL    499ms ForgotPassword  ← extra:username
+[1     048/399] FAIL    657ms GetUserToken  ← arg:password='user1pass'≠'user1newpass'
+[1     049/399] PASS    861ms DeleteAccount
+[1     050/399] PASS    635ms GetUserToken
+[1     051/399] PASS   1114ms AddReminder
+[1     052/399] FAIL    914ms AddAgenda  ← name:AddAgenda!=GetUserToken
+[1     053/399] PASS   1226ms AddAgenda
+[1     054/399] PASS   1299ms RecordHealthData
+[1     055/399] FAIL    839ms AppointmentRegistration  ← arg:doctor_name='Dr. Smith'≠'Smith'
+[1     056/399] PASS    307ms EmergencyKnowledge
+[1     057/399] PASS    701ms GetUserToken
+[1     058/399] PASS    457ms DeleteAccount
+[1     059/399] PASS    819ms DeleteAccount
+[1     060/399] FAIL    463ms ModifyPassword  ← name:ModifyPassword!=GetUserToken
+[1     061/399] PASS    658ms ModifyPassword
+[1     062/399] FAIL    849ms CancelTimedSwitch  ← missing:device_id
+[1     063/399] PASS   1369ms ImageCaption
+[1     064/399] PASS    363ms QueryScene
+[1     065/399] PASS    520ms GetToday
+[1     066/399] PASS    285ms EmergencyKnowledge
+[1     067/399] PASS    919ms ModifyRegistration
+[1     068/399] PASS    661ms OpenBankAccount
+[1     069/399] PASS    413ms Calculator
+[1     070/399] FAIL    413ms Calculator  ← arg:formula='5 * 10'≠'5*10'
+[1     071/399] PASS   1048ms ModifyRegistration
+[1     072/399] FAIL    333ms EmergencyKnowledge  ← arg:symptom='general fatigue'≠'fatigue'
+[1     073/399] PASS    289ms GetUserToken
+[1     074/399] PASS    797ms DeleteAccount
+[1     075/399] PASS    399ms QueryStock
+[1     076/399] PASS    369ms GetUserToken
+[1     077/399] PASS    470ms QueryBalance
+[1     078/399] PASS    795ms QueryBalance
+[1     079/399] PASS    293ms QueryHistoryToday
+[1     080/399] PASS    657ms Calculator
+[1     081/399] PASS   1088ms QueryHealthData
+[1     082/399] PASS    372ms CancelRegistration
+[1     083/399] PASS    685ms SymptomSearch
+[1     084/399] PASS    316ms Dictionary
+[1     085/399] PASS    644ms QueryScene
+[1     086/399] PASS    215ms GetToday
+[1     087/399] FAIL   1397ms ModifyMeeting  ← name:ModifyMeeting!=GetUserToken
+[1     088/399] PASS   1468ms ModifyMeeting
+[1     089/399] PASS   1224ms ModifyAlarm
+[1     090/399] PASS   1559ms RecordHealthData
+[1     091/399] PASS    484ms AppointmentRegistration
+[1     092/399] PASS    712ms EmergencyKnowledge
+[1     093/399] PASS    980ms RegisterUser
+[1     094/399] FAIL    736ms AddAgenda  ← name:AddAgenda!=GetUserToken
+[1     095/399] PASS   1066ms AddAgenda
+[1     096/399] PASS    859ms AddAgenda
+[1     097/399] PASS    326ms GetUserToken
+[1     098/399] PASS    681ms DeleteAccount
+[1     099/399] PASS   1156ms RecordHealthData
+[1     100/399] PASS    594ms GetUserToken
+[1     101/399] PASS   1219ms ModifyAlarm
+[1     102/399] PASS   1119ms AddAgenda
+[1     103/399] PASS    616ms QueryStock
+[1     104/399] PASS    655ms OpenBankAccount
+[1     105/399] PASS    755ms QueryStock
+[1     106/399] PASS    416ms GetUserToken
+[1     107/399] PASS    804ms QueryBalance
+[1     108/399] PASS    309ms GetUserToken
+[1     109/399] PASS   1364ms QueryReminder
+[1     110/399] PASS   1504ms RecordHealthData
+[1     111/399] PASS    831ms AppointmentRegistration
+[1     112/399] PASS    536ms EmergencyKnowledge
+[1     113/399] PASS    409ms GetUserToken
+[1     114/399] PASS    784ms QueryBalance
+[1     115/399] PASS    523ms QueryStock
+[1     116/399] PASS    412ms OpenBankAccount
+[1     117/399] PASS    842ms GetUserToken
+[1     118/399] PASS    571ms ModifyPassword
+[1     119/399] PASS    911ms ModifyRegistration
+[1     120/399] PASS    440ms QueryHistoryToday
+[1     121/399] PASS    707ms RegisterUser
+[1     122/399] PASS    398ms QueryStock
+[1     123/399] PASS    685ms GetUserToken
+[1     124/399] PASS    307ms GetUserToken
+[1     125/399] FAIL   1005ms DeleteReminder  ← arg:content='call the dentist'≠'Call dentist'
+[1     126/399] PASS   1098ms GetUserToken
+[1     127/399] PASS    661ms DeleteAlarm
+[1     128/399] PASS    283ms GetToday
+[1     129/399] PASS    652ms OpenBankAccount
+[1     130/399] PASS    324ms Dictionary
+[1     131/399] FAIL    955ms CancelTimedSwitch  ← missing:device_id
+[1     132/399] PASS    292ms QueryHistoryToday
+[1     133/399] PASS    360ms Calculator
+[1     134/399] PASS    960ms QueryHealthData
+[1     135/399] PASS    539ms CancelRegistration
+[1     136/399] PASS   1338ms RecordHealthData
+[1     137/399] PASS    429ms QueryRegistration
+[1     138/399] PASS   1206ms RecordHealthData
+[1     139/399] PASS    769ms AppointmentRegistration
+[1     140/399] PASS    390ms EmergencyKnowledge
+[1     141/399] PASS    382ms QueryStock
+[1     142/399] PASS    694ms OpenBankAccount
+[1     143/399] PASS    533ms GetUserToken
+[1     144/399] PASS    725ms QueryBalance
+[1     145/399] PASS    532ms QueryBalance
+[1     146/399] PASS    447ms QueryStock
+[1     147/399] PASS    653ms GetUserToken
+[1     148/399] PASS   1852ms QueryMeeting
+[1     149/399] PASS   1160ms ModifyRegistration
+[1     150/399] PASS    319ms GetUserToken
+[1     151/399] PASS    834ms OpenBankAccount
+[1     152/399] PASS    417ms QueryStock
+[1     153/399] PASS    671ms GetUserToken
+[1     154/399] PASS   1051ms ModifyPassword
+[1     155/399] PASS   1014ms ModifyRegistration
+[1     156/399] FAIL    304ms EmergencyKnowledge  ← arg:symptom='fatigued'≠'fatigue'
+[1     157/399] PASS    676ms GetToday
+[1     158/399] PASS    475ms OpenBankAccount
+[1     159/399] PASS    823ms Dictionary
+[1     160/399] PASS    368ms Dictionary
+[1     161/399] PASS    826ms Calculator
+[1     162/399] PASS    953ms ModifyRegistration
+[1     163/399] PASS   1258ms QueryHealthData
+[1     164/399] PASS    808ms CancelRegistration
+[1     165/399] FAIL    878ms CancelTimedSwitch  ← missing:device_id
+[1     166/399] PASS    296ms GetUserToken
+[1     167/399] PASS   1291ms DeleteAgenda
+[1     168/399] FAIL    828ms CancelTimedSwitch  ← missing:device_id
+[1     169/399] PASS    334ms GetUserToken
+[1     170/399] PASS    767ms DeleteAccount
+[1     171/399] PASS    488ms DeleteAccount
+[1     172/399] PASS    692ms OpenBankAccount
+[1     173/399] PASS    515ms GetUserToken
+[1     174/399] PASS    713ms AddAlarm
+[1     175/399] PASS    586ms QueryHistoryToday
+[1     176/399] PASS    511ms QueryScene
+[1     177/399] PASS    349ms EmergencyKnowledge
+[1     178/399] FAIL    603ms ModifyRegistration  ← arg:new_appointment_doctor='Brown'≠'Dr. Brown'
+[1     179/399] PASS   1416ms RecordHealthData
+[1     180/399] PASS    424ms GetToday
+[1     181/399] PASS    377ms OpenBankAccount
+[1     182/399] PASS    885ms ModifyRegistration
+[1     183/399] PASS    401ms GetUserToken
+[1     184/399] FAIL   1147ms QueryReminder  ← arg:content='call my mom'≠'Call mom'
+[1     185/399] PASS    301ms GetUserToken
+[1     186/399] FAIL   1149ms AddAgenda  ← arg:content='The meeting with the marketing team'≠'Meeting w
+[1     187/399] PASS    725ms QueryStock
+[1     188/399] PASS    315ms GetUserToken
+[1     189/399] PASS   1060ms AddReminder
+[1     190/399] PASS   1117ms AddReminder
+[1     191/399] PASS    440ms ForgotPassword
+[1     192/399] PASS    758ms ForgotPassword
+[1     193/399] PASS    320ms GetToday
+[1     194/399] FAIL   1393ms ModifyMeeting  ← name:ModifyMeeting!=GetUserToken
+[1     195/399] PASS   1597ms ModifyMeeting
+[1     196/399] PASS    436ms GetUserToken
+[1     197/399] PASS   1312ms ModifyAlarm
+[1     198/399] PASS    423ms GetUserToken
+[1     199/399] PASS   1033ms ModifyPassword
+[1     200/399] PASS    732ms ModifyRegistration
+[1     201/399] PASS   1125ms RecordHealthData
+[1     202/399] PASS    675ms AppointmentRegistration
+[1     203/399] PASS    441ms QueryRegistration
+[1     204/399] PASS    496ms GetUserToken
+[1     205/399] PASS    691ms DeleteAccount
+[1     206/399] PASS   1098ms GetUserToken
+[1     207/399] PASS   1124ms ModifyAlarm
+[1     208/399] PASS   1026ms RecordHealthData
+[1     209/399] PASS    577ms AppointmentRegistration
+[1     210/399] FAIL    729ms EmergencyKnowledge  ← arg:symptom='fever over 100 degrees Fahrenheit'≠'fever'
+[1     211/399] PASS    618ms RegisterUser
+[1     212/399] PASS    403ms OpenBankAccount
+[1     213/399] PASS    397ms GetUserToken
+[1     214/399] PASS    806ms QueryBalance
+[1     215/399] PASS    516ms QueryStock
+[1     216/399] FAIL    604ms CancelTimedSwitch  ← missing:device_id
+[1     217/399] PASS    702ms OpenBankAccount
+[1     218/399] PASS    321ms Dictionary
+[1     219/399] PASS    322ms Wiki
+[1     220/399] PASS    349ms QueryHistoryToday
+[1     221/399] PASS    814ms RegisterUser
+[1     222/399] PASS    577ms ModifyRegistration
+[1     223/399] PASS    379ms EmergencyKnowledge
+[1     224/399] PASS    360ms QueryScene
+[1     225/399] PASS    668ms GetUserToken
+[1     226/399] PASS    727ms DeleteAlarm
+[1     227/399] FAIL   1191ms AddAgenda  ← arg:content='I need to attend a meeting.'≠'Attend meeting'
+[1     228/399] PASS    438ms QueryStock
+[1     229/399] PASS    447ms GetUserToken
+[1     230/399] PASS    473ms QueryBalance
+[1     231/399] PASS    848ms OpenBankAccount
+[1     232/399] PASS    491ms RegisterUser
+[1     233/399] PASS    349ms QueryHistoryToday
+[1     234/399] PASS   1074ms QueryHealthData
+[1     235/399] PASS    306ms QueryHistoryToday
+[1     236/399] PASS    416ms Calculator
+[1     237/399] PASS    379ms GetUserToken
+[1     238/399] PASS    770ms DeleteAccount
+[1     239/399] FAIL    923ms AddMeeting  ← name:AddMeeting!=GetUserToken
+[1     240/399] PASS   1494ms AddMeeting
+[1     241/399] PASS   1594ms AddMeeting
+[1     242/399] PASS    336ms GetUserToken
+[1     243/399] PASS    474ms QueryBalance
+[1     244/399] PASS    514ms QueryStock
+[1     245/399] PASS    778ms OpenBankAccount
+[1     246/399] PASS    528ms QueryStock
+[1     247/399] PASS    700ms GetUserToken
+[1     248/399] PASS   1127ms QueryReminder
+[1     249/399] PASS    622ms RegisterUser
+[1     250/399] PASS    708ms GetUserToken
+[1     251/399] PASS   1082ms ModifyPassword
+[1     252/399] PASS    811ms OpenBankAccount
+[1     253/399] PASS    435ms QueryStock
+[1     254/399] FAIL    766ms Translate  ← extra:src_lang
+[1     255/399] FAIL    392ms SearchEngine  ← arg:keyword='sustainable development'≠'the sustainable devel
+[1     256/399] PASS    346ms CancelRegistration
+[1     257/399] PASS    929ms RecordHealthData
+[1     258/399] PASS    390ms PlayMusic
+[1     259/399] PASS    966ms BookHotel
+[1     260/399] PASS    633ms GetUserToken
+[1     261/399] PASS    971ms AddAlarm
+[1     262/399] FAIL    925ms TimedSwitch  ← missing:device_id
+[1     263/399] PASS    415ms QueryRegistration
+[1     264/399] PASS    310ms EmergencyKnowledge
+[1     265/399] PASS    567ms GetUserToken
+[1     266/399] PASS    984ms DeleteAlarm
+[1     267/399] PASS    372ms GetUserToken
+[1     268/399] PASS   1554ms ModifyMeeting
+[1     269/399] PASS    393ms GetUserToken
+[1     270/399] PASS   1065ms ModifyAgenda
+[1     271/399] FAIL    890ms TimedSwitch  ← missing:device_id
+[1     272/399] PASS    413ms GetUserToken
+[1     273/399] PASS    790ms QueryBalance
+[1     274/399] PASS    628ms DeleteScene
+[1     275/399] PASS    354ms CancelRegistration
+[1     276/399] FAIL   1202ms RecordHealthData  ← arg:time='2023-04-09 00:00:00'≠'2023-04-09 12:00:00'
+[1     277/399] PASS    799ms QueryRegistration
+[1     278/399] PASS    392ms GetUserToken
+[1     279/399] PASS   1063ms ModifyReminder
+[1     280/399] PASS    928ms GetUserToken
+[1     281/399] PASS   1212ms AddAgenda
+[1     282/399] PASS    851ms DeleteAgenda
+[1     283/399] PASS    496ms DocumentQA
+[1     284/399] PASS    764ms DocumentQA
+[1     285/399] PASS    620ms DocumentQA
+[1     286/399] PASS    830ms BookHotel
+[1     287/399] PASS    668ms SymptomSearch
+[1     288/399] PASS    338ms GetUserToken
+[1     289/399] PASS   1076ms ModifyReminder
+[1     290/399] PASS    397ms CancelRegistration
+[1     291/399] PASS    680ms GetUserToken
+[1     292/399] PASS    541ms DeleteAccount
+[1     293/399] PASS    860ms AppointmentRegistration
+[1     294/399] PASS    552ms QueryRegistration
+[1     295/399] FAIL    646ms Translate  ← extra:src_lang
+[1     296/399] PASS    939ms CancelRegistration
+[1     297/399] PASS    636ms SpeechRecognition
+[1     298/399] PASS    690ms EmergencyKnowledge
+[1     299/399] PASS    345ms Calculator
+[1     300/399] PASS    330ms QueryHistoryToday
+[1     301/399] PASS    337ms GetUserToken
+[1     302/399] FAIL    908ms ModifyAlarm  ← arg:from_time='2023-03-16 08:00:00'≠'2023-03-16 07:00:00'
+[1     303/399] PASS    391ms QueryRegistration
+[1     304/399] PASS    638ms EmergencyKnowledge
+[1     305/399] PASS    399ms QueryRegistration
+[1     306/399] PASS    908ms AppointmentRegistration
+[1     307/399] PASS    435ms GetUserToken
+[1     308/399] PASS   1877ms AddMeeting
+[1     309/399] PASS    407ms QueryRegistration
+[1     310/399] PASS    700ms SymptomSearch
+[1     311/399] FAIL   1289ms RecordHealthData  ← arg:user_id='user'≠'1234'
+[1     312/399] PASS   1315ms RecordHealthData
+[1     313/399] PASS    778ms DocumentQA
+[1     314/399] FAIL    641ms GetUserToken  ← arg:username='admin@example.com'≠'admin'
+[1     315/399] PASS   1070ms ModifyReminder
+[1     316/399] PASS    510ms QueryRegistration
+[1     317/399] PASS    305ms GetUserToken
+[1     318/399] PASS    701ms DeleteAccount
+[1     319/399] PASS    436ms AppointmentRegistration
+[1     320/399] PASS    314ms GetUserToken
+[1     321/399] FAIL   1190ms DeleteAgenda  ← arg:content='picking up dry cleaning'≠'Pick up dry cleaning'
+[1     322/399] PASS    340ms GetUserToken
+[1     323/399] PASS   1021ms ModifyReminder
+[1     324/399] FAIL    676ms BookHotel  ← arg:hotel_name='Hilton'≠'Hilton San Francisco'
+[1     325/399] PASS    818ms QueryRegistration
+[1     326/399] PASS    344ms EmergencyKnowledge
+[1     327/399] PASS    722ms ForgotPassword
+[1     328/399] FAIL    496ms ForgotPassword  ← extra:username
+[1     329/399] PASS    362ms GetUserToken
+[1     330/399] PASS   1599ms DeleteMeeting
+[1     331/399] PASS    409ms GetUserToken
+[1     332/399] PASS   1741ms ModifyMeeting
+[1     333/399] PASS    418ms GetUserToken
+[1     334/399] PASS   1051ms DeleteAlarm
+[1     335/399] FAIL    525ms SendEmail  ← arg:content="Don't forget our meeting tomorrow at 2pm."≠'Don
+[1     336/399] PASS    588ms QueryRegistration
+[1     337/399] PASS    776ms PlayMusic
+[1     338/399] PASS   1440ms GetUserToken
+[1     339/399] FAIL   2149ms AddAgenda  ← arg:content='Meeting with John'≠'Meeting with John at the of
+[1     340/399] PASS   1248ms AddAlarm
+[1     341/399] PASS    788ms DeleteScene
+[1     342/399] FAIL    815ms BookHotel  ← arg:check_in_time='2023-03-13'≠'2022-03-14'
+[1     343/399] PASS    860ms DeleteScene
+[1     344/399] PASS    457ms CancelRegistration
+[1     345/399] PASS   1460ms RecordHealthData
+[1     346/399] PASS    505ms PlayMusic
+[1     347/399] PASS    851ms GetUserToken
+[1     348/399] PASS    604ms QueryBalance
+[1     349/399] PASS    778ms GetUserToken
+[1     350/399] PASS   1011ms ModifyReminder
+[1     351/399] PASS   2011ms GetUserToken
+[1     352/399] PASS   1092ms AddAgenda
+[1     353/399] PASS   1339ms DeleteAgenda
+[1     354/399] PASS    400ms GetUserToken
+[1     355/399] FAIL   1261ms ModifyMeeting  ← missing:end_time
+[1     356/399] PASS    630ms GetUserToken
+[1     357/399] PASS   1747ms QueryMeeting
+[1     358/399] FAIL    688ms TimedSwitch  ← missing:device_id
+[1     359/399] PASS    600ms GetUserToken
+[1     360/399] PASS    983ms ModifyAgenda
+[1     361/399] PASS    423ms QueryRegistration
+[1     362/399] PASS    314ms EmergencyKnowledge
+[1     363/399] PASS    504ms EmergencyKnowledge
+[1     364/399] PASS    427ms GetUserToken
+[1     365/399] FAIL    957ms QueryAgenda  ← arg:content='meeting with a client'≠'Meeting with client'
+[1     366/399] PASS    680ms CancelRegistration
+[1     367/399] PASS    449ms Calculator
+[1     368/399] PASS    346ms QueryHistoryToday
+[1     369/399] PASS    679ms GetUserToken
+[1     370/399] PASS   1256ms ModifyAlarm
+[1     371/399] PASS   1072ms GetUserToken
+[1     372/399] PASS    772ms ModifyReminder
+[1     373/399] PASS    449ms SymptomSearch
+[1     374/399] PASS    476ms QueryRegistration
+[1     375/399] FAIL    859ms Translate  ← extra:src_lang
+[1     376/399] PASS    517ms AppointmentRegistration
+[1     377/399] PASS    852ms DocumentQA
+[1     378/399] PASS    310ms GetUserToken
+[1     379/399] PASS    877ms ModifyReminder
+[1     380/399] PASS    880ms AddAgenda
+[1     381/399] PASS    620ms GetUserToken
+[1     382/399] PASS    543ms DeleteAccount
+[1     383/399] FAIL    987ms DeleteAgenda  ← name:DeleteAgenda!=GetUserToken
+[1     384/399] FAIL   1294ms DeleteAgenda  ← arg:content='picking up dry cleaning'≠'Pick up dry cleaning'
+[1     385/399] FAIL    515ms Translate  ← extra:src_lang
+[1     386/399] PASS    309ms GetUserToken
+[1     387/399] PASS    918ms ModifyReminder
+[1     388/399] PASS   1077ms AddAgenda
+[1     389/399] PASS    779ms DocumentQA
+[1     390/399] FAIL    468ms DocumentQA  ← arg:question='What platforms is the software compatible with
+[1     391/399] PASS    685ms DocumentQA
+[1     392/399] PASS    334ms CancelRegistration
+[1     393/399] PASS   1337ms RecordHealthData
+[1     394/399] PASS    800ms BookHotel
+[1     395/399] PASS    644ms CancelRegistration
+[1     396/399] PASS   1284ms RecordHealthData
+[1     397/399] PASS    468ms QueryRegistration
+[1     398/399] FAIL    567ms SymptomSearch  ← arg:symptom='nauseous'≠'nausea'
+[1     399/399] FAIL   1245ms RecordHealthData  ← arg:time='2023-06-14 00:00:00'≠'2023-06-14 13:30:00'
+  -- level-1: 343/399 = 86.0%
+[2     001/135] FAIL    351ms ToolSearcher  ← arg:keywords='October 6th history'≠'history October 6th'
+[2     002/135] FAIL    672ms ToolSearcher  ← name:ToolSearcher!=QueryHistoryToday
+[2     003/135] FAIL    487ms ToolSearcher  ← name:ToolSearcher!=QueryHistoryToday
+[2     004/135] PASS    638ms GetUserToken
+[2     005/135] FAIL    293ms ∅  ← 输出不可解析
+[2     006/135] FAIL    591ms ToolSearcher  ← name:ToolSearcher!=QueryStock
+[2     007/135] FAIL    894ms ToolSearcher  ← name:ToolSearcher!=QueryStock
+[2     008/135] FAIL    751ms ∅  ← 输出不可解析
+[2     009/135] PASS   1301ms GetUserToken
+[2     010/135] PASS    880ms DeleteAgenda
+[2     011/135] FAIL    374ms ToolSearcher  ← arg:keywords='calculate square'≠'calculate the square of 8'
+[2     012/135] FAIL    638ms Calculator  ← arg:formula='8 * 8'≠'8*8'
+[2     013/135] FAIL    395ms Calculator  ← arg:formula='8 * 8'≠'8*8'
+[2     014/135] FAIL    258ms ∅  ← 输出不可解析
+[2     015/135] PASS    595ms GetToday
+[2     016/135] PASS    323ms ToolSearcher
+[2     017/135] PASS    668ms GetUserToken
+[2     018/135] PASS   1112ms AddAlarm
+[2     019/135] FAIL    739ms ToolSearcher  ← arg:keywords='schedule meeting add agenda'≠'add schedule'
+[2     020/135] PASS    393ms GetUserToken
+[2     021/135] FAIL   1194ms AddAgenda  ← arg:location='Client A office'≠'Client'
+[2     022/135] PASS    435ms ToolSearcher
+[2     023/135] PASS   1004ms ModifyRegistration
+[2     024/135] FAIL    636ms ToolSearcher  ← name:ToolSearcher!=GetUserToken
+[2     025/135] FAIL    395ms ToolSearcher  ← name:ToolSearcher!=QueryReminder
+[2     026/135] FAIL    449ms ToolSearcher  ← name:ToolSearcher!=QueryReminder
+[2     027/135] FAIL    349ms ∅  ← 输出不可解析
+[2     028/135] FAIL    948ms ToolSearcher  ← name:ToolSearcher!=QueryHealthData
+[2     029/135] FAIL    765ms ToolSearcher  ← arg:keywords='remind bills March 20th 12 PM'≠'reminder'
+[2     030/135] FAIL    512ms AddReminder  ← name:AddReminder!=GetUserToken
+[2     031/135] FAIL   1008ms AddReminder  ← name:AddReminder!=DeleteReminder
+[2     032/135] PASS    412ms ToolSearcher
+[2     033/135] FAIL    794ms ToolSearcher  ← name:ToolSearcher!=QueryHistoryToday
+[2     034/135] FAIL    408ms ToolSearcher  ← name:ToolSearcher!=QueryHistoryToday
+[2     035/135] FAIL    450ms ToolSearcher  ← arg:keywords='delete meeting March 18 2 pm 123 Main St clien
+[2     036/135] PASS    743ms GetUserToken
+[2     037/135] PASS   1100ms DeleteAgenda
+[2     038/135] PASS    393ms ToolSearcher
+[2     039/135] PASS    323ms Calculator
+[2     040/135] PASS    317ms Calculator
+[2     041/135] PASS    572ms ToolSearcher
+[2     042/135] PASS    339ms GetUserToken
+[2     043/135] PASS    947ms QueryAlarm
+[2     044/135] FAIL    548ms ToolSearcher  ← arg:keywords='calendar meeting'≠'agenda meeting scheduler'
+[2     045/135] PASS    334ms GetUserToken
+[2     046/135] FAIL   1189ms AddAgenda  ← arg:content='meeting'≠'Meeting in conference room'
+[2     047/135] FAIL    396ms ToolSearcher  ← arg:keywords='add reminder meeting'≠'add reminder'
+[2     048/135] PASS    320ms GetUserToken
+[2     049/135] PASS    959ms AddReminder
+[2     050/135] FAIL    631ms ToolSearcher  ← arg:keywords='alarm setting'≠'set alarm'
+[2     051/135] FAIL    844ms AddAlarm  ← name:AddAlarm!=GetUserToken
+[2     052/135] PASS    967ms AddAlarm
+[2     053/135] FAIL    340ms ToolSearcher  ← arg:keywords='nausea'≠'emergency knowledge'
+[2     054/135] FAIL    626ms EmergencyKnowledge  ← arg:symptom='nauseous'≠'nausea'
+[2     055/135] FAIL    374ms ToolSearcher  ← arg:keywords='appointment April 12 John Doe'≠'Query Registra
+[2     056/135] PASS    802ms QueryRegistration
+[2     057/135] FAIL   2567ms ToolSearcher  ← name:ToolSearcher!=QueryRegistration
+[2     058/135] FAIL    353ms ToolSearcher  ← arg:keywords='skin rash red bumpy arm'≠'skin rash'
+[2     059/135] FAIL    369ms ToolSearcher  ← name:ToolSearcher!=SymptomSearch
+[2     060/135] FAIL    769ms ToolSearcher  ← name:ToolSearcher!=SymptomSearch
+[2     061/135] FAIL    447ms ToolSearcher  ← arg:keywords='hotel booking Hilton July 15 2023 family of fo
+[2     062/135] FAIL    684ms BookHotel  ← arg:room_count=2≠'1'
+[2     063/135] FAIL   1043ms BookHotel  ← arg:room_count=2≠'1'
+[2     064/135] FAIL    626ms ∅  ← 输出不可解析
+[2     065/135] PASS    300ms GetUserToken
+[2     066/135] PASS    861ms DeleteAccount
+[2     067/135] FAIL    343ms ToolSearcher  ← arg:keywords='blood pressure heart rate logging'≠'record hea
+[2     068/135] FAIL   1243ms RecordHealthData  ← arg:health_data=[{'name': 'blood_pressure', 'value': '120/80
+[2     069/135] PASS    777ms ToolSearcher
+[2     070/135] PASS    356ms GetUserToken
+[2     071/135] FAIL   1616ms QueryAgenda  ← name:QueryAgenda!=AddMeeting
+[2     072/135] FAIL    320ms ToolSearcher  ← arg:keywords='modify reservation'≠'modify reservation for a 
+[2     073/135] PASS    802ms GetUserToken
+[2     074/135] FAIL   1473ms ModifyMeeting  ← arg:end_time='2023-03-29 11:00:00'≠'2023-03-29 12:00:00'
+[2     075/135] PASS    331ms ToolSearcher
+[2     076/135] PASS    824ms GetUserToken
+[2     077/135] PASS    829ms DeleteAlarm
+[2     078/135] FAIL    353ms ToolSearcher  ← arg:keywords='delete reservation board meeting'≠'delete rese
+[2     079/135] PASS    349ms GetUserToken
+[2     080/135] PASS   1147ms DeleteMeeting
+[2     081/135] FAIL    465ms ToolSearcher  ← arg:keywords='rash information'≠'rash'
+[2     082/135] FAIL    351ms ToolSearcher  ← name:ToolSearcher!=SymptomSearch
+[2     083/135] FAIL    542ms ToolSearcher  ← name:ToolSearcher!=SymptomSearch
+[2     084/135] FAIL    395ms ApiName  ← name:ApiName!=GetUserToken
+[2     085/135] FAIL    555ms GetUserToken  ← name:GetUserToken!=QueryBalance
+[2     086/135] FAIL    347ms ToolSearcher  ← arg:keywords='meeting reservation marketing campaign plannin
+[2     087/135] PASS    333ms GetUserToken
+[2     088/135] FAIL    997ms QueryMeeting  ← missing:end_time
+[2     089/135] FAIL    620ms ToolSearcher  ← arg:keywords='patient registration check'≠'registration quer
+[2     090/135] FAIL    369ms QueryRegistration  ← arg:patient_name=''≠'John Doe'
+[2     091/135] FAIL    662ms QueryRegistration  ← arg:patient_name=''≠'John Doe'
+[2     092/135] FAIL    363ms ToolSearcher  ← arg:keywords='appointment registration Dr. Smith next Monday
+[2     093/135] PASS    751ms AppointmentRegistration
+[2     094/135] FAIL    249ms ∅  ← 输出不可解析
+[2     095/135] PASS    303ms GetUserToken
+[2     096/135] PASS    707ms DeleteAccount
+[2     097/135] PASS    692ms DeleteAccount
+[2     098/135] FAIL    320ms ToolSearcher  ← arg:keywords='modify reminder'≠'reminder modify'
+[2     099/135] PASS    350ms GetUserToken
+[2     100/135] PASS    947ms ModifyReminder
+[2     101/135] FAIL    536ms ToolSearcher  ← arg:keywords='rash diagnosis'≠'rash'
+[2     102/135] FAIL    332ms ToolSearcher  ← name:ToolSearcher!=SymptomSearch
+[2     103/135] FAIL    582ms ToolSearcher  ← arg:keywords='hotel booking Hilton Hotel 2 adults 1 child Ju
+[2     104/135] PASS    886ms BookHotel
+[2     105/135] PASS   1074ms BookHotel
+[2     106/135] FAIL    342ms ToolSearcher  ← arg:keywords='blood pressure heart rate recording'≠'record h
+[2     107/135] PASS   1201ms RecordHealthData
+[2     108/135] FAIL    592ms ToolSearcher  ← arg:keywords='blood pressure heart rate recording'≠'health r
+[2     109/135] PASS   1033ms RecordHealthData
+[2     110/135] FAIL    596ms ToolSearcher  ← arg:keywords='meeting booking'≠'book meeting'
+[2     111/135] FAIL    290ms ToolSearcher  ← name:ToolSearcher!=GetUserToken
+[2     112/135] FAIL   1326ms BookMeeting  ← name:BookMeeting!=AddMeeting
+[2     113/135] FAIL    341ms ToolSearcher  ← arg:keywords='rash causes'≠'rash'
+[2     114/135] FAIL    559ms ToolSearcher  ← name:ToolSearcher!=SymptomSearch
+[2     115/135] FAIL    295ms ToolSearcher  ← name:ToolSearcher!=SymptomSearch
+[2     116/135] FAIL    706ms ToolSearcher  ← arg:keywords='hotel booking Grand Hotel two adults one child
+[2     117/135] PASS    687ms BookHotel
+[2     118/135] PASS    655ms ToolSearcher
+[2     119/135] PASS    306ms GetUserToken
+[2     120/135] PASS    405ms DeleteAccount
+[2     121/135] PASS    406ms DeleteAccount
+[2     122/135] FAIL    349ms ToolSearcher  ← arg:keywords='cancel reservation board meeting'≠'meeting can
+[2     123/135] PASS    581ms GetUserToken
+[2     124/135] FAIL    944ms ModifyMeeting  ← name:ModifyMeeting!=DeleteMeeting
+[2     125/135] PASS    520ms ToolSearcher
+[2     126/135] PASS    309ms GetUserToken
+[2     127/135] PASS   1349ms ModifyAgenda
+[2     128/135] FAIL    791ms ToolSearcher  ← arg:keywords='Marketing Campaign Planning meeting March 22 2
+[2     129/135] PASS    663ms GetUserToken
+[2     130/135] PASS   1371ms QueryMeeting
+[2     131/135] FAIL    330ms ApiName  ← name:ApiName!=GetUserToken
+[2     132/135] FAIL    748ms GetAccountBalance  ← name:GetAccountBalance!=QueryBalance
+[2     133/135] FAIL    642ms ToolSearcher  ← arg:keywords='rash causes illness'≠'illness rash'
+[2     134/135] FAIL    764ms ToolSearcher  ← name:ToolSearcher!=SymptomSearch
+[2     135/135] FAIL    371ms ToolSearcher  ← name:ToolSearcher!=SymptomSearch
+  -- level-2: 56/135 = 41.5%
+[batch 001/245] FAIL    675ms ToolSearcher  ← arg:keywords='meeting email reminder'≠'QueryMeeting'
+[batch 002/245] FAIL    353ms ToolSearcher  ← name:ToolSearcher!=QueryMeeting
+[batch 003/245] FAIL    721ms SendEmailReminder  ← name:SendEmailReminder!=ToolSearcher
+[batch 004/245] FAIL   1182ms EmailReminder  ← arg:content='Meeting with the client at Room 1 on 2021-01-01
+[batch 005/245] FAIL   1302ms ToolSearcher  ← name:ToolSearcher!=EmailReminder
+[batch 006/245] FAIL    662ms ToolSearcher  ← arg:keywords='meeting email reminder'≠'QueryMeeting'
+[batch 007/245] FAIL    371ms ToolSearcher  ← name:ToolSearcher!=QueryMeeting
+[batch 008/245] FAIL    312ms SendEmailReminder  ← name:SendEmailReminder!=ToolSearcher
+[batch 009/245] FAIL   1200ms EmailReminder  ← arg:content='Meeting with the client at Room 1 on 2021-01-01
+[batch 010/245] FAIL    416ms ToolSearcher  ← arg:keywords='meeting reminder email'≠'QueryMeeting'
+[batch 011/245] FAIL    756ms ToolSearcher  ← name:ToolSearcher!=QueryMeeting
+[batch 012/245] FAIL    312ms SendEmailReminder  ← name:SendEmailReminder!=ToolSearcher
+[batch 013/245] FAIL   1651ms EmailReminder  ← arg:content='Meeting with the client at Room 1 on 2021-01-01
+[batch 014/245] FAIL    332ms ToolSearcher  ← arg:keywords='meeting email reminder'≠'QueryMeeting'
+[batch 015/245] FAIL    770ms ToolSearcher  ← name:ToolSearcher!=QueryMeeting
+[batch 016/245] FAIL    310ms SendEmailReminder  ← name:SendEmailReminder!=ToolSearcher
+[batch 017/245] FAIL   1267ms EmailReminder  ← arg:content='Meeting: Meeting at 2021-01-01 10:00:00 in Room
+[batch 018/245] FAIL    563ms ToolSearcher  ← arg:keywords='meeting email reminder'≠'QueryMeeting'
+[batch 019/245] FAIL    328ms ToolSearcher  ← name:ToolSearcher!=QueryMeeting
+[batch 020/245] FAIL   1000ms SendEmail  ← name:SendEmail!=ToolSearcher
+[batch 021/245] FAIL   1142ms EmailReminder  ← arg:content='Meeting: Meeting at 2021-01-01 10:00:00 in Room
+[batch 022/245] FAIL    610ms ∅  ← 输出不可解析
+[batch 023/245] FAIL    484ms ToolSearcher  ← name:ToolSearcher!=GetWeatherForCoordinates
+[batch 024/245] FAIL    374ms GetWeatherForCoordinates  ← name:GetWeatherForCoordinates!=ToolSearcher
+[batch 025/245] FAIL    630ms ToolSearcher  ← name:ToolSearcher!=ClothingRecommendation
+[batch 026/245] FAIL    368ms ToolSearcher  ← arg:keywords='weather forecast clothing recommendation'≠'Get
+[batch 027/245] FAIL    502ms ToolSearcher  ← name:ToolSearcher!=GetWeatherForCoordinates
+[batch 028/245] FAIL    759ms GetWeatherForCoordinates  ← name:GetWeatherForCoordinates!=ToolSearcher
+[batch 029/245] FAIL    304ms ToolSearcher  ← name:ToolSearcher!=ClothingRecommendation
+[batch 030/245] FAIL    639ms ∅  ← 输出不可解析
+[batch 031/245] FAIL    484ms ToolSearcher  ← name:ToolSearcher!=GetWeatherForCoordinates
+[batch 032/245] FAIL    437ms GetWeatherForCoordinates  ← name:GetWeatherForCoordinates!=ToolSearcher
+[batch 033/245] FAIL    582ms ToolSearcher  ← name:ToolSearcher!=ClothingRecommendation
+[batch 034/245] FAIL    249ms ∅  ← 输出不可解析
+[batch 035/245] FAIL    386ms ToolSearcher  ← name:ToolSearcher!=GetWeatherForCoordinates
+[batch 036/245] FAIL    384ms GetWeatherForCoordinates  ← name:GetWeatherForCoordinates!=ToolSearcher
+[batch 037/245] FAIL    287ms ToolSearcher  ← name:ToolSearcher!=ClothingRecommendation
+[batch 038/245] FAIL    247ms ∅  ← 输出不可解析
+[batch 039/245] FAIL    379ms ToolSearcher  ← name:ToolSearcher!=GetWeatherForCoordinates
+[batch 040/245] FAIL    783ms GetWeatherForCoordinates  ← name:GetWeatherForCoordinates!=ToolSearcher
+[batch 041/245] FAIL    272ms ToolSearcher  ← name:ToolSearcher!=ClothingRecommendation
+[batch 042/245] FAIL    666ms ToolSearcher  ← arg:keywords='meeting booking employee scheduling'≠'Organiza
+[batch 043/245] FAIL    269ms ToolSearcher  ← name:ToolSearcher!=OrganizationMembers
+[batch 044/245] FAIL    666ms ToolSearcher  ← arg:keywords='OrganizationMembers'≠'TravelStatus'
+[batch 045/245] FAIL    715ms ToolSearcher  ← name:ToolSearcher!=TravelStatus
+[batch 046/245] FAIL    263ms ToolSearcher  ← name:ToolSearcher!=TravelStatus
+[batch 047/245] FAIL    289ms ToolSearcher  ← name:ToolSearcher!=TravelStatus
+[batch 048/245] FAIL    697ms ToolSearcher  ← arg:keywords='MeetingScheduler'≠'AddMeeting'
+[batch 049/245] FAIL   1658ms AddMeeting  ← arg:meeting_topic='Regular Meeting'≠'Team Meeting'
+[batch 050/245] FAIL    348ms ToolSearcher  ← arg:keywords='meeting booking employee scheduling'≠'Organiza
+[batch 051/245] FAIL    265ms ToolSearcher  ← name:ToolSearcher!=OrganizationMembers
+[batch 052/245] FAIL    291ms ToolSearcher  ← arg:keywords='OrganizationMembers'≠'TravelStatus'
+[batch 053/245] FAIL    261ms ToolSearcher  ← name:ToolSearcher!=TravelStatus
+[batch 054/245] FAIL    257ms ToolSearcher  ← name:ToolSearcher!=TravelStatus
+[batch 055/245] FAIL    293ms ToolSearcher  ← arg:keywords='MeetingScheduler'≠'AddMeeting'
+[batch 056/245] FAIL    798ms AddMeeting  ← arg:meeting_topic='Tencent Internal Meeting'≠'Team Meeting'
+[batch 057/245] FAIL    601ms ∅  ← 输出不可解析
+[batch 058/245] FAIL    256ms ToolSearcher  ← name:ToolSearcher!=OrganizationMembers
+[batch 059/245] FAIL    250ms ToolSearcher  ← arg:keywords='MeetingScheduler'≠'TravelStatus'
+[batch 060/245] FAIL    502ms ToolSearcher  ← name:ToolSearcher!=TravelStatus
+[batch 061/245] FAIL    578ms ToolSearcher  ← name:ToolSearcher!=TravelStatus
+[batch 062/245] FAIL    266ms ToolSearcher  ← arg:keywords='MeetingScheduler'≠'AddMeeting'
+[batch 063/245] FAIL   1394ms AddMeeting  ← arg:meeting_topic='Baidu Internal Meeting'≠'Team Meeting'
+[batch 064/245] FAIL    344ms ToolSearcher  ← arg:keywords='meeting booking employee scheduling'≠'Organiza
+[batch 065/245] FAIL    560ms ToolSearcher  ← name:ToolSearcher!=OrganizationMembers
+[batch 066/245] FAIL    262ms ToolSearcher  ← arg:keywords='MeetingScheduler'≠'TravelStatus'
+[batch 067/245] FAIL    265ms ToolSearcher  ← name:ToolSearcher!=TravelStatus
+[batch 068/245] FAIL    283ms ToolSearcher  ← name:ToolSearcher!=TravelStatus
+[batch 069/245] FAIL    272ms ToolSearcher  ← arg:keywords='MeetingScheduler'≠'AddMeeting'
+[batch 070/245] FAIL   1062ms AddMeeting  ← arg:meeting_topic='ByteDance Meeting'≠'Team Meeting'
+[batch 071/245] FAIL    660ms ToolSearcher  ← arg:keywords='meeting booking employee scheduling'≠'Organiza
+[batch 072/245] FAIL    262ms ToolSearcher  ← name:ToolSearcher!=OrganizationMembers
+[batch 073/245] FAIL    251ms ToolSearcher  ← arg:keywords='meeting booking'≠'TravelStatus'
+[batch 074/245] FAIL    575ms ToolSearcher  ← name:ToolSearcher!=TravelStatus
+[batch 075/245] FAIL    260ms ToolSearcher  ← name:ToolSearcher!=TravelStatus
+[batch 076/245] FAIL    254ms ToolSearcher  ← arg:keywords='MeetingScheduler'≠'AddMeeting'
+[batch 077/245] FAIL   1101ms AddMeeting  ← arg:meeting_topic='JD Internal Meeting'≠'Team Meeting'
+[batch 078/245] FAIL    370ms ToolSearcher  ← arg:keywords='restaurants New York City 1km'≠'Geocoding'
+[batch 079/245] FAIL    553ms ToolSearcher  ← name:ToolSearcher!=Geocoding
+[batch 080/245] FAIL    246ms ToolSearcher  ← arg:keywords='restaurants'≠'NearbyRestaurants'
+[batch 081/245] FAIL    609ms ToolSearcher  ← name:ToolSearcher!=NearbyRestaurants
+[batch 082/245] FAIL    384ms ToolSearcher  ← arg:keywords='restaurants near San Francisco'≠'Geocoding'
+[batch 083/245] FAIL    596ms ToolSearcher  ← name:ToolSearcher!=Geocoding
+[batch 084/245] FAIL    260ms ToolSearcher  ← arg:keywords='restaurants'≠'NearbyRestaurants'
+[batch 085/245] FAIL    276ms ToolSearcher  ← name:ToolSearcher!=NearbyRestaurants
+[batch 086/245] FAIL    325ms ToolSearcher  ← arg:keywords='restaurants near London'≠'Geocoding'
+[batch 087/245] FAIL    271ms ToolSearcher  ← name:ToolSearcher!=Geocoding
+[batch 088/245] FAIL    294ms ToolSearcher  ← arg:keywords='restaurants'≠'NearbyRestaurants'
+[batch 089/245] FAIL    279ms ToolSearcher  ← name:ToolSearcher!=NearbyRestaurants
+[batch 090/245] FAIL    706ms ToolSearcher  ← arg:keywords='restaurants near Paris'≠'Geocoding'
+[batch 091/245] FAIL    265ms ToolSearcher  ← name:ToolSearcher!=Geocoding
+[batch 092/245] FAIL    248ms ToolSearcher  ← arg:keywords='restaurants'≠'NearbyRestaurants'
+[batch 093/245] FAIL    274ms ToolSearcher  ← name:ToolSearcher!=NearbyRestaurants
+[batch 094/245] FAIL    697ms ToolSearcher  ← arg:keywords='restaurants near Tokyo'≠'Geocoding'
+[batch 095/245] FAIL    249ms ToolSearcher  ← name:ToolSearcher!=Geocoding
+[batch 096/245] FAIL    265ms ToolSearcher  ← arg:keywords='Restaurant Search'≠'NearbyRestaurants'
+[batch 097/245] FAIL    651ms ToolSearcher  ← name:ToolSearcher!=NearbyRestaurants
+[batch 098/245] FAIL    760ms ∅  ← 输出不可解析
+[batch 099/245] FAIL    367ms ToolSearcher  ← name:ToolSearcher!=UserMoviePreferences
+[batch 100/245] FAIL    268ms UserMoviePreferences  ← name:UserMoviePreferences!=ToolSearcher
+[batch 101/245] FAIL   2175ms ToolSearcher  ← name:ToolSearcher!=UserWatchedMovies
+[batch 102/245] FAIL    285ms ToolSearcher  ← arg:keywords='MovieRecommendationEngine'≠'MovieRecommendatio
+[batch 103/245] PASS    335ms MovieRecommendations
+[batch 104/245] FAIL    263ms ∅  ← 输出不可解析
+[batch 105/245] FAIL    351ms ToolSearcher  ← name:ToolSearcher!=UserMoviePreferences
+[batch 106/245] FAIL    535ms UserMoviePreferences  ← name:UserMoviePreferences!=ToolSearcher
+[batch 107/245] PASS    267ms UserWatchedMovies
+[batch 108/245] FAIL    619ms ToolSearcher  ← arg:keywords='MovieRecommendationEngine'≠'MovieRecommendatio
+[batch 109/245] PASS    335ms MovieRecommendations
+[batch 110/245] FAIL    506ms ∅  ← 输出不可解析
+[batch 111/245] FAIL    364ms ToolSearcher  ← name:ToolSearcher!=UserMoviePreferences
+[batch 112/245] FAIL    247ms UserMoviePreferences  ← name:UserMoviePreferences!=ToolSearcher
+[batch 113/245] PASS    585ms UserWatchedMovies
+[batch 114/245] FAIL    274ms ToolSearcher  ← arg:keywords='MovieRecommendationEngine'≠'MovieRecommendatio
+[batch 115/245] PASS    692ms MovieRecommendations
+[batch 116/245] FAIL    252ms ∅  ← 输出不可解析
+[batch 117/245] FAIL    728ms ToolSearcher  ← name:ToolSearcher!=UserMoviePreferences
+[batch 118/245] FAIL    619ms UserMoviePreferences  ← name:UserMoviePreferences!=ToolSearcher
+[batch 119/245] PASS    269ms UserWatchedMovies
+[batch 120/245] FAIL    282ms ToolSearcher  ← arg:keywords='MovieRecommendationEngine'≠'MovieRecommendatio
+[batch 121/245] PASS    759ms MovieRecommendations
+[batch 122/245] FAIL    668ms ∅  ← 输出不可解析
+[batch 123/245] FAIL    398ms ToolSearcher  ← name:ToolSearcher!=UserMoviePreferences
+[batch 124/245] FAIL    667ms UserMoviePreferences  ← name:UserMoviePreferences!=ToolSearcher
+[batch 125/245] PASS    260ms UserWatchedMovies
+[batch 126/245] FAIL    698ms ToolSearcher  ← arg:keywords='MovieRecommendationEngine'≠'MovieRecommendatio
+[batch 127/245] PASS    336ms MovieRecommendations
+[batch 128/245] FAIL    239ms ∅  ← 输出不可解析
+[batch 129/245] FAIL    550ms ToolSearcher  ← name:ToolSearcher!=UserPosts
+[batch 130/245] FAIL    289ms ToolSearcher  ← arg:keywords='PostLikes'≠'LikeCount'
+[batch 131/245] PASS    741ms LikeCount
+[batch 132/245] FAIL    371ms LikeCount  ← arg:post_id='4'≠'5'
+[batch 133/245] PASS    897ms LikeCount
+[batch 134/245] FAIL    364ms LikeCount  ← name:LikeCount!=ToolSearcher
+[batch 135/245] FAIL    668ms Calculator  ← arg:formula='40 + 50 + 60'≠'40+50+60'
+[batch 136/245] FAIL    243ms ∅  ← 输出不可解析
+[batch 137/245] FAIL    561ms ToolSearcher  ← name:ToolSearcher!=UserPosts
+[batch 138/245] FAIL    292ms ToolSearcher  ← arg:keywords='PostLikes'≠'LikeCount'
+[batch 139/245] PASS    758ms LikeCount
+[batch 140/245] FAIL    332ms ToolSearcher  ← name:ToolSearcher!=LikeCount
+[batch 141/245] PASS    912ms LikeCount
+[batch 142/245] FAIL    861ms ToolSearcher  ← arg:keywords='LikeCount'≠'Calculator'
+[batch 143/245] FAIL    307ms Calculator  ← arg:formula='10 + 20 + 30'≠'(10+20+30)'
+[batch 144/245] FAIL    559ms ∅  ← 输出不可解析
+[batch 145/245] FAIL    327ms ToolSearcher  ← name:ToolSearcher!=UserPosts
+[batch 146/245] FAIL    245ms UserPosts  ← name:UserPosts!=ToolSearcher
+[batch 147/245] PASS    800ms LikeCount
+[batch 148/245] FAIL    898ms ToolSearcher  ← name:ToolSearcher!=LikeCount
+[batch 149/245] PASS    994ms LikeCount
+[batch 150/245] FAIL    369ms LikeCount  ← name:LikeCount!=ToolSearcher
+[batch 151/245] FAIL    681ms Calculator  ← arg:formula='70 + 80 + 90'≠'30 / 3'
+[batch 152/245] FAIL    246ms ∅  ← 输出不可解析
+[batch 153/245] FAIL    735ms ToolSearcher  ← name:ToolSearcher!=UserPosts
+[batch 154/245] FAIL    259ms ToolSearcher  ← arg:keywords='PostLikes'≠'LikeCount'
+[batch 155/245] PASS    847ms LikeCount
+[batch 156/245] FAIL    819ms LikeCount  ← arg:post_id='10'≠'11'
+[batch 157/245] PASS    597ms LikeCount
+[batch 158/245] FAIL    642ms ∅  ← 输出不可解析
+[batch 159/245] FAIL    320ms ToolSearcher  ← name:ToolSearcher!=UserPosts
+[batch 160/245] FAIL    257ms UserPosts  ← name:UserPosts!=ToolSearcher
+[batch 161/245] PASS    864ms LikeCount
+[batch 162/245] FAIL    988ms ToolSearcher  ← name:ToolSearcher!=LikeCount
+[batch 163/245] PASS    769ms LikeCount
+[batch 164/245] FAIL    560ms LikeCount  ← name:LikeCount!=ToolSearcher
+[batch 165/245] FAIL    819ms Calculator  ← arg:formula='130 + 140 + 150'≠'130+140+150'
+[batch 166/245] FAIL    373ms ToolSearcher  ← arg:keywords='weather New York City'≠'Geocoding'
+[batch 167/245] FAIL    663ms ToolSearcher  ← name:ToolSearcher!=Geocoding
+[batch 168/245] FAIL   2510ms ToolSearcher  ← arg:keywords='Weather'≠'GetWeatherForCoordinates'
+[batch 169/245] PASS    608ms GetWeatherForCoordinates
+[batch 170/245] FAIL    507ms ToolSearcher  ← arg:keywords='weather conditions San Francisco'≠'Geocoding'
+[batch 171/245] FAIL    270ms ToolSearcher  ← name:ToolSearcher!=Geocoding
+[batch 172/245] FAIL   2407ms ToolSearcher  ← arg:keywords='Weather'≠'GetWeatherForCoordinates'
+[batch 173/245] PASS    397ms GetWeatherForCoordinates
+[batch 174/245] FAIL    844ms ToolSearcher  ← arg:keywords='weather London'≠'Geocoding'
+[batch 175/245] FAIL    253ms ToolSearcher  ← name:ToolSearcher!=Geocoding
+[batch 176/245] FAIL    258ms Geocoding  ← name:Geocoding!=ToolSearcher
+[batch 177/245] PASS    896ms GetWeatherForCoordinates
+[batch 178/245] FAIL    274ms ∅  ← 输出不可解析
+[batch 179/245] FAIL    279ms ToolSearcher  ← name:ToolSearcher!=Geocoding
+[batch 180/245] FAIL   2991ms ToolSearcher  ← arg:keywords='Weather'≠'GetWeatherForCoordinates'
+[batch 181/245] PASS    385ms GetWeatherForCoordinates
+[batch 182/245] FAIL    600ms ∅  ← 输出不可解析
+[batch 183/245] FAIL    244ms ToolSearcher  ← name:ToolSearcher!=Geocoding
+[batch 184/245] FAIL   2576ms ToolSearcher  ← arg:keywords='Weather'≠'GetWeatherForCoordinates'
+[batch 185/245] PASS    778ms GetWeatherForCoordinates
+[batch 186/245] FAIL    260ms ∅  ← 输出不可解析
+[batch 187/245] FAIL    635ms ToolSearcher  ← name:ToolSearcher!=FlightSearch
+[batch 188/245] PASS   2300ms ToolSearcher
+[batch 189/245] FAIL   3020ms ToolSearcher  ← name:ToolSearcher!=HotelAvailability
+[batch 190/245] FAIL    797ms ToolSearcher  ← arg:keywords='flight hotel Los Angeles San Francisco January
+[batch 191/245] FAIL   2848ms ToolSearcher  ← name:ToolSearcher!=FlightSearch
+[batch 192/245] FAIL   2902ms ToolSearcher  ← arg:keywords='HotelSearch'≠'HotelAvailability'
+[batch 193/245] FAIL   2920ms ToolSearcher  ← name:ToolSearcher!=HotelAvailability
+[batch 194/245] FAIL    913ms ToolSearcher  ← arg:keywords='flight hotel London San Francisco January 3rd 
+[batch 195/245] FAIL    250ms ToolSearcher  ← name:ToolSearcher!=FlightSearch
+[batch 196/245] PASS   2982ms ToolSearcher
+[batch 197/245] FAIL   2543ms ToolSearcher  ← name:ToolSearcher!=HotelAvailability
+[batch 198/245] FAIL    244ms ∅  ← 输出不可解析
+[batch 199/245] FAIL   2228ms ToolSearcher  ← name:ToolSearcher!=FlightSearch
+[batch 200/245] PASS    251ms ToolSearcher
+[batch 201/245] FAIL   2257ms ToolSearcher  ← name:ToolSearcher!=HotelAvailability
+[batch 202/245] FAIL    241ms ∅  ← 输出不可解析
+[batch 203/245] FAIL   2296ms ToolSearcher  ← name:ToolSearcher!=FlightSearch
+[batch 204/245] FAIL   1830ms ToolSearcher  ← arg:keywords='HotelSearch'≠'HotelAvailability'
+[batch 205/245] FAIL   1850ms ToolSearcher  ← name:ToolSearcher!=HotelAvailability
+[batch 206/245] FAIL    597ms ToolSearcher  ← arg:keywords='salary tax calculation financial analyst'≠'Get
+[batch 207/245] FAIL    279ms ToolSearcher  ← name:ToolSearcher!=GetOccupationSalary
+[batch 208/245] FAIL    263ms GetOccupationSalary  ← name:GetOccupationSalary!=ToolSearcher
+[batch 209/245] FAIL    669ms ToolSearcher  ← name:ToolSearcher!=TaxCalculator
+[batch 210/245] FAIL    342ms ToolSearcher  ← arg:keywords='salary tax calculation software engineer'≠'Get
+[batch 211/245] FAIL    287ms ToolSearcher  ← name:ToolSearcher!=GetOccupationSalary
+[batch 212/245] FAIL    273ms GetOccupationSalary  ← name:GetOccupationSalary!=ToolSearcher
+[batch 213/245] FAIL    370ms ToolSearcher  ← name:ToolSearcher!=TaxCalculator
+[batch 214/245] FAIL    346ms ToolSearcher  ← arg:keywords='salary tax calculation data scientist'≠'GetOcc
+[batch 215/245] FAIL    279ms ToolSearcher  ← name:ToolSearcher!=GetOccupationSalary
+[batch 216/245] FAIL    267ms GetOccupationSalary  ← name:GetOccupationSalary!=ToolSearcher
+[batch 217/245] FAIL    689ms ToolSearcher  ← name:ToolSearcher!=TaxCalculator
+[batch 218/245] FAIL    343ms ToolSearcher  ← arg:keywords='salary tax calculation product manager'≠'GetOc
+[batch 219/245] FAIL    298ms ToolSearcher  ← name:ToolSearcher!=GetOccupationSalary
+[batch 220/245] FAIL    582ms GetOccupationSalary  ← name:GetOccupationSalary!=ToolSearcher
+[batch 221/245] FAIL    382ms GetOccupationSalary  ← name:GetOccupationSalary!=TaxCalculator
+[batch 222/245] FAIL    353ms ToolSearcher  ← arg:keywords='salary tax calculation doctor'≠'GetOccupationS
+[batch 223/245] FAIL    400ms ToolSearcher  ← name:ToolSearcher!=GetOccupationSalary
+[batch 224/245] FAIL    275ms GetOccupationSalary  ← name:GetOccupationSalary!=ToolSearcher
+[batch 225/245] FAIL    477ms ToolSearcher  ← name:ToolSearcher!=TaxCalculator
+[batch 226/245] FAIL    260ms ∅  ← 输出不可解析
+[batch 227/245] FAIL    531ms ToolSearcher  ← name:ToolSearcher!=AccountInfo
+[batch 228/245] FAIL    398ms AccountInfo  ← name:AccountInfo!=ToolSearcher
+[batch 229/245] PASS    408ms PersonalInfoUpdate
+[batch 230/245] FAIL    250ms ∅  ← 输出不可解析
+[batch 231/245] FAIL    354ms AccountInfo  ← extra:address
+[batch 232/245] FAIL    355ms AccountInfo  ← name:AccountInfo!=ToolSearcher
+[batch 233/245] PASS    351ms PersonalInfoUpdate
+[batch 234/245] FAIL    269ms ∅  ← 输出不可解析
+[batch 235/245] FAIL    371ms AccountInfo  ← extra:address
+[batch 236/245] FAIL    374ms AccountInfo  ← name:AccountInfo!=ToolSearcher
+[batch 237/245] PASS    351ms PersonalInfoUpdate
+[batch 238/245] FAIL    247ms ∅  ← 输出不可解析
+[batch 239/245] FAIL    437ms ToolSearcher  ← name:ToolSearcher!=AccountInfo
+[batch 240/245] FAIL    347ms AccountInfo  ← name:AccountInfo!=ToolSearcher
+[batch 241/245] FAIL    359ms PersonalInfoUpdate  ← arg:address='012 Main St.'≠'012 Main St'
+[batch 242/245] FAIL    249ms ∅  ← 输出不可解析
+[batch 243/245] FAIL    361ms AccountInfo  ← extra:address
+[batch 244/245] FAIL    356ms AccountInfo  ← name:AccountInfo!=ToolSearcher
+[batch 245/245] PASS    742ms PersonalInfoUpdate
+  -- level-batch: 31/245 = 12.7%
+[api_bank] 报告 → eval\report_api_bank.md
+
+[api_bank] 总体 430/779 = 55.2%｜耗时 8.9 min
