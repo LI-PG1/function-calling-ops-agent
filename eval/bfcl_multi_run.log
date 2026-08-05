@@ -1,0 +1,509 @@
+[bfcl_multi] 模型 qwen3-coder-next｜类别 ['base', 'miss_func', 'miss_param', 'long_context', 'composite']｜每类 100
+[base        001/100] √ 轮 4｜调用 20
+[base        002/100] √ 轮 4｜调用 10
+[base        003/100] √ 轮 5｜调用 20
+[base        004/100] × 轮 2｜调用 9  ← multi_turn:instance_state_mismatch
+[base        005/100] × 轮 3｜调用 5  ← multi_turn:empty_turn_model_response
+[base        006/100] × 轮 4｜调用 7  ← multi_turn:empty_turn_model_response
+[base        007/100] × 轮 5｜调用 12  ← multi_turn:instance_state_mismatch
+[base        008/100] √ 轮 3｜调用 7
+[base        009/100] × 轮 4｜调用 2  ← multi_turn:empty_turn_model_response
+[base        010/100] × 轮 3｜调用 20  ← multi_turn:instance_state_mismatch
+[base        011/100] × 轮 5｜调用 15  ← multi_turn:instance_state_mismatch
+[base        012/100] × 轮 2｜调用 5  ← multi_turn:empty_turn_model_response
+[base        013/100] √ 轮 3｜调用 8
+[base        014/100] √ 轮 2｜调用 8
+[base        015/100] √ 轮 4｜调用 10
+[base        016/100] × 轮 5｜调用 7  ← multi_turn:instance_state_mismatch
+[base        017/100] × 轮 3｜调用 12  ← multi_turn:instance_state_mismatch
+[base        018/100] √ 轮 3｜调用 10
+[base        019/100] × 轮 3｜调用 19  ← multi_turn:instance_state_mismatch
+[base        020/100] × 轮 3｜调用 13  ← multi_turn:instance_state_mismatch
+[base        021/100] × 轮 2｜调用 10  ← multi_turn:instance_state_mismatch
+[base        022/100] × 轮 3｜调用 6  ← multi_turn:instance_state_mismatch
+[base        023/100] × 轮 4｜调用 5  ← multi_turn:instance_state_mismatch
+[base        024/100] √ 轮 3｜调用 4
+[base        025/100] × 轮 4｜调用 12  ← multi_turn:instance_state_mismatch
+[base        026/100] × 轮 4｜调用 6  ← multi_turn:execution_response_mismatch
+[base        027/100] × 轮 3｜调用 13  ← multi_turn:instance_state_mismatch
+[base        028/100] √ 轮 3｜调用 10
+[base        029/100] × 轮 3｜调用 13  ← multi_turn:instance_state_mismatch
+[base        030/100] √ 轮 3｜调用 4
+[base        031/100] × 轮 2｜调用 16  ← multi_turn:execution_response_mismatch
+[base        032/100] × 轮 2｜调用 12  ← multi_turn:instance_state_mismatch
+[base        033/100] √ 轮 2｜调用 7
+[base        034/100] √ 轮 5｜调用 7
+[base        035/100] × 轮 2｜调用 6  ← multi_turn:execution_response_mismatch
+[base        036/100] × 轮 3｜调用 22  ← multi_turn:instance_state_mismatch
+[base        037/100] × 轮 3｜调用 16  ← multi_turn:instance_state_mismatch
+[base        038/100] × 轮 3｜调用 17  ← multi_turn:execution_response_mismatch
+[base        039/100] × 轮 2｜调用 4  ← multi_turn:execution_response_mismatch
+[base        040/100] × 轮 4｜调用 12  ← multi_turn:instance_state_mismatch
+[base        041/100] √ 轮 4｜调用 18
+[base        042/100] √ 轮 2｜调用 9
+[base        043/100] × 轮 3｜调用 10  ← multi_turn:instance_state_mismatch
+[base        044/100] √ 轮 4｜调用 7
+[base        045/100] × 轮 3｜调用 9  ← multi_turn:instance_state_mismatch
+[base        046/100] × 轮 2｜调用 11  ← multi_turn:execution_response_mismatch
+[base        047/100] √ 轮 1｜调用 8
+[base        048/100] √ 轮 3｜调用 5
+[base        049/100] √ 轮 3｜调用 8
+[base        050/100] × 轮 4｜调用 9  ← multi_turn:instance_state_mismatch
+[base        051/100] √ 轮 1｜调用 2
+[base        052/100] × 轮 4｜调用 9  ← multi_turn:execution_response_mismatch
+[base        053/100] × 轮 4｜调用 5  ← multi_turn:empty_turn_model_response
+[base        054/100] × 轮 4｜调用 3  ← multi_turn:instance_state_mismatch
+[base        055/100] × 轮 3｜调用 4  ← multi_turn:instance_state_mismatch
+[base        056/100] √ 轮 5｜调用 11
+[base        057/100] √ 轮 3｜调用 9
+[base        058/100] √ 轮 2｜调用 4
+[base        059/100] × 轮 4｜调用 12  ← multi_turn:empty_turn_model_response
+[base        060/100] × 轮 5｜调用 13  ← multi_turn:execution_response_mismatch
+[base        061/100] × 轮 5｜调用 5  ← multi_turn:instance_state_mismatch
+[base        062/100] × 轮 4｜调用 15  ← multi_turn:instance_state_mismatch
+[base        063/100] √ 轮 4｜调用 11
+[base        064/100] √ 轮 3｜调用 12
+[base        065/100] √ 轮 2｜调用 7
+[base        066/100] × 轮 2｜调用 8  ← multi_turn:instance_state_mismatch
+[base        067/100] × 轮 4｜调用 10  ← multi_turn:instance_state_mismatch
+[base        068/100] × 轮 4｜调用 8  ← multi_turn:instance_state_mismatch
+[base        069/100] × 轮 5｜调用 12  ← multi_turn:empty_turn_model_response
+[base        070/100] × 轮 2｜调用 11  ← multi_turn:instance_state_mismatch
+[base        071/100] × 轮 2｜调用 10  ← multi_turn:instance_state_mismatch
+[base        072/100] √ 轮 5｜调用 12
+[base        073/100] × 轮 5｜调用 12  ← multi_turn:execution_response_mismatch
+[base        074/100] × 轮 3｜调用 10  ← multi_turn:instance_state_mismatch
+[base        075/100] √ 轮 2｜调用 11
+[base        076/100] × 轮 4｜调用 3  ← multi_turn:instance_state_mismatch
+[base        077/100] × 轮 2｜调用 5  ← multi_turn:empty_turn_model_response
+[base        078/100] × 轮 3｜调用 3  ← multi_turn:empty_turn_model_response
+[base        079/100] × 轮 2｜调用 2  ← multi_turn:empty_turn_model_response
+[base        080/100] × 轮 3｜调用 5  ← multi_turn:instance_state_mismatch
+[base        081/100] √ 轮 5｜调用 11
+[base        082/100] √ 轮 4｜调用 12
+[base        083/100] × 轮 3｜调用 10  ← multi_turn:instance_state_mismatch
+[base        084/100] √ 轮 3｜调用 8
+[base        085/100] √ 轮 2｜调用 9
+[base        086/100] √ 轮 2｜调用 11
+[base        087/100] × 轮 3｜调用 8  ← multi_turn:empty_turn_model_response
+[base        088/100] √ 轮 4｜调用 10
+[base        089/100] × 轮 3｜调用 11  ← multi_turn:instance_state_mismatch
+[base        090/100] √ 轮 4｜调用 11
+[base        091/100] × 轮 4｜调用 10  ← multi_turn:empty_turn_model_response
+[base        092/100] √ 轮 2｜调用 5
+[base        093/100] × 轮 5｜调用 7  ← multi_turn:instance_state_mismatch
+[base        094/100] × 轮 3｜调用 11  ← multi_turn:instance_state_mismatch
+[base        095/100] √ 轮 3｜调用 10
+[base        096/100] √ 轮 5｜调用 10
+[base        097/100] √ 轮 2｜调用 11
+[base        098/100] × 轮 6｜调用 14  ← multi_turn:instance_state_mismatch
+[base        099/100] × 轮 3｜调用 11  ← multi_turn:instance_state_mismatch
+[base        100/100] × 轮 4｜调用 13  ← multi_turn:instance_state_mismatch
+  -- base: 整例 39/100 = 39.0%
+[miss_func   001/100] × 轮 5｜调用 29  ← multi_turn:empty_turn_model_response
+[miss_func   002/100] × 轮 5｜调用 26  ← multi_turn:instance_state_mismatch
+[miss_func   003/100] × 轮 6｜调用 16  ← multi_turn:empty_turn_model_response
+[miss_func   004/100] × 轮 3｜调用 24  ← multi_turn:execution_response_mismatch
+[miss_func   005/100] × 轮 4｜调用 17  ← multi_turn:instance_state_mismatch
+[miss_func   006/100] × 轮 5｜调用 7  ← multi_turn:execution_response_mismatch
+[miss_func   007/100] × 轮 6｜调用 22  ← multi_turn:instance_state_mismatch
+[miss_func   008/100] × 轮 4｜调用 13  ← multi_turn:empty_turn_model_response
+[miss_func   009/100] × 轮 5｜调用 2  ← multi_turn:empty_turn_model_response
+[miss_func   010/100] × 轮 4｜调用 20  ← multi_turn:execution_response_mismatch
+[miss_func   011/100] × 轮 6｜调用 26  ← multi_turn:instance_state_mismatch
+[miss_func   012/100] × 轮 3｜调用 5  ← multi_turn:empty_turn_model_response
+[miss_func   013/100] × 轮 4｜调用 26  ← multi_turn:execution_response_mismatch
+[miss_func   014/100] × 轮 3｜调用 14  ← multi_turn:execution_response_mismatch
+[miss_func   015/100] √ 轮 5｜调用 12
+[miss_func   016/100] × 轮 6｜调用 20  ← multi_turn:instance_state_mismatch
+[miss_func   017/100] × 轮 4｜调用 26  ← multi_turn:instance_state_mismatch
+[miss_func   018/100] √ 轮 4｜调用 16
+[miss_func   019/100] × 轮 4｜调用 21  ← multi_turn:instance_state_mismatch
+[miss_func   020/100] × 轮 4｜调用 21  ← multi_turn:instance_state_mismatch
+[miss_func   021/100] × 轮 3｜调用 24  ← multi_turn:execution_response_mismatch
+[miss_func   022/100] × 轮 4｜调用 21  ← multi_turn:instance_state_mismatch
+[miss_func   023/100] × 轮 5｜调用 11  ← multi_turn:empty_turn_model_response
+[miss_func   024/100] √ 轮 4｜调用 14
+[miss_func   025/100] × 轮 5｜调用 17  ← multi_turn:execution_response_mismatch
+[miss_func   026/100] × 轮 5｜调用 20  ← multi_turn:execution_response_mismatch
+[miss_func   027/100] √ 轮 4｜调用 11
+[miss_func   028/100] √ 轮 4｜调用 9
+[miss_func   029/100] × 轮 4｜调用 21  ← multi_turn:instance_state_mismatch
+[miss_func   030/100] × 轮 4｜调用 13  ← multi_turn:execution_response_mismatch
+[miss_func   031/100] × 轮 3｜调用 13  ← multi_turn:instance_state_mismatch
+[miss_func   032/100] × 轮 3｜调用 18  ← multi_turn:instance_state_mismatch
+[miss_func   033/100] × 轮 3｜调用 13  ← multi_turn:instance_state_mismatch
+[miss_func   034/100] √ 轮 6｜调用 11
+[miss_func   035/100] × 轮 3｜调用 12  ← multi_turn:instance_state_mismatch
+[miss_func   036/100] × 轮 4｜调用 32  ← multi_turn:execution_response_mismatch
+[miss_func   037/100] × 轮 4｜调用 26  ← multi_turn:instance_state_mismatch
+[miss_func   038/100] × 轮 4｜调用 19  ← multi_turn:execution_response_mismatch
+[miss_func   039/100] √ 轮 3｜调用 14
+[miss_func   040/100] × 轮 5｜调用 20  ← multi_turn:instance_state_mismatch
+[miss_func   041/100] √ 轮 5｜调用 20
+[miss_func   042/100] √ 轮 3｜调用 18
+[miss_func   043/100] × 轮 4｜调用 17  ← multi_turn:instance_state_mismatch
+[miss_func   044/100] × 轮 5｜调用 13  ← multi_turn:instance_state_mismatch
+[miss_func   045/100] × 轮 4｜调用 13  ← multi_turn:empty_turn_model_response
+[miss_func   046/100] × 轮 3｜调用 24  ← multi_turn:instance_state_mismatch
+[miss_func   047/100] √ 轮 2｜调用 10
+[miss_func   048/100] √ 轮 4｜调用 12
+[miss_func   049/100] √ 轮 4｜调用 14
+[miss_func   050/100] × 轮 5｜调用 10  ← multi_turn:instance_state_mismatch
+[miss_func   051/100] × 轮 2｜调用 9  ← multi_turn:instance_state_mismatch
+[miss_func   052/100] × 轮 5｜调用 10  ← multi_turn:execution_response_mismatch
+[miss_func   053/100] × 轮 5｜调用 7  ← multi_turn:empty_turn_model_response
+[miss_func   054/100] × 轮 5｜调用 9  ← multi_turn:empty_turn_model_response
+[miss_func   055/100] × 轮 4｜调用 9  ← multi_turn:execution_response_mismatch
+[miss_func   056/100] √ 轮 6｜调用 11
+[miss_func   057/100] √ 轮 4｜调用 12
+[miss_func   058/100] × 轮 3｜调用 0  ← multi_turn:empty_turn_model_response
+[miss_func   059/100] × 轮 5｜调用 19  ← multi_turn:instance_state_mismatch
+[miss_func   060/100] × 轮 6｜调用 20  ← multi_turn:instance_state_mismatch
+[miss_func   061/100] √ 轮 6｜调用 11
+[miss_func   062/100] × 轮 5｜调用 17  ← multi_turn:instance_state_mismatch
+[miss_func   063/100] × 轮 5｜调用 19  ← multi_turn:instance_state_mismatch
+[miss_func   064/100] × 轮 4｜调用 19  ← multi_turn:instance_state_mismatch
+[miss_func   065/100] √ 轮 3｜调用 7
+[miss_func   066/100] × 轮 3｜调用 8  ← multi_turn:instance_state_mismatch
+[miss_func   067/100] × 轮 5｜调用 12  ← multi_turn:instance_state_mismatch
+[miss_func   068/100] × 轮 5｜调用 12  ← multi_turn:empty_turn_model_response
+[miss_func   069/100] × 轮 6｜调用 13  ← multi_turn:instance_state_mismatch
+[miss_func   070/100] × 轮 3｜调用 8  ← multi_turn:execution_response_mismatch
+[miss_func   071/100] × 轮 3｜调用 13  ← multi_turn:instance_state_mismatch
+[miss_func   072/100] × 轮 6｜调用 9  ← multi_turn:empty_turn_model_response
+[miss_func   073/100] × 轮 6｜调用 8  ← multi_turn:empty_turn_model_response
+[miss_func   074/100] × 轮 4｜调用 8  ← multi_turn:instance_state_mismatch
+[miss_func   075/100] × 轮 3｜调用 11  ← multi_turn:empty_turn_model_response
+[miss_func   076/100] × 轮 5｜调用 3  ← multi_turn:instance_state_mismatch
+[miss_func   077/100] × 轮 3｜调用 14  ← multi_turn:instance_state_mismatch
+[miss_func   078/100] × 轮 4｜调用 3  ← multi_turn:instance_state_mismatch
+[miss_func   079/100] × 轮 3｜调用 1  ← multi_turn:execution_response_mismatch
+[miss_func   080/100] √ 轮 4｜调用 8
+[miss_func   081/100] × 轮 6｜调用 18  ← multi_turn:execution_response_mismatch
+[miss_func   082/100] × 轮 5｜调用 10  ← multi_turn:instance_state_mismatch
+[miss_func   083/100] × 轮 4｜调用 9  ← multi_turn:empty_turn_model_response
+[miss_func   084/100] × 轮 4｜调用 9  ← multi_turn:execution_response_mismatch
+[miss_func   085/100] × 轮 3｜调用 5  ← multi_turn:empty_turn_model_response
+[miss_func   086/100] × 轮 3｜调用 17  ← multi_turn:execution_response_mismatch
+[miss_func   087/100] × 轮 4｜调用 7  ← multi_turn:instance_state_mismatch
+[miss_func   088/100] × 轮 5｜调用 11  ← multi_turn:instance_state_mismatch
+[miss_func   089/100] × 轮 4｜调用 16  ← multi_turn:instance_state_mismatch
+[miss_func   090/100] × 轮 5｜调用 17  ← multi_turn:instance_state_mismatch
+[miss_func   091/100] × 轮 5｜调用 12  ← multi_turn:empty_turn_model_response
+[miss_func   092/100] × 轮 3｜调用 5  ← multi_turn:instance_state_mismatch
+[miss_func   093/100] × 轮 6｜调用 7  ← multi_turn:instance_state_mismatch
+[miss_func   094/100] × 轮 4｜调用 11  ← multi_turn:empty_turn_model_response
+[miss_func   095/100] × 轮 4｜调用 8  ← multi_turn:instance_state_mismatch
+[miss_func   096/100] × 轮 6｜调用 9  ← multi_turn:empty_turn_model_response
+[miss_func   097/100] √ 轮 3｜调用 12
+[miss_func   098/100] × 轮 7｜调用 19  ← multi_turn:instance_state_mismatch
+[miss_func   099/100] √ 轮 4｜调用 16
+[miss_func   100/100] × 轮 5｜调用 13  ← multi_turn:execution_response_mismatch
+  -- miss_func: 整例 19/100 = 19.0%
+[miss_param  001/100] × 轮 5｜调用 33  ← multi_turn:instance_state_mismatch
+[miss_param  002/100] √ 轮 5｜调用 13
+[miss_param  003/100] × 轮 6｜调用 25  ← multi_turn:instance_state_mismatch
+[miss_param  004/100] × 轮 3｜调用 17  ← multi_turn:instance_state_mismatch
+[miss_param  005/100] × 轮 4｜调用 8  ← multi_turn:empty_turn_model_response
+[miss_param  006/100] × 轮 5｜调用 7  ← multi_turn:empty_turn_model_response
+[miss_param  007/100] × 轮 6｜调用 13  ← multi_turn:instance_state_mismatch
+[miss_param  008/100] × 轮 4｜调用 19  ← multi_turn:instance_state_mismatch
+[miss_param  009/100] × 轮 5｜调用 8  ← multi_turn:empty_turn_model_response
+[miss_param  010/100] × 轮 4｜调用 28  ← multi_turn:instance_state_mismatch
+[miss_param  011/100] × 轮 6｜调用 18  ← multi_turn:instance_state_mismatch
+[miss_param  012/100] × 轮 3｜调用 4  ← multi_turn:empty_turn_model_response
+[miss_param  013/100] √ 轮 4｜调用 7
+[miss_param  014/100] √ 轮 3｜调用 6
+[miss_param  015/100] √ 轮 5｜调用 10
+[miss_param  016/100] × 轮 6｜调用 8  ← multi_turn:instance_state_mismatch
+[miss_param  017/100] × 轮 4｜调用 27  ← multi_turn:instance_state_mismatch
+[miss_param  018/100] × 轮 4｜调用 17  ← multi_turn:instance_state_mismatch
+[miss_param  019/100] × 轮 4｜调用 16  ← multi_turn:instance_state_mismatch
+[miss_param  020/100] × 轮 4｜调用 21  ← multi_turn:instance_state_mismatch
+[miss_param  021/100] × 轮 3｜调用 11  ← multi_turn:instance_state_mismatch
+[miss_param  022/100] × 轮 4｜调用 4  ← multi_turn:instance_state_mismatch
+[miss_param  023/100] × 轮 5｜调用 19  ← multi_turn:instance_state_mismatch
+[miss_param  024/100] × 轮 4｜调用 6  ← multi_turn:instance_state_mismatch
+[miss_param  025/100] × 轮 5｜调用 16  ← multi_turn:instance_state_mismatch
+[miss_param  026/100] √ 轮 5｜调用 14
+[miss_param  027/100] × 轮 4｜调用 15  ← multi_turn:instance_state_mismatch
+[miss_param  028/100] √ 轮 4｜调用 9
+[miss_param  029/100] × 轮 4｜调用 22  ← multi_turn:execution_response_mismatch
+[miss_param  030/100] × 轮 4｜调用 5  ← multi_turn:instance_state_mismatch
+[miss_param  031/100] × 轮 3｜调用 16  ← multi_turn:execution_response_mismatch
+[miss_param  032/100] × 轮 3｜调用 11  ← multi_turn:instance_state_mismatch
+[miss_param  033/100] × 轮 3｜调用 7  ← multi_turn:instance_state_mismatch
+[miss_param  034/100] × 轮 6｜调用 7  ← multi_turn:empty_turn_model_response
+[miss_param  035/100] × 轮 3｜调用 8  ← multi_turn:instance_state_mismatch
+[miss_param  036/100] × 轮 4｜调用 17  ← multi_turn:instance_state_mismatch
+[miss_param  037/100] × 轮 4｜调用 13  ← multi_turn:execution_response_mismatch
+[miss_param  038/100] √ 轮 4｜调用 13
+[miss_param  039/100] × 轮 3｜调用 7  ← multi_turn:execution_response_mismatch
+[miss_param  040/100] × 轮 5｜调用 15  ← multi_turn:execution_response_mismatch
+[miss_param  041/100] × 轮 5｜调用 18  ← multi_turn:empty_turn_model_response
+[miss_param  042/100] × 轮 3｜调用 12  ← multi_turn:instance_state_mismatch
+[miss_param  043/100] × 轮 4｜调用 8  ← multi_turn:instance_state_mismatch
+[miss_param  044/100] √ 轮 5｜调用 8
+[miss_param  045/100] √ 轮 4｜调用 14
+[miss_param  046/100] × 轮 3｜调用 12  ← multi_turn:execution_response_mismatch
+[miss_param  047/100] × 轮 2｜调用 8  ← multi_turn:instance_state_mismatch
+[miss_param  048/100] √ 轮 4｜调用 4
+[miss_param  049/100] √ 轮 4｜调用 11
+[miss_param  050/100] × 轮 5｜调用 11  ← multi_turn:instance_state_mismatch
+[miss_param  051/100] √ 轮 2｜调用 2
+[miss_param  052/100] × 轮 5｜调用 11  ← multi_turn:instance_state_mismatch
+[miss_param  053/100] × 轮 5｜调用 5  ← multi_turn:empty_turn_model_response
+[miss_param  054/100] × 轮 5｜调用 3  ← multi_turn:instance_state_mismatch
+[miss_param  055/100] × 轮 4｜调用 9  ← multi_turn:instance_state_mismatch
+[miss_param  056/100] × 轮 6｜调用 11  ← multi_turn:empty_turn_model_response
+[miss_param  057/100] √ 轮 4｜调用 9
+[miss_param  058/100] √ 轮 3｜调用 4
+[miss_param  059/100] × 轮 5｜调用 14  ← multi_turn:empty_turn_model_response
+[miss_param  060/100] × 轮 6｜调用 18  ← multi_turn:execution_response_mismatch
+[miss_param  061/100] √ 轮 6｜调用 13
+[miss_param  062/100] × 轮 5｜调用 30  ← multi_turn:instance_state_mismatch
+[miss_param  063/100] × 轮 5｜调用 13  ← multi_turn:instance_state_mismatch
+[miss_param  064/100] √ 轮 4｜调用 12
+[miss_param  065/100] × 轮 3｜调用 13  ← multi_turn:execution_response_mismatch
+[miss_param  066/100] × 轮 3｜调用 8  ← multi_turn:instance_state_mismatch
+[miss_param  067/100] × 轮 5｜调用 10  ← multi_turn:instance_state_mismatch
+[miss_param  068/100] √ 轮 5｜调用 12
+[miss_param  069/100] × 轮 6｜调用 14  ← multi_turn:instance_state_mismatch
+[miss_param  070/100] × 轮 3｜调用 10  ← multi_turn:empty_turn_model_response
+[miss_param  071/100] × 轮 3｜调用 10  ← multi_turn:instance_state_mismatch
+[miss_param  072/100] √ 轮 6｜调用 13
+[miss_param  073/100] × 轮 6｜调用 13  ← multi_turn:instance_state_mismatch
+[miss_param  074/100] √ 轮 4｜调用 11
+[miss_param  075/100] √ 轮 3｜调用 9
+[miss_param  076/100] × 轮 5｜调用 3  ← multi_turn:instance_state_mismatch
+[miss_param  077/100] × 轮 3｜调用 4  ← multi_turn:empty_turn_model_response
+[miss_param  078/100] × 轮 4｜调用 3  ← multi_turn:empty_turn_model_response
+[miss_param  079/100] × 轮 3｜调用 2  ← multi_turn:empty_turn_model_response
+[miss_param  080/100] × 轮 4｜调用 12  ← multi_turn:instance_state_mismatch
+[miss_param  081/100] × 轮 6｜调用 13  ← multi_turn:empty_turn_model_response
+[miss_param  082/100] √ 轮 5｜调用 12
+[miss_param  083/100] × 轮 4｜调用 6  ← multi_turn:instance_state_mismatch
+[miss_param  084/100] × 轮 4｜调用 6  ← multi_turn:instance_state_mismatch
+[miss_param  085/100] × 轮 3｜调用 13  ← multi_turn:instance_state_mismatch
+[miss_param  086/100] √ 轮 3｜调用 12
+[miss_param  087/100] × 轮 4｜调用 8  ← multi_turn:empty_turn_model_response
+[miss_param  088/100] √ 轮 5｜调用 10
+[miss_param  089/100] × 轮 4｜调用 10  ← multi_turn:instance_state_mismatch
+[miss_param  090/100] √ 轮 5｜调用 11
+[miss_param  091/100] × 轮 5｜调用 10  ← multi_turn:empty_turn_model_response
+[miss_param  092/100] √ 轮 3｜调用 5
+[miss_param  093/100] × 轮 6｜调用 7  ← multi_turn:instance_state_mismatch
+[miss_param  094/100] × 轮 4｜调用 11  ← multi_turn:instance_state_mismatch
+[miss_param  095/100] √ 轮 4｜调用 9
+[miss_param  096/100] × 轮 6｜调用 10  ← multi_turn:empty_turn_model_response
+[miss_param  097/100] × 轮 3｜调用 4  ← multi_turn:empty_turn_model_response
+[miss_param  098/100] × 轮 7｜调用 15  ← multi_turn:instance_state_mismatch
+[miss_param  099/100] × 轮 4｜调用 8  ← multi_turn:execution_response_mismatch
+[miss_param  100/100] × 轮 5｜调用 13  ← multi_turn:instance_state_mismatch
+  -- miss_param: 整例 26/100 = 26.0%
+[long_contex 001/100] √ 轮 4｜调用 22
+[long_contex 002/100] √ 轮 4｜调用 11
+[long_contex 003/100] √ 轮 5｜调用 19
+[long_contex 004/100] × 轮 2｜调用 9  ← multi_turn:instance_state_mismatch
+[long_contex 005/100] × 轮 3｜调用 5  ← multi_turn:empty_turn_model_response
+[long_contex 006/100] × 轮 4｜调用 8  ← multi_turn:empty_turn_model_response
+[long_contex 007/100] × 轮 5｜调用 12  ← multi_turn:instance_state_mismatch
+[long_contex 008/100] × 轮 3｜调用 21  ← multi_turn:execution_response_mismatch
+[long_contex 009/100] × 轮 4｜调用 10  ← multi_turn:instance_state_mismatch
+[long_contex 010/100] × 轮 3｜调用 20  ← multi_turn:instance_state_mismatch
+[long_contex 011/100] × 轮 5｜调用 15  ← multi_turn:instance_state_mismatch
+[long_contex 012/100] × 轮 2｜调用 8  ← multi_turn:empty_turn_model_response
+[long_contex 013/100] √ 轮 3｜调用 6
+[long_contex 014/100] √ 轮 2｜调用 12
+[long_contex 015/100] √ 轮 4｜调用 10
+[long_contex 016/100] × 轮 5｜调用 7  ← multi_turn:execution_response_mismatch
+[long_contex 017/100] × 轮 3｜调用 15  ← multi_turn:instance_state_mismatch
+[long_contex 018/100] × 轮 3｜调用 10  ← multi_turn:instance_state_mismatch
+[long_contex 019/100] × 轮 3｜调用 19  ← multi_turn:instance_state_mismatch
+[long_contex 020/100] × 轮 3｜调用 17  ← multi_turn:instance_state_mismatch
+[long_contex 021/100] × 轮 2｜调用 10  ← multi_turn:instance_state_mismatch
+[long_contex 022/100] × 轮 3｜调用 9  ← multi_turn:instance_state_mismatch
+[long_contex 023/100] × 轮 4｜调用 7  ← multi_turn:instance_state_mismatch
+[long_contex 024/100] √ 轮 3｜调用 4
+[long_contex 025/100] √ 轮 4｜调用 12
+[long_contex 026/100] × 轮 4｜调用 6  ← multi_turn:execution_response_mismatch
+[long_contex 027/100] × 轮 3｜调用 11  ← multi_turn:execution_response_mismatch
+[long_contex 028/100] √ 轮 3｜调用 9
+[long_contex 029/100] × 轮 3｜调用 18  ← multi_turn:instance_state_mismatch
+[long_contex 030/100] × 轮 3｜调用 5  ← multi_turn:instance_state_mismatch
+[long_contex 031/100] × 轮 2｜调用 16  ← multi_turn:execution_response_mismatch
+[long_contex 032/100] × 轮 2｜调用 12  ← multi_turn:instance_state_mismatch
+[long_contex 033/100] × 轮 2｜调用 7  ← multi_turn:instance_state_mismatch
+[long_contex 034/100] √ 轮 5｜调用 6
+[long_contex 035/100] × 轮 2｜调用 6  ← multi_turn:instance_state_mismatch
+[long_contex 036/100] × 轮 3｜调用 13  ← multi_turn:instance_state_mismatch
+[long_contex 037/100] × 轮 3｜调用 12  ← multi_turn:execution_response_mismatch
+[long_contex 038/100] × 轮 3｜调用 11  ← multi_turn:execution_response_mismatch
+[long_contex 039/100] × 轮 2｜调用 4  ← multi_turn:execution_response_mismatch
+[long_contex 040/100] √ 轮 4｜调用 10
+[long_contex 041/100] √ 轮 4｜调用 15
+[long_contex 042/100] × 轮 2｜调用 13  ← multi_turn:instance_state_mismatch
+[long_contex 043/100] × 轮 3｜调用 9  ← multi_turn:instance_state_mismatch
+[long_contex 044/100] × 轮 4｜调用 9  ← multi_turn:instance_state_mismatch
+[long_contex 045/100] √ 轮 3｜调用 10
+[long_contex 046/100] × 轮 2｜调用 12  ← multi_turn:execution_response_mismatch
+[long_contex 047/100] × 轮 1｜调用 8  ← multi_turn:instance_state_mismatch
+[long_contex 048/100] × 轮 3｜调用 4  ← multi_turn:execution_response_mismatch
+[long_contex 049/100] √ 轮 3｜调用 9
+[long_contex 050/100] × 轮 4｜调用 9  ← multi_turn:instance_state_mismatch
+[long_contex 051/100] √ 轮 1｜调用 2
+[long_contex 052/100] √ 轮 4｜调用 10
+[long_contex 053/100] × 轮 4｜调用 5  ← multi_turn:empty_turn_model_response
+[long_contex 054/100] × 轮 4｜调用 8  ← multi_turn:instance_state_mismatch
+[long_contex 055/100] × 轮 3｜调用 4  ← multi_turn:instance_state_mismatch
+[long_contex 056/100] √ 轮 5｜调用 11
+[long_contex 057/100] √ 轮 3｜调用 9
+[long_contex 058/100] √ 轮 2｜调用 4
+[long_contex 059/100] × 轮 4｜调用 14  ← multi_turn:instance_state_mismatch
+[long_contex 060/100] × 轮 5｜调用 12  ← multi_turn:execution_response_mismatch
+[long_contex 061/100] × 轮 5｜调用 5  ← multi_turn:instance_state_mismatch
+[long_contex 062/100] × 轮 4｜调用 16  ← multi_turn:instance_state_mismatch
+[long_contex 063/100] √ 轮 4｜调用 12
+[long_contex 064/100] × 轮 3｜调用 13  ← multi_turn:instance_state_mismatch
+[long_contex 065/100] √ 轮 2｜调用 7
+[long_contex 066/100] × 轮 2｜调用 8  ← multi_turn:instance_state_mismatch
+[long_contex 067/100] × 轮 4｜调用 8  ← multi_turn:instance_state_mismatch
+[long_contex 068/100] × 轮 4｜调用 7  ← multi_turn:instance_state_mismatch
+[long_contex 069/100] × 轮 5｜调用 13  ← multi_turn:instance_state_mismatch
+[long_contex 070/100] × 轮 2｜调用 10  ← multi_turn:instance_state_mismatch
+[long_contex 071/100] × 轮 2｜调用 10  ← multi_turn:instance_state_mismatch
+[long_contex 072/100] √ 轮 5｜调用 13
+[long_contex 073/100] × 轮 5｜调用 12  ← multi_turn:execution_response_mismatch
+[long_contex 074/100] √ 轮 3｜调用 11
+[long_contex 075/100] √ 轮 2｜调用 11
+[long_contex 076/100] × 轮 4｜调用 3  ← multi_turn:instance_state_mismatch
+[long_contex 077/100] × 轮 2｜调用 4  ← multi_turn:empty_turn_model_response
+[long_contex 078/100] × 轮 3｜调用 3  ← multi_turn:empty_turn_model_response
+[long_contex 079/100] × 轮 2｜调用 2  ← multi_turn:empty_turn_model_response
+[long_contex 080/100] × 轮 3｜调用 4  ← multi_turn:instance_state_mismatch
+[long_contex 081/100] √ 轮 5｜调用 12
+[long_contex 082/100] √ 轮 4｜调用 12
+[long_contex 083/100] √ 轮 3｜调用 11
+[long_contex 084/100] √ 轮 3｜调用 8
+[long_contex 085/100] √ 轮 2｜调用 9
+[long_contex 086/100] √ 轮 2｜调用 11
+[long_contex 087/100] × 轮 3｜调用 6  ← multi_turn:instance_state_mismatch
+[long_contex 088/100] √ 轮 4｜调用 10
+[long_contex 089/100] × 轮 3｜调用 13  ← multi_turn:instance_state_mismatch
+[long_contex 090/100] √ 轮 4｜调用 12
+[long_contex 091/100] × 轮 4｜调用 10  ← multi_turn:empty_turn_model_response
+[long_contex 092/100] √ 轮 2｜调用 5
+[long_contex 093/100] × 轮 5｜调用 11  ← multi_turn:instance_state_mismatch
+[long_contex 094/100] × 轮 3｜调用 12  ← multi_turn:instance_state_mismatch
+[long_contex 095/100] √ 轮 3｜调用 9
+[long_contex 096/100] √ 轮 5｜调用 10
+[long_contex 097/100] √ 轮 2｜调用 13
+[long_contex 098/100] × 轮 6｜调用 14  ← multi_turn:instance_state_mismatch
+[long_contex 099/100] × 轮 3｜调用 13  ← multi_turn:instance_state_mismatch
+[long_contex 100/100] × 轮 4｜调用 12  ← multi_turn:instance_state_mismatch
+  -- long_context: 整例 36/100 = 36.0%
+[composite   001/100] × 轮 6｜调用 47  ← multi_turn:instance_state_mismatch
+[composite   002/100] × 轮 6｜调用 17  ← multi_turn:execution_response_mismatch
+[composite   003/100] × 轮 7｜调用 31  ← multi_turn:instance_state_mismatch
+[composite   004/100] × 轮 4｜调用 9  ← multi_turn:execution_response_mismatch
+[composite   005/100] × 轮 5｜调用 16  ← multi_turn:empty_turn_model_response
+[composite   006/100] × 轮 6｜调用 9  ← multi_turn:empty_turn_model_response
+[composite   007/100] × 轮 7｜调用 33  ← multi_turn:instance_state_mismatch
+[composite   008/100] × 轮 5｜调用 30  ← multi_turn:instance_state_mismatch
+[composite   009/100] × 轮 6｜调用 7  ← multi_turn:execution_response_mismatch
+[composite   010/100] × 轮 5｜调用 30  ← multi_turn:instance_state_mismatch
+[composite   011/100] × 轮 7｜调用 45  ← multi_turn:instance_state_mismatch
+[composite   012/100] × 轮 4｜调用 10  ← multi_turn:execution_response_mismatch
+[composite   013/100] × 轮 5｜调用 12  ← multi_turn:execution_response_mismatch
+[composite   014/100] × 轮 4｜调用 20  ← multi_turn:execution_response_mismatch
+[composite   015/100] × 轮 6｜调用 7  ← multi_turn:execution_response_mismatch
+[composite   016/100] × 轮 7｜调用 9  ← multi_turn:instance_state_mismatch
+[composite   017/100] × 轮 5｜调用 27  ← multi_turn:execution_response_mismatch
+[composite   018/100] × 轮 5｜调用 22  ← multi_turn:execution_response_mismatch
+[composite   019/100] × 轮 5｜调用 14  ← multi_turn:instance_state_mismatch
+[composite   020/100] × 轮 5｜调用 26  ← multi_turn:instance_state_mismatch
+[composite   021/100] × 轮 4｜调用 23  ← multi_turn:instance_state_mismatch
+[composite   022/100] × 轮 5｜调用 11  ← multi_turn:empty_turn_model_response
+[composite   023/100] × 轮 6｜调用 25  ← multi_turn:execution_response_mismatch
+[composite   024/100] × 轮 5｜调用 17  ← multi_turn:instance_state_mismatch
+[composite   025/100] × 轮 6｜调用 20  ← multi_turn:execution_response_mismatch
+[composite   026/100] × 轮 6｜调用 33  ← multi_turn:instance_state_mismatch
+[composite   027/100] × 轮 5｜调用 14  ← multi_turn:execution_response_mismatch
+[composite   028/100] × 轮 5｜调用 10  ← multi_turn:execution_response_mismatch
+[composite   029/100] × 轮 5｜调用 37  ← multi_turn:execution_response_mismatch
+[composite   030/100] × 轮 5｜调用 25  ← multi_turn:execution_response_mismatch
+[composite   031/100] × 轮 4｜调用 24  ← multi_turn:execution_response_mismatch
+[composite   032/100] × 轮 4｜调用 25  ← multi_turn:instance_state_mismatch
+[composite   033/100] × 轮 4｜调用 10  ← multi_turn:execution_response_mismatch
+[composite   034/100] × 轮 7｜调用 7  ← multi_turn:empty_turn_model_response
+[composite   035/100] × 轮 5｜调用 14  ← multi_turn:execution_response_mismatch
+[composite   036/100] × 轮 5｜调用 38  ← multi_turn:execution_response_mismatch
+[composite   037/100] × 轮 5｜调用 26  ← multi_turn:instance_state_mismatch
+[composite   038/100] × 轮 5｜调用 18  ← multi_turn:execution_response_mismatch
+[composite   039/100] × 轮 4｜调用 32  ← multi_turn:instance_state_mismatch
+[composite   040/100] × 轮 6｜调用 13  ← multi_turn:empty_turn_model_response
+[composite   041/100] × 轮 6｜调用 14  ← multi_turn:instance_state_mismatch
+[composite   042/100] × 轮 4｜调用 26  ← multi_turn:execution_response_mismatch
+[composite   043/100] × 轮 5｜调用 34  ← multi_turn:instance_state_mismatch
+[composite   044/100] × 轮 6｜调用 8  ← multi_turn:instance_state_mismatch
+[composite   045/100] × 轮 5｜调用 12  ← multi_turn:instance_state_mismatch
+[composite   046/100] × 轮 4｜调用 31  ← multi_turn:instance_state_mismatch
+[composite   047/100] × 轮 2｜调用 6  ← multi_turn:instance_state_mismatch
+[composite   048/100] × 轮 5｜调用 13  ← multi_turn:empty_turn_model_response
+[composite   049/100] × 轮 5｜调用 26  ← multi_turn:execution_response_mismatch
+[composite   050/100] × 轮 6｜调用 12  ← multi_turn:execution_response_mismatch
+[composite   051/100] × 轮 2｜调用 5  ← multi_turn:instance_state_mismatch
+[composite   052/100] × 轮 6｜调用 10  ← multi_turn:instance_state_mismatch
+[composite   053/100] × 轮 6｜调用 4  ← multi_turn:execution_response_mismatch
+[composite   054/100] × 轮 6｜调用 21  ← multi_turn:instance_state_mismatch
+[composite   055/100] × 轮 5｜调用 11  ← multi_turn:instance_state_mismatch
+[composite   056/100] × 轮 7｜调用 12  ← multi_turn:instance_state_mismatch
+[composite   057/100] × 轮 5｜调用 20  ← multi_turn:instance_state_mismatch
+[composite   058/100] × 轮 4｜调用 5  ← multi_turn:instance_state_mismatch
+[composite   059/100] × 轮 6｜调用 18  ← multi_turn:instance_state_mismatch
+[composite   060/100] × 轮 7｜调用 8  ← multi_turn:empty_turn_model_response
+[composite   061/100] × 轮 7｜调用 15  ← multi_turn:instance_state_mismatch
+[composite   062/100] × 轮 6｜调用 10  ← multi_turn:execution_response_mismatch
+[composite   063/100] × 轮 6｜调用 17  ← multi_turn:instance_state_mismatch
+[composite   064/100] × 轮 5｜调用 25  ← multi_turn:instance_state_mismatch
+[composite   065/100] × 轮 4｜调用 4  ← multi_turn:empty_turn_model_response
+[composite   066/100] × 轮 4｜调用 8  ← multi_turn:instance_state_mismatch
+[composite   067/100] × 轮 6｜调用 15  ← multi_turn:instance_state_mismatch
+[composite   068/100] × 轮 6｜调用 15  ← multi_turn:instance_state_mismatch
+[composite   069/100] × 轮 7｜调用 8  ← multi_turn:empty_turn_model_response
+[composite   070/100] × 轮 4｜调用 12  ← multi_turn:instance_state_mismatch
+[composite   071/100] × 轮 4｜调用 11  ← multi_turn:instance_state_mismatch
+[composite   072/100] × 轮 7｜调用 10  ← multi_turn:empty_turn_model_response
+[composite   073/100] × 轮 7｜调用 8  ← multi_turn:empty_turn_model_response
+[composite   074/100] × 轮 5｜调用 10  ← multi_turn:instance_state_mismatch
+[composite   075/100] × 轮 4｜调用 11  ← multi_turn:instance_state_mismatch
+[composite   076/100] × 轮 6｜调用 3  ← multi_turn:empty_turn_model_response
+[composite   077/100] × 轮 4｜调用 17  ← multi_turn:instance_state_mismatch
+[composite   078/100] × 轮 5｜调用 8  ← multi_turn:instance_state_mismatch
+[composite   079/100] × 轮 4｜调用 0  ← multi_turn:empty_turn_model_response
+[composite   080/100] × 轮 5｜调用 16  ← multi_turn:instance_state_mismatch
+[composite   081/100] × 轮 7｜调用 17  ← multi_turn:empty_turn_model_response
+[composite   082/100] × 轮 6｜调用 6  ← multi_turn:instance_state_mismatch
+[composite   083/100] × 轮 5｜调用 20  ← multi_turn:empty_turn_model_response
+[composite   084/100] × 轮 5｜调用 11  ← multi_turn:instance_state_mismatch
+[composite   085/100] × 轮 4｜调用 4  ← multi_turn:empty_turn_model_response
+[composite   086/100] × 轮 4｜调用 23  ← multi_turn:instance_state_mismatch
+[composite   087/100] × 轮 5｜调用 9  ← multi_turn:instance_state_mismatch
+[composite   088/100] × 轮 6｜调用 14  ← multi_turn:instance_state_mismatch
+[composite   089/100] × 轮 5｜调用 17  ← multi_turn:instance_state_mismatch
+[composite   090/100] × 轮 6｜调用 23  ← multi_turn:instance_state_mismatch
+[composite   091/100] × 轮 6｜调用 17  ← multi_turn:instance_state_mismatch
+[composite   092/100] × 轮 4｜调用 9  ← multi_turn:empty_turn_model_response
+[composite   093/100] × 轮 7｜调用 7  ← multi_turn:empty_turn_model_response
+[composite   094/100] × 轮 5｜调用 7  ← multi_turn:empty_turn_model_response
+[composite   095/100] × 轮 5｜调用 10  ← multi_turn:execution_response_mismatch
+[composite   096/100] × 轮 7｜调用 10  ← multi_turn:instance_state_mismatch
+[composite   097/100] × 轮 4｜调用 5  ← multi_turn:instance_state_mismatch
+[composite   098/100] × 轮 8｜调用 14  ← multi_turn:instance_state_mismatch
+[composite   099/100] × 轮 5｜调用 16  ← multi_turn:instance_state_mismatch
+[composite   100/100] × 轮 6｜调用 25  ← multi_turn:instance_state_mismatch
+  -- composite: 整例 0/100 = 0.0%
+[bfcl_multi] 报告 → eval\report_bfcl_multi.md
+
+[bfcl_multi] 整例 120/500 = 24.0%｜耗时 144.8 min
