@@ -1,0 +1,55 @@
+[bfcl_multi] 模型 qwen3-coder-next｜类别 ['composite']｜每类 50
+[composite   001/50] × 轮 6｜调用 23  ← multi_turn:instance_state_mismatch
+[composite   002/50] √ 轮 6｜调用 26
+[composite   003/50] × 轮 7｜调用 39  ← multi_turn:instance_state_mismatch
+[composite   004/50] × 轮 4｜调用 6  ← multi_turn:instance_state_mismatch
+[composite   005/50] × 轮 5｜调用 82  ← multi_turn:instance_state_mismatch
+[composite   006/50] × 轮 6｜调用 8  ← multi_turn:empty_turn_model_response
+[composite   007/50] × 轮 7｜调用 10  ← multi_turn:instance_state_mismatch
+[composite   008/50] × 轮 5｜调用 38  ← multi_turn:instance_state_mismatch
+[composite   009/50] × 轮 6｜调用 26  ← multi_turn:empty_turn_model_response
+[composite   010/50] × 轮 5｜调用 4  ← multi_turn:empty_turn_model_response
+[composite   011/50] × 轮 7｜调用 58  ← multi_turn:instance_state_mismatch
+[composite   012/50] × 轮 4｜调用 9  ← multi_turn:execution_response_mismatch
+[composite   013/50] × 轮 5｜调用 29  ← multi_turn:empty_turn_model_response
+[composite   014/50] × 轮 4｜调用 63  ← multi_turn:instance_state_mismatch
+[composite   015/50] × 轮 6｜调用 9  ← multi_turn:execution_response_mismatch
+[composite   016/50] × 轮 7｜调用 9  ← multi_turn:instance_state_mismatch
+[composite   017/50] × 轮 5｜调用 70  ← multi_turn:instance_state_mismatch
+[composite   018/50] × 轮 5｜调用 64  ← multi_turn:instance_state_mismatch
+[composite   019/50] × 轮 5｜调用 28  ← multi_turn:instance_state_mismatch
+[composite   020/50] × 轮 5｜调用 42  ← multi_turn:instance_state_mismatch
+[composite   021/50] × 轮 4｜调用 24  ← multi_turn:instance_state_mismatch
+[composite   022/50] × 轮 5｜调用 7  ← multi_turn:empty_turn_model_response
+[composite   023/50] × 轮 6｜调用 15  ← multi_turn:empty_turn_model_response
+[composite   024/50] × 轮 5｜调用 44  ← multi_turn:instance_state_mismatch
+[composite   025/50] × 轮 6｜调用 42  ← multi_turn:empty_turn_model_response
+[composite   026/50] × 轮 6｜调用 43  ← multi_turn:instance_state_mismatch
+[composite   027/50] × 轮 5｜调用 14  ← multi_turn:execution_response_mismatch
+[composite   028/50] × 轮 5｜调用 12  ← multi_turn:execution_response_mismatch
+[composite   029/50] √ 轮 5｜调用 102
+[composite   030/50] × 轮 5｜调用 76  ← multi_turn:execution_response_mismatch
+[composite   031/50] × 轮 4｜调用 96  ← multi_turn:instance_state_mismatch
+[composite   032/50] × 轮 4｜调用 39  ← multi_turn:instance_state_mismatch
+[composite   033/50] × 轮 4｜调用 12  ← multi_turn:execution_response_mismatch
+[composite   034/50] × 轮 7｜调用 8  ← multi_turn:empty_turn_model_response
+[composite   035/50] × 轮 5｜调用 53  ← multi_turn:execution_response_mismatch
+[composite   036/50] × 轮 5｜调用 107  ← multi_turn:execution_response_mismatch
+[composite   037/50] × 轮 5｜调用 99  ← multi_turn:instance_state_mismatch
+[composite   038/50] × 轮 5｜调用 49  ← multi_turn:execution_response_mismatch
+[composite   039/50] × 轮 4｜调用 79  ← multi_turn:instance_state_mismatch
+[composite   040/50] × 轮 6｜调用 12  ← multi_turn:empty_turn_model_response
+[composite   041/50] × 轮 6｜调用 36  ← multi_turn:instance_state_mismatch
+[composite   042/50] × 轮 4｜调用 82  ← multi_turn:instance_state_mismatch
+[composite   043/50] × 轮 5｜调用 41  ← multi_turn:instance_state_mismatch
+[composite   044/50] × 轮 6｜调用 13  ← multi_turn:instance_state_mismatch
+[composite   045/50] × 轮 5｜调用 17  ← multi_turn:instance_state_mismatch
+[composite   046/50] × 轮 4｜调用 77  ← multi_turn:instance_state_mismatch
+[composite   047/50] × 轮 2｜调用 7  ← multi_turn:instance_state_mismatch
+[composite   048/50] × 轮 5｜调用 11  ← multi_turn:execution_response_mismatch
+[composite   049/50] × 轮 5｜调用 29  ← multi_turn:execution_response_mismatch
+[composite   050/50] × 轮 6｜调用 12  ← multi_turn:execution_response_mismatch
+  -- composite: 整例 2/50 = 4.0%
+[bfcl_multi] 报告 → eval\report_expC_composite.md
+
+[bfcl_multi] 整例 2/50 = 4.0%｜耗时 52.1 min

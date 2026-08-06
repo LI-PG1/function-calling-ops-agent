@@ -1,0 +1,55 @@
+[bfcl_multi] 模型 qwen3-coder-next｜类别 ['base']｜每类 50
+[base        001/50] √ 轮 4｜调用 20
+[base        002/50] √ 轮 4｜调用 13
+[base        003/50] × 轮 5｜调用 20  ← multi_turn:instance_state_mismatch
+[base        004/50] × 轮 2｜调用 9  ← multi_turn:instance_state_mismatch
+[base        005/50] × 轮 3｜调用 7  ← multi_turn:instance_state_mismatch
+[base        006/50] × 轮 4｜调用 7  ← multi_turn:empty_turn_model_response
+[base        007/50] × 轮 5｜调用 11  ← multi_turn:instance_state_mismatch
+[base        008/50] × 轮 3｜调用 13  ← multi_turn:execution_response_mismatch
+[base        009/50] × 轮 4｜调用 2  ← multi_turn:empty_turn_model_response
+[base        010/50] × 轮 3｜调用 20  ← multi_turn:instance_state_mismatch
+[base        011/50] × 轮 5｜调用 15  ← multi_turn:instance_state_mismatch
+[base        012/50] × 轮 2｜调用 5  ← multi_turn:empty_turn_model_response
+[base        013/50] √ 轮 3｜调用 7
+[base        014/50] √ 轮 2｜调用 9
+[base        015/50] √ 轮 4｜调用 10
+[base        016/50] × 轮 5｜调用 7  ← multi_turn:execution_response_mismatch
+[base        017/50] × 轮 3｜调用 21  ← multi_turn:instance_state_mismatch
+[base        018/50] √ 轮 3｜调用 10
+[base        019/50] × 轮 3｜调用 19  ← multi_turn:instance_state_mismatch
+[base        020/50] √ 轮 3｜调用 9
+[base        021/50] × 轮 2｜调用 9  ← multi_turn:instance_state_mismatch
+[base        022/50] × 轮 3｜调用 7  ← multi_turn:instance_state_mismatch
+[base        023/50] × 轮 4｜调用 4  ← multi_turn:empty_turn_model_response
+[base        024/50] √ 轮 3｜调用 5
+[base        025/50] × 轮 4｜调用 14  ← multi_turn:instance_state_mismatch
+[base        026/50] × 轮 4｜调用 5  ← multi_turn:execution_response_mismatch
+[base        027/50] √ 轮 3｜调用 10
+[base        028/50] √ 轮 3｜调用 9
+[base        029/50] × 轮 3｜调用 11  ← multi_turn:instance_state_mismatch
+[base        030/50] √ 轮 3｜调用 4
+[base        031/50] × 轮 2｜调用 15  ← multi_turn:execution_response_mismatch
+[base        032/50] × 轮 2｜调用 13  ← multi_turn:instance_state_mismatch
+[base        033/50] √ 轮 2｜调用 7
+[base        034/50] √ 轮 5｜调用 6
+[base        035/50] × 轮 2｜调用 6  ← multi_turn:execution_response_mismatch
+[base        036/50] × 轮 3｜调用 14  ← multi_turn:execution_response_mismatch
+[base        037/50] × 轮 3｜调用 19  ← multi_turn:execution_response_mismatch
+[base        038/50] √ 轮 3｜调用 14
+[base        039/50] √ 轮 2｜调用 9
+[base        040/50] √ 轮 4｜调用 10
+[base        041/50] √ 轮 4｜调用 18
+[base        042/50] √ 轮 2｜调用 10
+[base        043/50] × 轮 3｜调用 10  ← multi_turn:instance_state_mismatch
+[base        044/50] √ 轮 4｜调用 7
+[base        045/50] × 轮 3｜调用 13  ← multi_turn:instance_state_mismatch
+[base        046/50] × 轮 2｜调用 10  ← multi_turn:execution_response_mismatch
+[base        047/50] √ 轮 1｜调用 8
+[base        048/50] √ 轮 3｜调用 4
+[base        049/50] √ 轮 3｜调用 9
+[base        050/50] × 轮 4｜调用 9  ← multi_turn:instance_state_mismatch
+  -- base: 整例 22/50 = 44.0%
+[bfcl_multi] 报告 → eval\report_expA.md
+
+[bfcl_multi] 整例 22/50 = 44.0%｜耗时 9.3 min
