@@ -1,0 +1,13 @@
+# Streamlit 主题（车机 HUD 深色）
+[theme]
+base = "dark"
+primaryColor = "#38bdf8"
+backgroundColor = "#0a0f1a"
+secondaryBackgroundColor = "#111a2c"
+textColor = "#e6edf7"
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false
