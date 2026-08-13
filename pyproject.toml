@@ -1,0 +1,26 @@
+[project]
+name = "function-calling-ops-agent"
+version = "0.2.0"
+description = "出行服务编排 Agent：多工具编排、双层安全护栏与可靠性工程"
+requires-python = ">=3.12"
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "ruff==0.11.13"]
+
+[tool.ruff]
+line-length = 100
+extend-exclude = [
+    "eval/bfcl_multi_exec",
+    "eval/kdd_evaluator",
+    "eval/archive",
+    ".venv",
+]
+
+[tool.ruff.lint]
+# 对齐公开冠军仓的配置：默认规则集（E4/E7/E9/F），仅统一行宽
+select = ["E4", "E7", "E9", "F"]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
